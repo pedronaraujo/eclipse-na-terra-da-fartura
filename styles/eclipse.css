@@ -70,8 +70,9 @@
     width: 220px;
     height: 220px;
     background: radial-gradient(circle at var(--cx) var(--cy), rgba(255, 120, 60, 0.32), rgba(122, 0, 24, 0.18) 35%, transparent 65%);
-    animation: eclipse-pulse var(--eclipse-pulse) ease-in-out infinite reverse;
+    animation: eclipse-corner-breath var(--eclipse-pulse) ease-in-out infinite reverse;
 }
+@keyframes eclipse-corner-breath { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
 #eclipse-ntf-overlay .eclipse-corner.tl { top: 0; left: 0; --cx: 0%; --cy: 0%; }
 #eclipse-ntf-overlay .eclipse-corner.tr { top: 0; right: 0; --cx: 100%; --cy: 0%; }
 #eclipse-ntf-overlay .eclipse-corner.bl { bottom: 0; left: 0; --cx: 0%; --cy: 100%; }
