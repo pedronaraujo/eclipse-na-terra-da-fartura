@@ -1,0 +1,126 @@
+<div class="eclipse-app-inner {{#if state.active}}is-active{{/if}}">
+    <header class="eclipse-hero">
+        <img class="hero-banner" src="{{banner}}" alt="Eclipse na Terra da Fartura">
+        <div class="hero-glow"></div>
+        {{#if state.active}}
+        <div class="hero-badge active"><i class="fa-solid fa-circle-half-stroke"></i> {{localize "ECLIPSE.App.Active"}}{{#if startedAgo}} · {{startedAgo}}{{/if}}</div>
+        {{else}}
+        <div class="hero-badge {{#if state.usedSinceLongRest}}used{{else}}ready{{/if}}">
+            {{#if state.usedSinceLongRest}}<i class="fa-solid fa-moon"></i> {{localize "ECLIPSE.App.UsedChip"}}{{else}}<i class="fa-solid fa-sun"></i> {{localize "ECLIPSE.App.ReadyChip"}}{{/if}}
+        </div>
+        {{/if}}
+    </header>
+
+    <div class="eclipse-scroll">
+        {{#if state.active}}
+        <section class="eclipse-active-panel">
+            <div class="active-sun"><img src="{{icon}}" alt=""></div>
+            <div class="active-info">
+                <div class="active-label">{{localize "ECLIPSE.App.Countdown"}}</div>
+                <div class="active-count"><span class="num">{{state.counter}}</span><span class="of">/ {{state.max}}</span></div>
+                <div class="eclipse-pips">{{#each activePips}}<span class="pip {{#if lit}}lit{{else}}spent{{/if}}"></span>{{/each}}</div>
+                <p class="active-hint">{{localize "ECLIPSE.App.ActiveHint"}}</p>
+            </div>
+            {{#if isGM}}
+            <div class="active-controls">
+                <button type="button" data-action="tickDown" data-tooltip="{{localize 'ECLIPSE.App.TickDown'}}"><i class="fa-solid fa-minus"></i></button>
+                <button type="button" data-action="tickUp" data-tooltip="{{localize 'ECLIPSE.App.TickUp'}}"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            {{/if}}
+        </section>
+        {{else}}
+            {{#if setup}}
+            <section class="eclipse-rules">
+                <p>{{{localize "ECLIPSE.App.Rules"}}}</p>
+                {{#if state.usedSinceLongRest}}
+                <p class="eclipse-warning"><i class="fa-solid fa-triangle-exclamation"></i> {{localize "ECLIPSE.App.UsedHint"}}
+                    <a data-action="resetRest">{{localize "ECLIPSE.App.ResetRest"}}</a></p>
+                {{/if}}
+            </section>
+
+            <section class="eclipse-setup">
+                <div class="setup-card">
+                    <label>{{localize "ECLIPSE.App.Players"}}</label>
+                    <div class="stepper">
+                        <button type="button" data-action="playersDown"><i class="fa-solid fa-chevron-left"></i></button>
+                        <input type="number" name="players" value="{{draft.players}}" min="1" max="12">
+                        <button type="button" data-action="playersUp"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <small>{{localize "ECLIPSE.App.PlayersHint"}}</small>
+                </div>
+                <div class="setup-card fear {{#if fearShort}}short{{/if}}">
+                    <label>{{localize "ECLIPSE.App.Fear"}}</label>
+                    <div class="stepper">
+                        <button type="button" data-action="fearDown"><i class="fa-solid fa-chevron-left"></i></button>
+                        <span class="value">{{draft.fear}}</span>
+                        <button type="button" data-action="fearUp"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="fear-pips">{{#each fearPips}}<span class="skull {{#if lit}}lit{{/if}}"><i class="fa-solid fa-skull"></i></span>{{/each}}</div>
+                    <small>{{localize "ECLIPSE.App.FearHint" fear=fearNow}}</small>
+                </div>
+                <div class="setup-card countdown">
+                    <label>{{localize "ECLIPSE.App.Countdown"}}</label>
+                    <div class="big">{{previewMax}}</div>
+                    <small>{{localize "ECLIPSE.App.CountdownHint" players=draft.players dup=draft.duplicates}}</small>
+                </div>
+            </section>
+
+            <section class="eclipse-options">
+                <label class="check"><input type="checkbox" name="darken" {{checked draft.darken}}> {{localize "ECLIPSE.App.Darken"}}</label>
+                <label class="check"><input type="checkbox" name="spendFear" {{checked draft.spendFear}}> {{localize "ECLIPSE.App.SpendFear"}}</label>
+            </section>
+
+            <div class="eclipse-roll-row">
+                <button type="button" class="eclipse-roll" data-action="rollEclipse"><i class="fa-solid fa-dice-d10"></i> {{rollLabel}}</button>
+                {{#if draft.rolled}}<button type="button" class="eclipse-ghost" data-action="clearRoll"><i class="fa-solid fa-rotate-left"></i> {{localize "ECLIPSE.App.Clear"}}</button>{{/if}}
+            </div>
+            {{#if draft.rolls.length}}
+            <div class="eclipse-dice">
+                {{#each draft.rolls}}<span class="die">{{this}}</span>{{/each}}
+                {{#if draft.duplicates}}<span class="dup-note"><i class="fa-solid fa-plus"></i> {{localize "ECLIPSE.App.Duplicates" n=draft.duplicates}}</span>{{/if}}
+            </div>
+            {{/if}}
+            {{else}}
+            <section class="eclipse-rules"><p>{{localize "ECLIPSE.App.NoEclipse"}}</p></section>
+            {{/if}}
+        {{/if}}
+
+        <section class="eclipse-traits">
+            {{#each traits}}
+            <article class="trait-card {{#if selected}}selected{{/if}} {{#if ../interactive}}interactive{{/if}}" {{#if ../interactive}}data-action="toggleTrait"{{/if}} data-index="{{index}}">
+                <div class="trait-range">{{range}}</div>
+                <div class="trait-icon"><i class="{{icon}}"></i></div>
+                <div class="trait-body">
+                    <h3>{{name}}</h3>
+                    <p>{{text}}</p>
+                    <small class="trait-auto"><i class="fa-solid fa-gears"></i> {{auto}}</small>
+                </div>
+                {{#if dice.length}}<div class="trait-dice">{{#each dice}}<span class="die">{{this}}</span>{{/each}}</div>{{/if}}
+            </article>
+            {{/each}}
+        </section>
+
+        {{#if setup}}
+        <section class="eclipse-notes">
+            <label>{{localize "ECLIPSE.App.Notes"}}</label>
+            <textarea name="notes" rows="2" placeholder="{{localize 'ECLIPSE.App.NotesPlaceholder'}}">{{draft.notes}}</textarea>
+            <small>{{localize "ECLIPSE.App.ImproviseHint"}}</small>
+        </section>
+        {{/if}}
+        {{#if state.notes}}
+        <section class="eclipse-notes view"><label>{{localize "ECLIPSE.App.Notes"}}</label><p>{{state.notes}}</p></section>
+        {{/if}}
+    </div>
+
+    <footer class="eclipse-footer">
+        <a class="guide" data-action="openGuide"><i class="fa-solid fa-book-open"></i> {{localize "ECLIPSE.App.Guide"}}</a>
+        {{#if setup}}
+        <button type="button" class="eclipse-start" data-action="startEclipse" {{#unless canStart}}disabled{{/unless}}>
+            <i class="fa-solid fa-circle-half-stroke"></i> {{localize "ECLIPSE.App.Start"}}
+        </button>
+        {{/if}}
+        {{#if state.active}}{{#if isGM}}
+        <button type="button" class="eclipse-sunset" data-action="endEclipse"><i class="fa-solid fa-sun"></i> {{localize "ECLIPSE.App.End"}}</button>
+        {{/if}}{{/if}}
+    </footer>
+</div>

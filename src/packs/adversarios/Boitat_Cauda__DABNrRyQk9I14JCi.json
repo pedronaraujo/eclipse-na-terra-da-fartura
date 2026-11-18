@@ -1,0 +1,458 @@
+{
+  "_id": "DABNrRyQk9I14JCi",
+  "name": "Boitatá (Cauda)",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/boitata.webp",
+  "folder": "JoyzwQX8BMXTEF0z",
+  "sort": 220,
+  "system": {
+    "tier": 4,
+    "type": "solo",
+    "difficulty": 17,
+    "damageThresholds": {
+      "major": 37,
+      "severe": 69
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 8
+      }
+    },
+    "motivesAndTactics": "Cegar contempladores, Defender as profundezas da mata, Queimar invasores",
+    "description": "<p><em>O Boitatá é uma gigantesca serpente de fogo que protege as matas e os animais contra destruidores e caçadores.</em></p><div class=\"eclipse-box\"><p><strong>4º Patamar · Colosso</strong> — <strong>Tamanho:</strong> 120 m de comprimento. <strong>Segmentos:</strong> 1 Cabeça, 2 Corpos, 1 Cauda. <strong>Limiares:</strong> 37/69 · <strong>Fadiga:</strong> 8 (compartilhada). <strong>Experiência:</strong> Fúria Primitiva da Mata +4, Presença Deslumbrante e Cegante +3.</p><p>Segmentos: @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.yr0GR2xLYD0VRB57]{Cabeça} · @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.0U9b0HnUZmpBVcyV]{Corpo (×2)} · @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.DABNrRyQk9I14JCi]{Cauda}. Use as regras de Colosso da Campanha de Caça a Monstros do SRD.</p></div><div class=\"eclipse-lore\"><p>O Boitatá é o guardião dos campos e a punição de quem os incendeia. Tem o corpo de uma serpente imensa de um fogo azulado que não queima as folhas por onde passa, e olhos enormes, feitos dos olhos de todos os animais mortos nas queimadas. Antes dele, o capim exala cheiro de queimado sem que haja brasa, e carcaças aparecem com as órbitas vazias. A luz das suas chamas dançando sobre a mata pode parecer distante, mas quem fica para olhar essa luz já entregou a ele os próprios olhos.</p></div>",
+    "notes": "",
+    "experiences": {
+      "Tg3LS3JT6MSb7WGx": {
+        "name": "Fúria Primitiva da Mata",
+        "value": 4,
+        "description": ""
+      },
+      "xSMz6gBPZlp1PXUp": {
+        "name": "Presença Deslumbrante e Cegante",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "rcidEu8RAPH6js0K",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Rabada",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 4,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 4,
+            "dice": "d10",
+            "bonus": 6,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 23,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "huge",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Boitatá (Cauda)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 3,
+    "height": 3,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/boitata-cauda.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Segmentos Adjacentes: Corpo",
+      "type": "feature",
+      "_id": "eQT0xouiFcb1vR6k",
+      "img": "icons/creatures/reptiles/serpent-horned-green.webp",
+      "system": {
+        "description": "<p>A Cauda é adjacente ao segmento Corpo.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!DABNrRyQk9I14JCi.eQT0xouiFcb1vR6k"
+    },
+    {
+      "name": "Ponto de Entrada",
+      "type": "feature",
+      "_id": "IPipbTlAIheMe2ks",
+      "img": "icons/creatures/tentacles/tentacle-earth-green.webp",
+      "system": {
+        "description": "<p>Por estar sempre em contato com o chão, a dificuldade para escalar esse segmento diminui em <strong>3</strong>.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!DABNrRyQk9I14JCi.IPipbTlAIheMe2ks"
+    },
+    {
+      "name": "Porta Fechada",
+      "type": "feature",
+      "_id": "uL86aLfCoP01DYs3",
+      "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+      "system": {
+        "description": "<p>Ao ser destruído, esse segmento irrompe em chamas e espasmos descontrolados. Personagens sofrem <strong>4d6+8</strong> pontos de dano direto por ação que fizerem enquanto estiverem nesse segmento. Além disso, a dificuldade para escalá-lo aumenta em 5.</p>",
+        "resource": null,
+        "actions": {
+          "jRQtpW5wrSeeEBbZ": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Chamas do Segmento",
+            "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 4,
+                  "dice": "d6",
+                  "bonus": 8,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": true,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "_id": "jRQtpW5wrSeeEBbZ",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!DABNrRyQk9I14JCi.uL86aLfCoP01DYs3"
+    },
+    {
+      "name": "Rasteira",
+      "type": "feature",
+      "_id": "nrodgt7MPcztCOxx",
+      "img": "icons/creatures/tentacles/tentacle-earth-green.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para fazer um ataque padrão contra todos os alvos em alcance Próximo.</p>",
+        "resource": null,
+        "actions": {
+          "yVPyMslIFs5BWddF": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Rasteira",
+            "img": "icons/creatures/tentacles/tentacle-earth-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 4,
+                  "dice": "d10",
+                  "bonus": 6,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "yVPyMslIFs5BWddF",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!DABNrRyQk9I14JCi.nrodgt7MPcztCOxx"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "boitata-cauda"
+    }
+  },
+  "_key": "!actors!DABNrRyQk9I14JCi",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

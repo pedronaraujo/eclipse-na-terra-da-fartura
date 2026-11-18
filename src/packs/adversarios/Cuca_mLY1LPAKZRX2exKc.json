@@ -1,0 +1,819 @@
+{
+  "_id": "mLY1LPAKZRX2exKc",
+  "name": "Cuca",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/cuca.webp",
+  "folder": "SEDqmfCu5O4lZwBn",
+  "sort": 400,
+  "system": {
+    "tier": 3,
+    "type": "leader",
+    "difficulty": 18,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 33
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 7
+      }
+    },
+    "motivesAndTactics": "Acuar, Controlar criaturas, Fazer Dormir",
+    "description": "<p><em>Uma bruxa com corpo de jacaré e cabelos loiros. Dorme uma vez ao ano e captura o sono dos desavisados. Ela se alimenta de pessoas que não dormem.</em></p><div class=\"eclipse-lore\"><p>A Cuca é uma bruxa que se alimenta do sono dos desavisados, pessoas que dormem muito tarde ou não dormem; seu alimento preferido são crianças. Dizem que ela se alimenta do sono daqueles enfeitiçados por ela e por isso ela não precisa dormir. Ela sabe fazer poções e encantos diversos, e dizem que faz acordos escusos com pessoas que a procuram para que ela faça uma poção mágica. Dizem que o que ela mais odeia é ver crianças obedientes que dormem cedo.</p></div>",
+    "notes": "",
+    "experiences": {
+      "xjxa5iHJ7sQ4cUmI": {
+        "name": "Bruxa do Caldeirão",
+        "value": 3,
+        "description": ""
+      },
+      "1dmetjJY27RQLk3H": {
+        "name": "Ordenar",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "IRN794o6KBjenDnp",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Garras",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 4,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 3,
+            "dice": "d10",
+            "bonus": 4,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 20,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Cuca",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/cuca.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Aterrorizante",
+      "type": "feature",
+      "_id": "uu8iRQzMQIrvUBE3",
+      "img": "icons/magic/control/fear-fright-shadow-monster-red.webp",
+      "system": {
+        "description": "<p>Quando a Cuca acerta um ataque, todos os personagens Distantes <strong>perdem um Ponto de Esperança</strong>. Receba <strong>um Ponto de Medo</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "QFYTtQDR3rAVhE5C": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Perder Esperança",
+            "img": "icons/magic/control/fear-fright-shadow-monster-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hope": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hope",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "QFYTtQDR3rAVhE5C",
+            "effects": []
+          },
+          "i3LUwRTs6SqA9Pw2": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Ganhar Medo",
+            "img": "icons/magic/control/fear-fright-shadow-monster-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "fear": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "fear",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "i3LUwRTs6SqA9Pw2",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!mLY1LPAKZRX2exKc.uu8iRQzMQIrvUBE3"
+    },
+    {
+      "name": "Pesadelos Seguidores",
+      "type": "feature",
+      "_id": "fF09wTdMy46VfhzX",
+      "img": "icons/magic/control/hypnosis-mesmerism-pendulum.webp",
+      "system": {
+        "description": "<p>Ao ser posta em foco pela primeira vez, surgem <strong>1d6 + a quantidade de jogadores</strong> @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.SQguJbM5trLac0jr]{Pesadelos da Cuca} em alcance Distante.</p>",
+        "resource": null,
+        "actions": {
+          "J0ijEQhNDNloo8tU": {
+            "type": "summon",
+            "systemPath": "actions",
+            "name": "Invocar Pesadelos",
+            "img": "icons/magic/control/hypnosis-mesmerism-pendulum.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "summon": [
+              {
+                "actorUUID": "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.SQguJbM5trLac0jr",
+                "count": "1d6+4"
+              }
+            ],
+            "_id": "J0ijEQhNDNloo8tU",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!mLY1LPAKZRX2exKc.fF09wTdMy46VfhzX"
+    },
+    {
+      "name": "A Cuca te Pega Daqui",
+      "type": "feature",
+      "_id": "zC0EB62qYDjmp5gy",
+      "img": "icons/magic/control/hypnosis-mesmerism-pendulum.webp",
+      "system": {
+        "description": "<p><strong>Marque 2 Pontos de Fadiga</strong> para controlar o corpo de todos os alvos Distantes que estão dormindo devido à habilidade <em>Nana Neném</em>. Aquelas criaturas viram lacaios Pesadelo da Cuca, obedecendo às ordens dela até acordarem.</p>",
+        "resource": null,
+        "actions": {
+          "Z1Ah2I46moygsjsV": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Controlar Adormecidos",
+            "img": "icons/magic/control/hypnosis-mesmerism-pendulum.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 2,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "Z1Ah2I46moygsjsV",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!mLY1LPAKZRX2exKc.zC0EB62qYDjmp5gy"
+    },
+    {
+      "name": "Nana Neném",
+      "type": "feature",
+      "_id": "5My6UZzxpEsbgxG5",
+      "img": "icons/magic/nature/moon-crescent.webp",
+      "system": {
+        "description": "<p>Durante a noite, <strong>gaste um Ponto de Medo</strong> para fazer <strong>1d4</strong> inimigos Distantes, que não dormiram ainda esta noite, dormirem. O alvo deve fazer um <strong>Teste de Reação de Instinto</strong>. Em caso de falha, a Cuca recupera um Ponto de Fadiga e o alvo fica <em>Adormecido</em> até sofrer dano.</p>",
+        "resource": null,
+        "actions": {
+          "8C3z2OR39FyiMx9i": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Nana Neném",
+            "img": "icons/magic/nature/moon-crescent.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "8C3z2OR39FyiMx9i",
+            "effects": [
+              {
+                "_id": "2ZYuQdEdDkoWHcze",
+                "onSave": false
+              }
+            ]
+          },
+          "ybhiFQpXsrAzKuoY": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Recuperar 1 PF",
+            "img": "icons/magic/nature/moon-crescent.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "ybhiFQpXsrAzKuoY",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Adormecido",
+          "img": "icons/magic/nature/moon-crescent.webp",
+          "_id": "2ZYuQdEdDkoWHcze",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Dormindo até sofrer dano. Pode ser controlado pela Cuca (A Cuca te Pega Daqui).</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!mLY1LPAKZRX2exKc.5My6UZzxpEsbgxG5.2ZYuQdEdDkoWHcze"
+        }
+      ],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!mLY1LPAKZRX2exKc.5My6UZzxpEsbgxG5"
+    },
+    {
+      "name": "Te Pega de Lá",
+      "type": "feature",
+      "_id": "jof17J3WOMg3U5Eu",
+      "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+      "system": {
+        "description": "<p><strong>Uma vez por cena, gaste um Ponto de Medo</strong> para pôr em foco todos os outros adversários Distantes. Ataques feitos por eles por conta desta ação causam metade do dano.</p>",
+        "resource": null,
+        "actions": {
+          "YMJTC36hHll87M7M": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Comandar",
+            "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "1",
+              "recovery": "scene",
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "YMJTC36hHll87M7M",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!mLY1LPAKZRX2exKc.jof17J3WOMg3U5Eu"
+    },
+    {
+      "name": "Transformação",
+      "type": "feature",
+      "_id": "HKygLzEvYPB83Tzm",
+      "img": "icons/skills/toxins/cauldron-pot-bubbles-green.webp",
+      "system": {
+        "description": "<p>Você pode <strong>marcar um Ponto de Fadiga</strong> para tomar a forma de outro humanoide que possa ver com clareza em sua mente. Enquanto estiver nessa forma, sua Dificuldade aumenta em 2 para evitar ser descoberta e enganar. Se atacar, o efeito termina.</p>",
+        "resource": null,
+        "actions": {
+          "ZJ7C56gLeIFGD8OU": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Transformar-se",
+            "img": "icons/skills/toxins/cauldron-pot-bubbles-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "ZJ7C56gLeIFGD8OU",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!mLY1LPAKZRX2exKc.HKygLzEvYPB83Tzm"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "cuca"
+    }
+  },
+  "_key": "!actors!mLY1LPAKZRX2exKc",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "_id": "SacrM9S6jpYmyd6T",
+  "name": "Bernuncinha",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/bernuncinha.webp",
+  "folder": "BLNt8QlxFRhKEDTx",
+  "sort": 100,
+  "system": {
+    "tier": 2,
+    "type": "bruiser",
+    "difficulty": 14,
+    "damageThresholds": {
+      "major": 15,
+      "severe": 28
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Dançar, Engolir, Morder",
+    "description": "<p><em>Uma filhote de bernunça, uma criatura com cabeça de dragão, parte da frente do corpo de leão e traseiro de hipopótamo. Come tudo o que lhe dão e fica cada vez mais comprida.</em></p><div class=\"eclipse-lore\"><p>Essa criatura tem uma fome insaciável e come tudo que vê pela frente. Suas comidas favoritas são crianças desobedientes, pão e bolacha. Ela adora dançar músicas de sanfona, cavaco e pandeiro enquanto faz a digestão. Estão sempre próximas de sua mãe e vivem próximas a rios e lagoas, sendo uma criatura semiaquática que adora se banhar em águas lamacentas.</p></div>",
+    "notes": "",
+    "experiences": {
+      "COngapJA8i5THgoj": {
+        "name": "Alimentar-se",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "hLWvbKsvfNXBeGpT",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Mordida",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 2,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 2,
+            "dice": "d10",
+            "bonus": 4,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 16,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Bernuncinha",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/bernuncinha.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Lentidão",
+      "type": "feature",
+      "_id": "4vORlVNNcvalgmqs",
+      "img": "icons/magic/time/hourglass-tilted-gray.webp",
+      "system": {
+        "description": "<p>Enquanto a Bernuncinha estiver engolindo alguém, esta habilidade é ativada. Se a Bernuncinha for posta em foco, mas não tiver nenhum marcador em sua ficha, ela é incapaz de agir. Coloque um marcador na ficha e descreva o que ela está se preparando para fazer. Quando puser a Bernuncinha em foco e ela tiver um marcador na ficha, remova o marcador para que ela possa agir.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!SacrM9S6jpYmyd6T.4vORlVNNcvalgmqs"
+    },
+    {
+      "name": "Sopro de Chamas",
+      "type": "feature",
+      "_id": "KLFN3yQi3xB3Bdki",
+      "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+      "system": {
+        "description": "<p><strong>Gaste 2 Pontos de Medo</strong> para liberar chamas em alvos Muito Próximos na frente da Bernuncinha. Todos os alvos devem fazer um <strong>Teste de Reação de Agilidade</strong>. Quem falhar sofre <strong>3d6+2</strong> de dano mágico. Quem passar deve marcar um Ponto de Fadiga ou sofrer metade do dano.</p>",
+        "resource": null,
+        "actions": {
+          "Tp1cV7mDTF6gd5gI": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Sopro de Chamas",
+            "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 2,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 3,
+                  "dice": "d6",
+                  "bonus": 2,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "agility",
+              "difficulty": null,
+              "damageMod": "half"
+            },
+            "_id": "Tp1cV7mDTF6gd5gI",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!SacrM9S6jpYmyd6T.KLFN3yQi3xB3Bdki"
+    },
+    {
+      "name": "Sempre Cabe Mais",
+      "type": "feature",
+      "_id": "ugBPvl3Gug74BbnN",
+      "img": "icons/creatures/abilities/mouth-teeth-lamprey-red.webp",
+      "system": {
+        "description": "<p><strong>Contagem Regressiva (Ciclo 1d4).</strong> Quando a Bernuncinha acerta um ataque padrão, você pode <strong>marcar um Ponto de Fadiga</strong> para tentar engolir o alvo. O alvo deve fazer um <strong>Teste de Reação de Força ou Agilidade</strong> para tentar escapar; se falhar, ele é engolido, ficando <em>Imobilizado</em> e com desvantagem em Testes de Ação. Ative a contagem regressiva e diminua sempre que um personagem rolar com Medo. Quando a contagem chegar a zero, o personagem marca 1 PV e 1 PF e a Bernuncinha aumenta em 1 seus limiares de dano. Ela só pode ter uma criatura engolida por vez. Se o personagem morrer enquanto estiver dentro dela, ela pode engolir um novo inimigo.</p>",
+        "resource": null,
+        "actions": {
+          "hNUnKRwcvNXFpOu0": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Engolir",
+            "img": "icons/creatures/abilities/mouth-teeth-lamprey-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "melee",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "agility",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "hNUnKRwcvNXFpOu0",
+            "effects": [
+              {
+                "_id": "070iwnzFxPIxJTG1",
+                "onSave": false
+              }
+            ]
+          },
+          "jcsNj7sE5A8TmcmG": {
+            "type": "countdown",
+            "systemPath": "actions",
+            "name": "Iniciar Contagem",
+            "img": "icons/creatures/abilities/mouth-teeth-lamprey-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "countdown": [
+              {
+                "name": "Sempre Cabe Mais (Bernuncinha)",
+                "type": "encounter",
+                "hidden": false,
+                "img": "icons/creatures/abilities/mouth-teeth-lamprey-red.webp",
+                "progress": {
+                  "looping": "looping",
+                  "type": "custom",
+                  "startFormula": "1d4",
+                  "current": 1,
+                  "start": 1
+                },
+                "ownership": {}
+              }
+            ],
+            "_id": "jcsNj7sE5A8TmcmG",
+            "effects": []
+          },
+          "ZD9vxwVWKUhZlGHI": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Digestão (1 PV e 1 PF)",
+            "img": "icons/creatures/abilities/mouth-teeth-lamprey-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                },
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "ZD9vxwVWKUhZlGHI",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Imobilizado",
+          "img": "icons/magic/control/debuff-chains-shackles-movement-blue.webp",
+          "_id": "070iwnzFxPIxJTG1",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p><em>Imobilizado</em>: não pode se mover, mas ainda pode agir no lugar. Engolido: desvantagem em Testes de Ação.</p>",
+          "statuses": [
+            "restrained"
+          ],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!SacrM9S6jpYmyd6T.ugBPvl3Gug74BbnN.070iwnzFxPIxJTG1"
+        }
+      ],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!SacrM9S6jpYmyd6T.ugBPvl3Gug74BbnN"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "bernuncinha"
+    }
+  },
+  "_key": "!actors!SacrM9S6jpYmyd6T",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

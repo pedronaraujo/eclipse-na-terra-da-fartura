@@ -1,0 +1,100 @@
+{
+  "id": "eclipse-na-terra-da-fartura",
+  "title": "Eclipse na Terra da Fartura (DOZE Vol. 1)",
+  "description": "Cenário de Daggerheart da revista DOZE Vol. 1 (ANAMA): guia de jogadores e de mestre com a lore completa, bestiário de Encantados e Criaturas da Noite, ambientes, aliados e a mecânica de Eclipse com janela própria, efeitos automáticos e borda pulsante na tela.",
+  "version": "1.0.0",
+  "authors": [
+    { "name": "Pedro Tostes", "url": "https://github.com/pedronaraujo" },
+    { "name": "Vinícius Sena" },
+    { "name": "Giordano “Zeva” Azevedo" },
+    { "name": "Henrique “Manik” Fonseca" }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.369"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "daggerheart",
+        "type": "system",
+        "compatibility": { "minimum": "2.12.0" }
+      }
+    ]
+  },
+  "esmodules": ["scripts/main.mjs"],
+  "styles": ["styles/eclipse.css"],
+  "languages": [
+    { "lang": "pt-BR", "name": "Português (Brasil)", "path": "lang/pt-BR.json" },
+    { "lang": "en", "name": "English", "path": "lang/en.json" }
+  ],
+  "socket": true,
+  "packs": [
+    {
+      "name": "diario-jogadores",
+      "label": "Eclipse — Guia dos Jogadores",
+      "path": "packs/diario-jogadores",
+      "type": "JournalEntry",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "diario-mestre",
+      "label": "Eclipse — Guia do Mestre",
+      "path": "packs/diario-mestre",
+      "type": "JournalEntry",
+      "ownership": { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "adversarios",
+      "label": "Eclipse — Adversários",
+      "path": "packs/adversarios",
+      "type": "Actor",
+      "system": "daggerheart",
+      "ownership": { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ambientes",
+      "label": "Eclipse — Ambientes",
+      "path": "packs/ambientes",
+      "type": "Actor",
+      "system": "daggerheart",
+      "ownership": { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "aliados",
+      "label": "Eclipse — Aliados",
+      "path": "packs/aliados",
+      "type": "Actor",
+      "system": "daggerheart",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "tabelas",
+      "label": "Eclipse — Tabelas",
+      "path": "packs/tabelas",
+      "type": "RollTable",
+      "ownership": { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "macros",
+      "label": "Eclipse — Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "ownership": { "PLAYER": "NONE", "TRUSTED": "NONE", "ASSISTANT": "OWNER" }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Eclipse na Terra da Fartura",
+      "color": "#7a0018",
+      "sorting": "m",
+      "packs": ["diario-jogadores", "diario-mestre", "adversarios", "ambientes", "aliados", "tabelas", "macros"]
+    }
+  ],
+  "url": "https://github.com/pedronaraujo/eclipse-na-terra-da-fartura",
+  "manifest": "https://github.com/pedronaraujo/eclipse-na-terra-da-fartura/releases/latest/download/module.json",
+  "download": "https://github.com/pedronaraujo/eclipse-na-terra-da-fartura/releases/download/v1.0.0/module.zip",
+  "readme": "https://github.com/pedronaraujo/eclipse-na-terra-da-fartura#readme",
+  "bugs": "https://github.com/pedronaraujo/eclipse-na-terra-da-fartura/issues",
+  "license": "Conteúdo © ANAMA Criativa (DPCGL); código MIT"
+}

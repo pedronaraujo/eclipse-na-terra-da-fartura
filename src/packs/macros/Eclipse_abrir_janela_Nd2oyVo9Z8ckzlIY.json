@@ -1,0 +1,21 @@
+{
+  "_id": "Nd2oyVo9Z8ckzlIY",
+  "name": "Eclipse: abrir janela",
+  "type": "script",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/ui/eclipse-icon.webp",
+  "command": "game.modules.get('eclipse-na-terra-da-fartura')?.api?.open();",
+  "scope": "global",
+  "folder": null,
+  "sort": 100,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  },
+  "_key": "!macros!Nd2oyVo9Z8ckzlIY"
+}

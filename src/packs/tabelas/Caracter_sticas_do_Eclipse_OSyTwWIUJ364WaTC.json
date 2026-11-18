@@ -1,0 +1,99 @@
+{
+  "_id": "OSyTwWIUJ364WaTC",
+  "name": "Características do Eclipse",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/ui/eclipse-icon.webp",
+  "description": "<p>Role um d10 para cada Ponto de Medo gasto ao iniciar um Eclipse. Se um dado cair em uma característica já adicionada, aumente a contagem em 2.</p>",
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "780Ks54f08eNzrcs",
+      "type": "text",
+      "name": "Fúria da Noite",
+      "description": "<p>Aumente o dano dos adversários em +2.</p>",
+      "img": "icons/skills/melee/strike-slashes-red.webp",
+      "range": [
+        1,
+        2
+      ],
+      "weight": 2,
+      "drawn": false,
+      "flags": {},
+      "_key": "!tables.results!OSyTwWIUJ364WaTC.780Ks54f08eNzrcs"
+    },
+    {
+      "_id": "n1siK6vRAEQN7mS6",
+      "type": "text",
+      "name": "Sombra Espessa",
+      "description": "<p>Aumente a Dificuldade de todos os adversários e ambientes em 1, enquanto o Eclipse durar.</p>",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "range": [
+        3,
+        4
+      ],
+      "weight": 2,
+      "drawn": false,
+      "flags": {},
+      "_key": "!tables.results!OSyTwWIUJ364WaTC.n1siK6vRAEQN7mS6"
+    },
+    {
+      "_id": "qAUPEg33CTLOsu8o",
+      "type": "text",
+      "name": "Couro da Noite",
+      "description": "<p>Aumente os limiares de dano dos adversários em +2.</p>",
+      "img": "icons/magic/defensive/shield-barrier-flaming-pentagon-orange.webp",
+      "range": [
+        5,
+        6
+      ],
+      "weight": 2,
+      "drawn": false,
+      "flags": {},
+      "_key": "!tables.results!OSyTwWIUJ364WaTC.qAUPEg33CTLOsu8o"
+    },
+    {
+      "_id": "PzhjDzbdJIhBf1ON",
+      "type": "text",
+      "name": "Esperança Minguante",
+      "description": "<p>Diminua o Dado de Esperança dos jogadores para um d10.</p>",
+      "img": "icons/magic/light/explosion-star-small-blue-yellow.webp",
+      "range": [
+        7,
+        8
+      ],
+      "weight": 2,
+      "drawn": false,
+      "flags": {},
+      "_key": "!tables.results!OSyTwWIUJ364WaTC.PzhjDzbdJIhBf1ON"
+    },
+    {
+      "_id": "bMbqw1NbdkAJFGh0",
+      "type": "text",
+      "name": "Garras da Onça Celeste",
+      "description": "<p>Todas as criaturas obtêm sucesso crítico ao rolar 19 ou 20 em testes de ataque contra personagens.</p>",
+      "img": "icons/creatures/claws/claw-talons-glowing-purple.webp",
+      "range": [
+        9,
+        10
+      ],
+      "weight": 2,
+      "drawn": false,
+      "flags": {},
+      "_key": "!tables.results!OSyTwWIUJ364WaTC.bMbqw1NbdkAJFGh0"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  },
+  "_key": "!tables!OSyTwWIUJ364WaTC"
+}

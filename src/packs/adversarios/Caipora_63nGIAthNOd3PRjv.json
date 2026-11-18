@@ -1,0 +1,806 @@
+{
+  "_id": "63nGIAthNOd3PRjv",
+  "name": "Caipora",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/caipora.webp",
+  "folder": "BLNt8QlxFRhKEDTx",
+  "sort": 200,
+  "system": {
+    "tier": 2,
+    "type": "support",
+    "difficulty": 15,
+    "damageThresholds": {
+      "major": 10,
+      "severe": 17
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Defender a Natureza, Punir Transgressores",
+    "description": "<p><em>Uma humanoide que fica mudando de tamanho, coberta com pelos vermelho-sangue.</em></p><div class=\"eclipse-lore\"><p>Parece-se com uma criança pequena, de pele escura como brasa apagada e cabelos vermelhos sempre encharcados; monta um porco-do-mato e carrega uma vara de cipó que usa para levantar de novo os animais já abatidos. Seu assobio vem sempre do lado oposto de onde ela está, tornando difícil rastreá-la.</p></div>",
+    "notes": "",
+    "experiences": {
+      "shiLnCokGquGoMPH": {
+        "name": "Protetora dos Animais",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "Oh7prwOoY1U5ZH0n",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Cajado de Guaco",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 1,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 2,
+            "dice": "d8",
+            "bonus": 5,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "magical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 17,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Caipora",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/caipora.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Mudança de Forma",
+      "type": "feature",
+      "_id": "PyJsH4DWeTNVhZ7i",
+      "img": "icons/magic/control/silhouette-hold-change-green.webp",
+      "system": {
+        "description": "<p>Uma vez por turno do mestre, a Caipora pode alternar entre as formas abaixo e receber suas habilidades: <strong>Forma Diminuta</strong>, <strong>Forma Mediana</strong> e <strong>Forma Gigante</strong>.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!63nGIAthNOd3PRjv.PyJsH4DWeTNVhZ7i"
+    },
+    {
+      "name": "Forma Diminuta — Velocidade Ganha de Força",
+      "type": "feature",
+      "_id": "HzAMJMZBwwMphDLl",
+      "img": "icons/magic/control/silhouette-hold-change-green.webp",
+      "system": {
+        "description": "<p>As criaturas têm <strong>desvantagem</strong> para atacar a Caipora, e seu ataque padrão causa <strong>2d4+4</strong> de dano, em vez do valor original.</p>",
+        "resource": null,
+        "actions": {
+          "bDtIhFGtqUPuRxOE": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Cajado (Forma Diminuta)",
+            "img": "icons/magic/control/silhouette-hold-change-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "melee",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d4",
+                  "bonus": 4,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "bDtIhFGtqUPuRxOE",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!63nGIAthNOd3PRjv.HzAMJMZBwwMphDLl"
+    },
+    {
+      "name": "Forma Diminuta — Vigor Natural",
+      "type": "feature",
+      "_id": "g0LZhZYXdxCNKfQw",
+      "img": "icons/magic/life/heart-cross-strong-green.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para recuperar <strong>1 PV</strong> de qualquer criatura Próxima.</p>",
+        "resource": null,
+        "actions": {
+          "zm5CWUJZtdEbyecR": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Vigor Natural",
+            "img": "icons/magic/life/heart-cross-strong-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "zm5CWUJZtdEbyecR",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!63nGIAthNOd3PRjv.g0LZhZYXdxCNKfQw"
+    },
+    {
+      "name": "Forma Mediana — Poder da Natureza",
+      "type": "feature",
+      "_id": "cBfhj9bMGeFiu4Dc",
+      "img": "icons/magic/nature/root-vine-entangled-humanoid.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para utilizar o poder da natureza do ambiente ao seu redor.</p><ul><li><strong>Ambiente aquático:</strong> empurre as criaturas dentro de um alcance Muito Próximo para até um alcance Distante caso falhem em um Teste de Reação de Força ou Agilidade.</li><li><strong>Ambiente árido:</strong> escolha um ponto dentro do alcance Distante e faça uma área Próxima se tornar areia movediça. Criaturas devem fazer um Teste de Instinto para perceber a área traiçoeira, e qualquer criatura que entre nessa área deverá fazer um Teste de Reação de Agilidade ou ficar <em>Imobilizada</em> pela areia.</li><li><strong>Ambiente de mata:</strong> raízes saem de seu cajado em direção a um alvo para prendê-lo. O alvo deverá fazer um Teste de Reação de Agilidade para não ficar <em>Imobilizado</em>. Até que se liberte, a criatura deverá marcar uma Fadiga antes de fazer qualquer ação que não seja tentar se libertar.</li></ul>",
+        "resource": null,
+        "actions": {
+          "4p4VjfOLE4Z2Lr9S": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Aquático: Empurrar",
+            "img": "icons/magic/nature/root-vine-entangled-humanoid.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "strength",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "4p4VjfOLE4Z2Lr9S",
+            "effects": []
+          },
+          "ZyYjc4ga55i1tt1Q": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Árido / Mata: Prender",
+            "img": "icons/magic/nature/root-vine-entangled-humanoid.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "agility",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "ZyYjc4ga55i1tt1Q",
+            "effects": [
+              {
+                "_id": "jRFpiheTQPa3gYt7",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Imobilizado",
+          "img": "icons/magic/control/debuff-chains-shackles-movement-blue.webp",
+          "_id": "jRFpiheTQPa3gYt7",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p><em>Imobilizado</em>: não pode se mover, mas ainda pode agir no lugar.</p>",
+          "statuses": [
+            "restrained"
+          ],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!63nGIAthNOd3PRjv.cBfhj9bMGeFiu4Dc.jRFpiheTQPa3gYt7"
+        }
+      ],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!63nGIAthNOd3PRjv.cBfhj9bMGeFiu4Dc"
+    },
+    {
+      "name": "Forma Gigante — Poder Bruto",
+      "type": "feature",
+      "_id": "xSSWp0R3Fx9JHz8T",
+      "img": "icons/skills/movement/arrows-up-trio-red.webp",
+      "system": {
+        "description": "<p>Seu ataque padrão passa a causar <strong>2d12+6</strong> de dano mágico.</p>",
+        "resource": null,
+        "actions": {
+          "ioCtG4nbNqXIyv2f": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Cajado (Forma Gigante)",
+            "img": "icons/skills/movement/arrows-up-trio-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "melee",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d12",
+                  "bonus": 6,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "ioCtG4nbNqXIyv2f",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!63nGIAthNOd3PRjv.xSSWp0R3Fx9JHz8T"
+    },
+    {
+      "name": "Forma Gigante — Natureza em Fúria",
+      "type": "feature",
+      "_id": "7Qw60WWPDRJMRlEe",
+      "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
+      "system": {
+        "description": "<p><strong>Marque 2 Pontos de Fadiga</strong> para invocar uma forte tempestade centrada em você com alcance Muito Distante. Enquanto estiverem na área da tempestade, ataques à distância têm desvantagem e a Dificuldade do ambiente aumenta em 2.</p>",
+        "resource": null,
+        "actions": {
+          "iOObw5PNnj0Qh0VE": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Invocar Tempestade",
+            "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 2,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "iOObw5PNnj0Qh0VE",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!63nGIAthNOd3PRjv.7Qw60WWPDRJMRlEe"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "caipora"
+    }
+  },
+  "_key": "!actors!63nGIAthNOd3PRjv",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

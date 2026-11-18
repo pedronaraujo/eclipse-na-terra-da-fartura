@@ -1,0 +1,165 @@
+{
+  "ECLIPSE": {
+    "Status": "Eclipse",
+    "Menu": {
+      "Legend": "Eclipse na Terra da Fartura",
+      "Tooltip": "Abrir a janela do Eclipse",
+      "Button": "Eclipse",
+      "StatusActive": "Em curso · contagem {counter}/{max}",
+      "StatusUsed": "Já usado neste descanso longo",
+      "StatusReady": "Pronto para cobrir o sol"
+    },
+    "Hud": {
+      "Title": "Noite ao Meio-Dia",
+      "Tooltip": "Eclipse em curso — clique para abrir"
+    },
+    "Intro": {
+      "Title": "Noite ao Meio-Dia",
+      "Subtitle": "Chariã, a Onça Celeste, engole o Sol"
+    },
+    "Outro": {
+      "Title": "O Sol Retorna",
+      "Subtitle": "A sombra recua… por enquanto"
+    },
+    "App": {
+      "Title": "Eclipse — Noite ao Meio-Dia",
+      "Active": "Eclipse em curso",
+      "UsedChip": "Usado neste descanso longo",
+      "ReadyChip": "Disponível",
+      "Countdown": "Contagem",
+      "ActiveHint": "Diminui em 1 cada vez que um personagem usa Esperança. Ao zerar ou ao pôr do sol, o Eclipse termina.",
+      "TickDown": "Diminuir a contagem",
+      "TickUp": "Aumentar a contagem",
+      "Rules": "<strong>Uma vez por descanso longo, enquanto ainda estiver de dia</strong>, gaste Medo para iniciar um Eclipse. A contagem é o <strong>dobro de jogadores</strong> na cena. Para cada Medo gasto, role um <strong>d10</strong> e adicione a característica; se repetir uma característica, a contagem sobe <strong>+2</strong>.",
+      "UsedHint": "Um Eclipse já aconteceu desde o último descanso longo.",
+      "UsedWarning": "Pela regra, o Eclipse acontece uma vez por descanso longo e já foi usado. Iniciar mesmo assim?",
+      "ResetRest": "Houve um descanso longo",
+      "Players": "Jogadores na cena",
+      "PlayersHint": "Contagem = 2 × jogadores",
+      "Fear": "Medo a gastar",
+      "FearHint": "Você tem {fear} de Medo",
+      "CountdownHint": "2 × {players} jogadores + 2 × {dup} repetições",
+      "Darken": "Escurecer a cena",
+      "SpendFear": "Descontar o Medo do rastreador",
+      "Roll": "Rolar {n}d10",
+      "Clear": "Limpar",
+      "Duplicates": "{n} repetida(s): contagem +2 cada",
+      "NoEclipse": "O céu está limpo. Por enquanto, nenhum Eclipse cobre a Terra da Fartura.",
+      "Notes": "Características improvisadas",
+      "NotesPlaceholder": "Ex.: as brumas de Aguapê sobem e a visão além de Próximo tem desvantagem…",
+      "ImproviseHint": "Clique nas características para ligar ou desligar (Improvisando um Eclipse).",
+      "Guide": "Regras no Guia do Mestre",
+      "Start": "Iniciar o Eclipse",
+      "End": "Pôr do sol — encerrar",
+      "EndConfirm": "Encerrar o Eclipse agora e remover todas as suas características?",
+      "JustNow": "agora mesmo",
+      "MinutesAgo": "há {mins} min"
+    },
+    "Traits": {
+      "dano": {
+        "name": "Fúria da Noite",
+        "text": "Aumente o dano dos adversários em +2.",
+        "auto": "Efeito ativo: +2 de dano nos adversários"
+      },
+      "dificuldade": {
+        "name": "Sombra Espessa",
+        "text": "Aumente a Dificuldade de todos os adversários e ambientes em 1, enquanto o Eclipse durar.",
+        "auto": "Efeito ativo: Dificuldade +1 em adversários e ambientes"
+      },
+      "limiares": {
+        "name": "Couro da Noite",
+        "text": "Aumente os limiares de dano dos adversários em +2.",
+        "auto": "Efeito ativo: limiares +2 (exceto lacaios)"
+      },
+      "esperanca": {
+        "name": "Esperança Minguante",
+        "text": "Diminua o Dado de Esperança dos jogadores para um d10.",
+        "auto": "Efeito ativo: Dado de Esperança d10 nos personagens"
+      },
+      "critico": {
+        "name": "Garras da Onça Celeste",
+        "text": "Todas as criaturas obtêm sucesso crítico ao rolar 19 ou 20 em testes de ataque contra personagens.",
+        "auto": "Efeito ativo: crítico em 19–20 nos adversários"
+      }
+    },
+    "Effect": {
+      "Name": "Eclipse — Noite ao Meio-Dia",
+      "Description": "Enquanto o Eclipse durar:",
+      "Duration": "Até a contagem do Eclipse zerar ou o pôr do sol."
+    },
+    "Countdown": {
+      "Name": "Eclipse — Noite ao Meio-Dia"
+    },
+    "Chat": {
+      "Speaker": "Chariã, a Onça Celeste",
+      "StartTitle": "A Noite ao Meio-Dia começou",
+      "StartFlavor": "Os pássaros se calam. Uma sombra colossal engole o Sol, e as chamas das fogueiras vacilam.",
+      "CountDetail": "2 × {players} jogadores + 2 × {dup} repetições",
+      "FearSpent": "{fear} de Medo gasto",
+      "EndTitle": "O Sol retorna",
+      "EndFlavor": "Uma luz cinzenta volta à terra e mostra o estrago. Vai acontecer de novo — ninguém sabe quando."
+    },
+    "End": {
+      "Reason": {
+        "countdown": "A contagem chegou a zero.",
+        "sunset": "O sol se pôs."
+      }
+    },
+    "Notify": {
+      "HopeSpent": "{name} usou Esperança — Eclipse: {counter}"
+    },
+    "Errors": {
+      "Generic": "Eclipse: algo deu errado (veja o console).",
+      "GMOnly": "Só o mestre pode controlar o Eclipse.",
+      "AlreadyActive": "Já existe um Eclipse em curso.",
+      "NotEnoughFear": "Medo insuficiente: precisa de {fear}, você tem {cur}."
+    },
+    "Settings": {
+      "DarkenScene": {
+        "Name": "Escurecer a cena no Eclipse",
+        "Hint": "Valor padrão da caixa “Escurecer a cena” na janela do Eclipse."
+      },
+      "DarknessLevel": {
+        "Name": "Nível de escuridão",
+        "Hint": "Escuridão da cena durante o Eclipse (restaurada ao final)."
+      },
+      "ApplyEffects": {
+        "Name": "Aplicar características automaticamente",
+        "Hint": "Cria um efeito ativo “Eclipse” em adversários, ambientes e personagens afetados, e o remove ao final."
+      },
+      "AutoTick": {
+        "Name": "Contagem automática pela Esperança",
+        "Hint": "Diminui a contagem sempre que a Esperança de um personagem diminui."
+      },
+      "SystemCountdown": {
+        "Name": "Mostrar no rastreador de contagens",
+        "Hint": "Cria a contagem do Eclipse no rastreador de contagens do sistema Daggerheart."
+      },
+      "SoundStart": {
+        "Name": "Som de início",
+        "Hint": "Opcional: arquivo de áudio tocado para todos quando o Eclipse começa."
+      },
+      "SoundEnd": {
+        "Name": "Som de fim",
+        "Hint": "Opcional: arquivo de áudio tocado quando o sol retorna."
+      },
+      "Intensity": {
+        "Name": "Efeito de tela",
+        "Hint": "Intensidade da borda pulsante durante o Eclipse (só para você).",
+        "Full": "Intenso",
+        "Subtle": "Suave",
+        "Off": "Desligado"
+      },
+      "Animations": {
+        "Name": "Animações de início e fim",
+        "Hint": "Mostra a cena “Noite ao Meio-Dia” e “O Sol Retorna”."
+      },
+      "HudPosition": {
+        "Name": "Posição do HUD do Eclipse",
+        "Top": "Topo",
+        "Bottom": "Acima da barra de atalhos",
+        "Hidden": "Oculto"
+      }
+    }
+  }
+}

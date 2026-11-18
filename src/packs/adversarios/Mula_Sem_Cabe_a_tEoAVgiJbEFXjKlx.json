@@ -1,0 +1,820 @@
+{
+  "_id": "tEoAVgiJbEFXjKlx",
+  "name": "Mula Sem Cabeça",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/mula-sem-cabeca.webp",
+  "folder": "jKqDBglxnLHl9Am0",
+  "sort": 500,
+  "system": {
+    "tier": 1,
+    "type": "solo",
+    "difficulty": 15,
+    "damageThresholds": {
+      "major": 9,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 8
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Castigar, Destruir, Queimar",
+    "description": "<p><em>Uma mula sem cabeça; no local da cabeça há somente chamas.</em></p><div class=\"eclipse-lore\"><p>A Mula sem Cabeça é a encarnação do amor da maldição divina. Durante o dia, uma mulher que se entregou a um amor proibido; durante a noite, uma mula amaldiçoada que corre levando destruição por onde passa. Seu corpo de mula emana um calor infernal, com chamas vivas e azuis borbulhando do pescoço amputado, enquanto uma pesada corrente de ferro em brasa se arrasta pelo chão. Dizem que é possível conter sua fúria arrancando a corrente, mas o metal incandescente derreteu os dedos dos que tentaram. O som de correntes arrastando freneticamente e o cheiro de brasa e fumaça anunciam sua presença, sinais fáceis de identificar, mas quando o calor sufocante pode ser sentido e os relinchos agonizantes ouvidos, não há mais para onde correr.</p></div>",
+    "notes": "",
+    "experiences": {
+      "vcpmsc0ektYesj1G": {
+        "name": "Incendiar",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "A3jvYc6zBl3odB51",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Coice Flamejante",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 3,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 1,
+            "dice": "d12",
+            "bonus": 4,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "magical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 15,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Mula Sem Cabeça",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/mula-sem-cabeca.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Casco Flamejante",
+      "type": "feature",
+      "_id": "Uif6cWlOuvD2QLAo",
+      "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+      "system": {
+        "description": "<p>Enquanto a Mula Sem Cabeça estiver em uma <em>Zona de Chamas</em>, personagens que sofrerem dano devem <strong>marcar 1 Ponto de Armadura</strong> sem receber seus benefícios.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tEoAVgiJbEFXjKlx.Uif6cWlOuvD2QLAo"
+    },
+    {
+      "name": "Inclemente (2)",
+      "type": "feature",
+      "_id": "VPFhabAVchoSVcok",
+      "img": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+      "system": {
+        "description": "<p>A Mula Sem Cabeça pode ser posta em foco até <strong>2 vezes</strong> por turno do mestre. Gaste Medo normalmente para colocá-la em foco.</p>",
+        "resource": null,
+        "actions": {
+          "YijFlHPfk09slq5o": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Foco: Inclemente",
+            "img": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "passive",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "YijFlHPfk09slq5o",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tEoAVgiJbEFXjKlx.VPFhabAVchoSVcok"
+    },
+    {
+      "name": "Absorver Chamas",
+      "type": "feature",
+      "_id": "2RMXp6nQlGoqE1al",
+      "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+      "system": {
+        "description": "<p>Enquanto a Mula Sem Cabeça estiver em uma Zona de Chamas, <strong>marque um Ponto de Fadiga</strong> para absorver todas as chamas na área, encerrando a Zona de Chamas e curando <strong>2 PV</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "9nJKZRTy51nQfACZ": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Absorver (curar 2 PV)",
+            "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "2"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "9nJKZRTy51nQfACZ",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tEoAVgiJbEFXjKlx.2RMXp6nQlGoqE1al"
+    },
+    {
+      "name": "Coice Descontrolado",
+      "type": "feature",
+      "_id": "hYG1VvFeIgp5uHag",
+      "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para fazer um ataque padrão contra todos os alvos Muito Próximos.</p>",
+        "resource": null,
+        "actions": {
+          "GFUUQODb7SbHXuCJ": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Coice Descontrolado",
+            "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 1,
+                  "dice": "d12",
+                  "bonus": 4,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "GFUUQODb7SbHXuCJ",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tEoAVgiJbEFXjKlx.hYG1VvFeIgp5uHag"
+    },
+    {
+      "name": "Zona de Chamas",
+      "type": "feature",
+      "_id": "PVC4V8bb9omNHDVf",
+      "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+      "system": {
+        "description": "<p><strong>Gaste 2 Pontos de Medo</strong> para incendiar a área em alcance Próximo. Alvos nessa área devem ter sucesso em um <strong>Teste de Reação de Força</strong>. Em caso de falha, sofrem <strong>2d8+6</strong> de dano mágico e ficam <em>Em Chamas</em> até sair da área. Em caso de sucesso, sofrem metade do dano. Quando um personagem Em Chamas age, ele sofre <strong>2d6</strong> de dano mágico adicional se ainda estiver Em Chamas no fim da ação dele.</p>",
+        "resource": null,
+        "actions": {
+          "kcrefmCG1fduKMFf": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Zona de Chamas",
+            "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 2,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d8",
+                  "bonus": 6,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "strength",
+              "difficulty": null,
+              "damageMod": "half"
+            },
+            "_id": "kcrefmCG1fduKMFf",
+            "effects": [
+              {
+                "_id": "xfVgFrVz8Sr61QIw",
+                "onSave": false
+              }
+            ]
+          },
+          "GXqbWPqEzDa2VZHB": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Dano: Em Chamas",
+            "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d6",
+                  "bonus": null,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "_id": "GXqbWPqEzDa2VZHB",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Em Chamas",
+          "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+          "_id": "xfVgFrVz8Sr61QIw",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p><em>Em Chamas</em>: ao fim de cada ação, se ainda estiver na Zona de Chamas, sofre 2d6 de dano mágico.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!tEoAVgiJbEFXjKlx.PVC4V8bb9omNHDVf.xfVgFrVz8Sr61QIw"
+        }
+      ],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tEoAVgiJbEFXjKlx.PVC4V8bb9omNHDVf"
+    },
+    {
+      "name": "Impulso",
+      "type": "feature",
+      "_id": "mCaYq3RuPNsjhQSB",
+      "img": "icons/skills/melee/strike-weapons-orange.webp",
+      "system": {
+        "description": "<p>Quando a Mula Sem Cabeça acertar um ataque contra um personagem, receba <strong>um Ponto de Medo</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "qoFfuSHNrwEa9ZHR": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Ganhar Medo",
+            "img": "icons/skills/melee/strike-weapons-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "fear": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "fear",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "qoFfuSHNrwEa9ZHR",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tEoAVgiJbEFXjKlx.mCaYq3RuPNsjhQSB"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "mula-sem-cabeca"
+    }
+  },
+  "_key": "!actors!tEoAVgiJbEFXjKlx",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

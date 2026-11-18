@@ -1,0 +1,445 @@
+{
+  "_id": "BkZe59dowwSMMGVA",
+  "name": "Opartabá",
+  "type": "environment",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/opartaba.webp",
+  "folder": null,
+  "sort": 400,
+  "system": {
+    "tier": 4,
+    "type": "exploration",
+    "difficulty": 20,
+    "impulses": "Guardar o segredo, manter indesejados fora, ser redescoberta",
+    "description": "<p><em>A cidade adormecida de Opartabá, localizada abaixo de uma floresta, está perdida há milênios, com diversos segredos e perigos a serem encontrados.</em></p>",
+    "notes": "",
+    "potentialAdversaries": {
+      "eWDmXuzIqjl5UXIj": {
+        "label": "Guardiões da Cidade",
+        "adversaries": [
+          "Compendium.daggerheart.adversaries.Actor.Tg1F1PthQWeKdLJT",
+          "Compendium.daggerheart.adversaries.Actor.befIqd5IYKg6eUz2",
+          "Compendium.daggerheart.adversaries.Actor.DJTVWE5AuWKsAdLZ"
+        ]
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 26,
+      "artist": "",
+      "srd": false
+    }
+  },
+  "prototypeToken": {
+    "name": "Opartabá",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/opartaba.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Conhecimento Perdido",
+      "type": "feature",
+      "_id": "LPcHYNaUoJWy0PxI",
+      "img": "icons/skills/trades/academics-book-study-runes.webp",
+      "system": {
+        "description": "<p>A tecnologia e o conhecimento de Opartabá ficaram perdidos por tempo demais. Testes de Conhecimento feitos para entender algo deste ambiente têm <strong>desvantagem</strong>.</p><section id=\"secret-dBciVIhCs4WCT2q8\" class=\"secret\"><p><em>Que segredos estão escondidos aqui? Qual conhecimento falta para os personagens entenderem esse local?</em></p></section>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!BkZe59dowwSMMGVA.LPcHYNaUoJWy0PxI"
+    },
+    {
+      "name": "Imperturbado",
+      "type": "feature",
+      "_id": "WERjKAyUMhbB3Nzo",
+      "img": "icons/magic/death/skeleton-skull-soul-blue.webp",
+      "system": {
+        "description": "<p>Apesar de estar escondida por muito tempo, Opartabá ainda está viva, de certo modo, e não gosta de ser perturbada. Se os personagens fizerem algo desrespeitoso para a cidade, sua cultura ou religião, invoque um @UUID[Compendium.daggerheart.adversaries.Actor.befIqd5IYKg6eUz2]{Oráculo da Perdição} em alcance Distante do grupo e coloque-o em foco imediatamente.</p><section id=\"secret-WQ1bO7Y3tn3dnSjr\" class=\"secret\"><p><em>Quais ações seriam consideradas desrespeitosas pelo povo que viveu aqui? Como os personagens podem se redimir com a cidade?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "NwmYIsivZN2Y9weJ": {
+            "type": "summon",
+            "systemPath": "actions",
+            "name": "Invocar Oráculo da Perdição",
+            "img": "icons/magic/death/skeleton-skull-soul-blue.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "summon": [
+              {
+                "actorUUID": "Compendium.daggerheart.adversaries.Actor.befIqd5IYKg6eUz2",
+                "count": "1"
+              }
+            ],
+            "_id": "NwmYIsivZN2Y9weJ",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!BkZe59dowwSMMGVA.WERjKAyUMhbB3Nzo"
+    },
+    {
+      "name": "Instabilidade Geográfica",
+      "type": "feature",
+      "_id": "EAaj8xEarrHzMRre",
+      "img": "icons/magic/earth/projectile-stone-landslide.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para que as rochas do teto que estavam parcialmente soltas sofram um desabamento. O grupo deve ter sucesso em um <strong>Teste de Reação de Força</strong> ou sofre <strong>4d10+6</strong> pontos de dano físico e fica <em>Imobilizado</em> até ter sucesso em um Teste de Força. Em um sucesso, sofrem metade do dano e evitam a condição.</p><section id=\"secret-zCn8NQU8NALdmJhF\" class=\"secret\"><p><em>Qual foi a causa dessa instabilidade? Como os personagens suportam esse desabamento?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "Ilz1yitvTpxeX3bX": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Desabamento",
+            "img": "icons/magic/earth/projectile-stone-landslide.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 4,
+                  "dice": "d10",
+                  "bonus": 6,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "strength",
+              "difficulty": null,
+              "damageMod": "half"
+            },
+            "_id": "Ilz1yitvTpxeX3bX",
+            "effects": [
+              {
+                "_id": "nIKIgwcZYWr4Fi0H",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Imobilizado",
+          "img": "icons/magic/control/debuff-chains-shackles-movement-blue.webp",
+          "_id": "nIKIgwcZYWr4Fi0H",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p><em>Imobilizado</em>: não pode se mover, mas ainda pode agir no lugar. Soterrado até ter sucesso em um Teste de Força.</p>",
+          "statuses": [
+            "restrained"
+          ],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!BkZe59dowwSMMGVA.EAaj8xEarrHzMRre.nIKIgwcZYWr4Fi0H"
+        }
+      ],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!BkZe59dowwSMMGVA.EAaj8xEarrHzMRre"
+    },
+    {
+      "name": "Retorno dos Cidadãos",
+      "type": "feature",
+      "_id": "kgzerQH8ukmHj0iX",
+      "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para invocar <strong>1d4</strong> @UUID[Compendium.daggerheart.adversaries.Actor.Tg1F1PthQWeKdLJT]{Legiões Fantasmagóricas} que surgem Próximas, ao redor do grupo.</p><section id=\"secret-SSRfrB4VaCAUw4fI\" class=\"secret\"><p><em>Quem eram essas pessoas antes de passarem pelo véu da vida? Como elas se sentem ao ver alguém vivo aqui depois de tanto tempo?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "EGu7GzrhZco4QsQv": {
+            "type": "summon",
+            "systemPath": "actions",
+            "name": "Invocar Legiões",
+            "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "summon": [
+              {
+                "actorUUID": "Compendium.daggerheart.adversaries.Actor.Tg1F1PthQWeKdLJT",
+                "count": "1d4"
+              }
+            ],
+            "_id": "EGu7GzrhZco4QsQv",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!BkZe59dowwSMMGVA.kgzerQH8ukmHj0iX"
+    },
+    {
+      "name": "Mistério Lendário",
+      "type": "feature",
+      "_id": "qGVKSf33VT1jhF4x",
+      "img": "icons/magic/symbols/question-stone-yellow.webp",
+      "system": {
+        "description": "<p>Existe um mistério em Opartabá que foi perdido junto à sua civilização. Caso os jogadores consigam resolver esse mistério, eles são recompensados com <strong>2 tesouros lendários</strong> à escolha do mestre.</p><section id=\"secret-9FIGwrRbcSV80eyb\" class=\"secret\"><p><em>Que mistério a cidade esconde? Quais tesouros lendários o grupo pode encontrar?</em></p></section>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!BkZe59dowwSMMGVA.qGVKSf33VT1jhF4x"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "opartaba"
+    }
+  },
+  "_key": "!actors!BkZe59dowwSMMGVA",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

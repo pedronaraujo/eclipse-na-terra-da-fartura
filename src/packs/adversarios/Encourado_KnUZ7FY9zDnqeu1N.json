@@ -1,0 +1,516 @@
+{
+  "_id": "KnUZ7FY9zDnqeu1N",
+  "name": "Encourado",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/encourado.webp",
+  "folder": "SEDqmfCu5O4lZwBn",
+  "sort": 500,
+  "system": {
+    "tier": 3,
+    "type": "social",
+    "difficulty": 17,
+    "damageThresholds": {
+      "major": 16,
+      "severe": 32
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 7
+      }
+    },
+    "motivesAndTactics": "Criar Tentações, Enganar, Semear Discórdia",
+    "description": "<p><em>Conhecido como vampiro ou diabo, é descrito como um homem que veste roupas pretas de couro e exala um forte cheiro de sangue.</em></p><div class=\"eclipse-lore\"><p>O Encourado é o diabo que escolheu virar vaqueiro para andar entre os vivos cobrando dívidas que ninguém lembra de ter contraído. Veste gibão, perneiras e chapéu de couro cru, e tem pés que terminam em cascos, razão pela qual nunca se descalça diante de ninguém. Seu rosto é curtido, sem poros nem suor, e ao meio-dia o corpo não lança sombra alguma. Contam no sertão que ele não entra em casa onde não foi chamado e nem aceita água oferecida com a mão esquerda. Antes dele o gado emudece e o ar cheira a couro novo e sebo queimado. Mas ele sempre cumprimenta primeiro, e na Terra da Fartura não se nega resposta a um boa-tarde.</p></div>",
+    "notes": "",
+    "experiences": {
+      "VZareCFgrlRCeRVc": {
+        "name": "Caçador Noturno",
+        "value": 3,
+        "description": ""
+      },
+      "GAmX0TpE4Dm8kwhC": {
+        "name": "Tentador",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "FXGpo4gB03PFXnyI",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Pancada",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 0,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 3,
+            "dice": "d6",
+            "bonus": 3,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": true,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 21,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Encourado",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/encourado.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Energia Devastadora",
+      "type": "feature",
+      "_id": "3dQOXVWKv7PpvxIG",
+      "img": "icons/magic/unholy/energy-smoke-pink.webp",
+      "system": {
+        "description": "<p>Quando um personagem rolar 20 ou menos em testes contra o Encourado, ele deve <strong>marcar 1 Ponto de Fadiga</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "PugV9HMKxYgEA4u8": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Marcar Fadiga",
+            "img": "icons/magic/unholy/energy-smoke-pink.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "PugV9HMKxYgEA4u8",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!KnUZ7FY9zDnqeu1N.3dQOXVWKv7PpvxIG"
+    },
+    {
+      "name": "Natureza Demoníaca",
+      "type": "feature",
+      "_id": "BY5bp58m7NPS8LPx",
+      "img": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+      "system": {
+        "description": "<p>O Encourado é <strong>resistente a dano mágico</strong> e não pode ser enganado por ilusões mágicas.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!KnUZ7FY9zDnqeu1N.BY5bp58m7NPS8LPx"
+    },
+    {
+      "name": "Bode Expiatório",
+      "type": "feature",
+      "_id": "KLyfSpmw5lqvFIKJ",
+      "img": "icons/skills/social/trading-injustice-scale-gray.webp",
+      "system": {
+        "description": "<p><strong>Gaste 1 Ponto de Medo</strong> para marcar um personagem como alvo. O Encourado convence uma multidão de indivíduos de que o alvo é a causa de todos os seus infortúnios.</p>",
+        "resource": null,
+        "actions": {
+          "QY4WDP17wJtM9CS8": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Marcar o Bode Expiatório",
+            "img": "icons/skills/social/trading-injustice-scale-gray.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "_id": "QY4WDP17wJtM9CS8",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!KnUZ7FY9zDnqeu1N.KLyfSpmw5lqvFIKJ"
+    },
+    {
+      "name": "Demônio em Pele de Humano",
+      "type": "feature",
+      "_id": "QpXHtoA57QX1jJWQ",
+      "img": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+      "system": {
+        "description": "<p>Quando o Encourado for derrotado ou um personagem descobrir sua verdadeira identidade, substitua o Encourado por @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.5F2yhhTvhhWUEdNl]{Encourado Revelado} e coloque-o em foco imediatamente.</p>",
+        "resource": null,
+        "actions": {
+          "HGRLeKq6mOO562zn": {
+            "type": "transform",
+            "systemPath": "actions",
+            "name": "Revelar-se",
+            "img": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "transform": {
+              "actorUUID": "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.5F2yhhTvhhWUEdNl",
+              "resourceRefresh": {
+                "hitPoints": true,
+                "stress": true
+              }
+            },
+            "_id": "HGRLeKq6mOO562zn",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!KnUZ7FY9zDnqeu1N.QpXHtoA57QX1jJWQ"
+    },
+    {
+      "name": "Manipulação Maldita",
+      "type": "feature",
+      "_id": "Zo84x4WJ3LYqASsa",
+      "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+      "system": {
+        "description": "<p>Quando um personagem faz um teste de ação enquanto o Encourado estiver em cena, você pode <strong>marcar um Ponto de Fadiga</strong> para adicionar <strong>1d6</strong> ao resultado do Dado de Medo.</p>",
+        "resource": null,
+        "actions": {
+          "4LNZxnthY93nAqqQ": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Manipular (+1d6 no Medo)",
+            "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "4LNZxnthY93nAqqQ",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!KnUZ7FY9zDnqeu1N.Zo84x4WJ3LYqASsa"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "encourado"
+    }
+  },
+  "_key": "!actors!KnUZ7FY9zDnqeu1N",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

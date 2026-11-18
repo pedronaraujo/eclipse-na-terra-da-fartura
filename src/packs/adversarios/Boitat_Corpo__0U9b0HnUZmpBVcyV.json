@@ -1,0 +1,520 @@
+{
+  "_id": "0U9b0HnUZmpBVcyV",
+  "name": "Boitatá (Corpo)",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/boitata.webp",
+  "folder": "JoyzwQX8BMXTEF0z",
+  "sort": 210,
+  "system": {
+    "tier": 4,
+    "type": "solo",
+    "difficulty": 18,
+    "damageThresholds": {
+      "major": 37,
+      "severe": 69
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 8
+      }
+    },
+    "motivesAndTactics": "Cegar contempladores, Defender as profundezas da mata, Queimar invasores",
+    "description": "<p><em>O Boitatá é uma gigantesca serpente de fogo que protege as matas e os animais contra destruidores e caçadores.</em></p><div class=\"eclipse-box\"><p><strong>4º Patamar · Colosso</strong> — <strong>Tamanho:</strong> 120 m de comprimento. <strong>Segmentos:</strong> 1 Cabeça, 2 Corpos, 1 Cauda. <strong>Limiares:</strong> 37/69 · <strong>Fadiga:</strong> 8 (compartilhada). <strong>Experiência:</strong> Fúria Primitiva da Mata +4, Presença Deslumbrante e Cegante +3.</p><p>Segmentos: @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.yr0GR2xLYD0VRB57]{Cabeça} · @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.0U9b0HnUZmpBVcyV]{Corpo (×2)} · @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.DABNrRyQk9I14JCi]{Cauda}. Use as regras de Colosso da Campanha de Caça a Monstros do SRD.</p></div><div class=\"eclipse-lore\"><p>O Boitatá é o guardião dos campos e a punição de quem os incendeia. Tem o corpo de uma serpente imensa de um fogo azulado que não queima as folhas por onde passa, e olhos enormes, feitos dos olhos de todos os animais mortos nas queimadas. Antes dele, o capim exala cheiro de queimado sem que haja brasa, e carcaças aparecem com as órbitas vazias. A luz das suas chamas dançando sobre a mata pode parecer distante, mas quem fica para olhar essa luz já entregou a ele os próprios olhos.</p></div>",
+    "notes": "",
+    "experiences": {
+      "5D1AigvQp4w16Vdb": {
+        "name": "Fúria Primitiva da Mata",
+        "value": 4,
+        "description": ""
+      },
+      "eQnBlLgjLndXYxBG": {
+        "name": "Presença Deslumbrante e Cegante",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "gYtDYJfFirTUs8Ry",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Constrição Calcinante",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 4,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 4,
+            "dice": "d8",
+            "bonus": 10,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 23,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "huge",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Boitatá (Corpo)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 3,
+    "height": 3,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/boitata-corpo.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Segmentos Adjacentes: Cabeça, Cauda e Corpo",
+      "type": "feature",
+      "_id": "2Blvv3r0ZBkk2iZM",
+      "img": "icons/creatures/reptiles/serpent-horned-green.webp",
+      "system": {
+        "description": "<p>O Corpo é adjacente à Cabeça, à Cauda e ao outro Corpo.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!0U9b0HnUZmpBVcyV.2Blvv3r0ZBkk2iZM"
+    },
+    {
+      "name": "Chacoalhar",
+      "type": "feature",
+      "_id": "1eAUe7ueLzVuFLtf",
+      "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para se chacoalhar e derrubar personagens do seu corpo. Todas as criaturas no Boitatá devem fazer um <strong>Teste de Reação de Força</strong>. Em caso de falha, caem até o chão e devem marcar 1 PV. Em caso de sucesso, devem marcar 1 PF.</p>",
+        "resource": null,
+        "actions": {
+          "Qdlpnkgp7EW5ZUAM": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Chacoalhar",
+            "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "save": {
+              "trait": "strength",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "Qdlpnkgp7EW5ZUAM",
+            "effects": []
+          },
+          "JfLKiPs9M25YpJOD": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Sucesso: marcar 1 PF",
+            "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "JfLKiPs9M25YpJOD",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!0U9b0HnUZmpBVcyV.1eAUe7ueLzVuFLtf"
+    },
+    {
+      "name": "Olhar por Olho",
+      "type": "feature",
+      "_id": "3DZVHKjoSqyL44uj",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+      "system": {
+        "description": "<p>Ao rolar um ataque com Medo contra esse segmento, você pode <strong>marcar um Ponto de Fadiga</strong> para fazer o jogador fazer um <strong>Teste de Reação de Instinto</strong>. Se falhar, ele fica temporariamente <em>Cego</em>. Personagens Cegos têm desvantagem em testes de ataque.</p>",
+        "resource": null,
+        "actions": {
+          "neCBoLdncr779v6J": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Olhar por Olho",
+            "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "melee",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "neCBoLdncr779v6J",
+            "effects": [
+              {
+                "_id": "vQAk8GJDQZOqJOLy",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Cego",
+          "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+          "_id": "vQAk8GJDQZOqJOLy",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Desvantagem em testes de ataque.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!0U9b0HnUZmpBVcyV.3DZVHKjoSqyL44uj.vQAk8GJDQZOqJOLy"
+        }
+      ],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!0U9b0HnUZmpBVcyV.3DZVHKjoSqyL44uj"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "boitata-corpo"
+    }
+  },
+  "_key": "!actors!0U9b0HnUZmpBVcyV",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

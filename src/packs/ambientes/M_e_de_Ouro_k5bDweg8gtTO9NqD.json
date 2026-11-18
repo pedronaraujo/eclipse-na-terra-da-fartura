@@ -1,0 +1,327 @@
+{
+  "_id": "k5bDweg8gtTO9NqD",
+  "name": "Mãe de Ouro",
+  "type": "environment",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/mata-emaranhada.webp",
+  "folder": null,
+  "sort": 100,
+  "system": {
+    "tier": 1,
+    "type": "exploration",
+    "difficulty": 11,
+    "impulses": "Atrair o grupo, descobrir o motivo de estarem ali, enganar aqueles de coração ruim",
+    "description": "<p><em>Envolvida por árvores, uma curiosa aparição em formato de mulher com cabelos dourados aparece para o grupo.</em></p><p><em>Outros adversários potenciais citados na revista:</em> Rilhas em Bando.</p>",
+    "notes": "",
+    "potentialAdversaries": {
+      "J45bbIVgskSbGUgc": {
+        "label": "Guardiões da Mata",
+        "adversaries": [
+          "Compendium.daggerheart.adversaries.Actor.C9vt09lsAa6AeXeg",
+          "Compendium.daggerheart.adversaries.Actor.9x2xY9zwc3xzbXo5",
+          "Compendium.daggerheart.adversaries.Actor.G62k4oSkhkoXEs2D",
+          "Compendium.daggerheart.adversaries.Actor.PKSXFuaIHUCoH63A",
+          "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.nbC5Bwa1gNCIBmkH"
+        ]
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 25,
+      "artist": "",
+      "srd": false
+    }
+  },
+  "prototypeToken": {
+    "name": "Mãe de Ouro",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/mae-de-ouro.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Presença Encantadora",
+      "type": "feature",
+      "_id": "DRQ52nC8mcMDhrJ4",
+      "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+      "system": {
+        "description": "<p>A presença mística da Mãe de Ouro é encantadora. Todos os personagens que podem ver a Mãe de Ouro têm <strong>desvantagem em Testes de Presença</strong>.</p><section id=\"secret-KZ8cpzywpmp8ozIL\" class=\"secret\"><p><em>Por que ela é tão atraente? Como isso está afetando os personagens?</em></p></section>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!k5bDweg8gtTO9NqD.DRQ52nC8mcMDhrJ4"
+    },
+    {
+      "name": "Julgamento de Caráter",
+      "type": "feature",
+      "_id": "kBBTtDeV25GVzTWs",
+      "img": "icons/skills/social/trading-justice-scale-yellow.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para fazer com que a Mãe de Ouro julgue o caráter do grupo. Os personagens devem ter sucesso em um <strong>Teste de Reação de Presença</strong>. Em caso de falha, a Mãe de Ouro julga perfeitamente o caráter dos personagens que falharam.</p><section id=\"secret-lCP1Uj74KSzJBIsH\" class=\"secret\"><p><em>Como ela julga cada personagem? Como ela age ao fazer isso?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "VHaU9CZHrIwCF8xc": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Julgar o Caráter",
+            "img": "icons/skills/social/trading-justice-scale-yellow.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "presence",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "VHaU9CZHrIwCF8xc",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!k5bDweg8gtTO9NqD.kBBTtDeV25GVzTWs"
+    },
+    {
+      "name": "Coração Verdadeiro",
+      "type": "feature",
+      "_id": "X2sXuBoS4mGgHqqB",
+      "img": "icons/commodities/treasure/goblet-coins-gold.webp",
+      "system": {
+        "description": "<p>Caso os personagens consigam convencer a Mãe de Ouro de que são boas pessoas, ela levará o grupo para um local de tesouros. Caso contrário, ela vai prometer o mesmo, mas vai levar o grupo para uma emboscada.</p><section id=\"secret-dwBVOTbYfjk9fGW6\" class=\"secret\"><p><em>Como a Mãe de Ouro chegou nessa conclusão? Para onde ela os levará?</em></p></section>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!k5bDweg8gtTO9NqD.X2sXuBoS4mGgHqqB"
+    },
+    {
+      "name": "Fulgor Dourado",
+      "type": "feature",
+      "_id": "itoOdcaiPt8smMAp",
+      "img": "icons/magic/light/beam-strike-orange-gold.webp",
+      "system": {
+        "description": "<p>Sempre que um personagem falhar em um Teste de Presença relacionado com a Mãe de Ouro, ele deve <strong>marcar um Ponto de Fadiga</strong>.</p><section id=\"secret-lhFKw5sl29ZtLFLH\" class=\"secret\"><p><em>Como o brilho dela afeta os personagens? Por que isso só os afeta quando estão se direcionando a ela?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "o9CtlPu9hl13kUsv": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Marcar Fadiga",
+            "img": "icons/magic/light/beam-strike-orange-gold.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "o9CtlPu9hl13kUsv",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!k5bDweg8gtTO9NqD.itoOdcaiPt8smMAp"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "mae-de-ouro"
+    }
+  },
+  "_key": "!actors!k5bDweg8gtTO9NqD",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

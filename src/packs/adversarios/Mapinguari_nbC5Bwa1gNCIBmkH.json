@@ -1,0 +1,410 @@
+{
+  "_id": "nbC5Bwa1gNCIBmkH",
+  "name": "Mapinguari",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/mapinguari.webp",
+  "folder": "jKqDBglxnLHl9Am0",
+  "sort": 300,
+  "system": {
+    "tier": 1,
+    "type": "bruiser",
+    "difficulty": 12,
+    "damageThresholds": {
+      "major": 9,
+      "severe": 17
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Caçar, Comer, Imitar, Matar",
+    "description": "<p><em>Uma criatura coberta de pelos que se camuflam com a folhagem, com um único olho, garras afiadas e boca ventral vertical.</em></p><div class=\"eclipse-lore\"><p>O Mapinguari é uma criatura diurna e por onde anda deixa um rastro de galhos quebrados, árvores derrubadas e gritos. Ele tem um odor insuportável capaz de ser sentido por quilômetros e pés virados para trás, dificultando o rastreamento. Ele não mata por crueldade: o Mapinguari é o símbolo de proteção da floresta e muitos consideram que é a própria força da natureza se defendendo; ele mata por sua fome insaciável.</p></div>",
+    "notes": "",
+    "experiences": {
+      "3kPQ8n9TiIoypG1X": {
+        "name": "Imitação",
+        "value": 5,
+        "description": ""
+      },
+      "2BnyIDSzDR3Cfkch": {
+        "name": "Protetor da Floresta",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "5KgH0T0xdfg3BAQO",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Garras Longas",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 2,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 1,
+            "dice": "d10",
+            "bonus": 2,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": true,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 14,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "large",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Mapinguari",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/mapinguari.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Pelagem Grossa",
+      "type": "feature",
+      "_id": "di0fzML5jPlf3105",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+      "system": {
+        "description": "<p>O Mapinguari é <strong>resistente a dano físico</strong>.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!nbC5Bwa1gNCIBmkH.di0fzML5jPlf3105"
+    },
+    {
+      "name": "Grito de Caçador",
+      "type": "feature",
+      "_id": "Kd3U5MST9BsXjpWe",
+      "img": "icons/magic/sonic/projectile-sound-rings-wave.webp",
+      "system": {
+        "description": "<p>Caso o Mapinguari esteja fora da visão dos personagens, você pode <strong>gastar um Ponto de Medo</strong> para imitar o grito feito por um caçador. Se um personagem responder esse grito, o Mapinguari passa a saber exatamente o local da pessoa que respondeu e começa a persegui-la. Em um momento oportuno, o Mapinguari embosca a criatura.</p>",
+        "resource": null,
+        "actions": {
+          "YxyjzXt0MO9KeUc7": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Gastar Medo",
+            "img": "icons/magic/sonic/projectile-sound-rings-wave.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "YxyjzXt0MO9KeUc7",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!nbC5Bwa1gNCIBmkH.Kd3U5MST9BsXjpWe"
+    },
+    {
+      "name": "Mordida Ventral",
+      "type": "feature",
+      "_id": "9DodOAuUoMu7JSrm",
+      "img": "icons/creatures/abilities/mouth-teeth-rows-red.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para rasgar um alvo Corpo a Corpo com uma mordida. Em caso de sucesso, o ataque provoca <strong>2d6+4</strong> de dano físico direto.</p>",
+        "resource": null,
+        "actions": {
+          "i2as0DNO6ImrDh8D": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Mordida Ventral",
+            "img": "icons/creatures/abilities/mouth-teeth-rows-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "melee",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d6",
+                  "bonus": 4,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": true,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "i2as0DNO6ImrDh8D",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!nbC5Bwa1gNCIBmkH.9DodOAuUoMu7JSrm"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "mapinguari"
+    }
+  },
+  "_key": "!actors!nbC5Bwa1gNCIBmkH",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

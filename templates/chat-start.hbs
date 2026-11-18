@@ -1,0 +1,19 @@
+<div class="eclipse-ntf-chat start">
+    <div class="chat-banner"><img src="{{banner}}" alt="Eclipse"></div>
+    <h3><i class="fa-solid fa-circle-half-stroke"></i> {{localize "ECLIPSE.Chat.StartTitle"}}</h3>
+    <p class="chat-flavor">{{localize "ECLIPSE.Chat.StartFlavor"}}</p>
+    <div class="chat-count">
+        <span class="label">{{localize "ECLIPSE.App.Countdown"}}</span>
+        <span class="num">{{counter}}</span>
+        <span class="detail">{{localize "ECLIPSE.Chat.CountDetail" players=players dup=duplicates}}</span>
+    </div>
+    {{#if rolls.length}}
+    <div class="chat-dice">{{#each rolls}}<span class="die">{{this}}</span>{{/each}}<span class="fear">· {{localize "ECLIPSE.Chat.FearSpent" fear=fear}}</span></div>
+    {{/if}}
+    <ul class="chat-traits">
+        {{#each traits}}
+        <li><i class="{{icon}}"></i><div><strong>{{name}}</strong><span>{{text}}</span></div></li>
+        {{/each}}
+    </ul>
+    {{#if notes}}<p class="chat-notes"><i class="fa-solid fa-feather"></i> {{notes}}</p>{{/if}}
+</div>

@@ -1,0 +1,698 @@
+{
+  "_id": "pYyTummvNocI7kHC",
+  "name": "Saci-Pererê — Espírito de Porco do Mato",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/saci.webp",
+  "folder": "BLNt8QlxFRhKEDTx",
+  "sort": 510,
+  "system": {
+    "tier": 2,
+    "type": "skulk",
+    "difficulty": 13,
+    "damageThresholds": {
+      "major": 9,
+      "severe": 16
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Atrapalhar, Brincar, Zoar — agora em frenesi",
+    "description": "<p><em>Fundido ao próprio gorro, o Saci cresce em tamanho e massa e ganha a feição de um porco-do-mato ameaçador, em frenesi.</em></p><div class=\"eclipse-lore\"><p>O Saci-Pererê adora aprontar. É sempre bom tomar cuidado com ventos fortes, pois pode ser que ele esteja por perto. Ele cachimba enquanto prepara seus planos. É normal pendurarem peneiras nas varandas para prender um Saci que venha em forma de redemoinho. Os antigos dizem que o único jeito de mantê-lo preso é colocá-lo em uma garrafa com uma cruz desenhada na rolha. Além disso, dizem que ele tem fixação pelo seu gorro.</p></div>",
+    "notes": "",
+    "experiences": {
+      "ua48CHSQDzjnJCKw": {
+        "name": "Azedar o Doce",
+        "value": 3,
+        "description": ""
+      },
+      "jswXtPl8qMpeTjPp": {
+        "name": "Desaparecer",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "e7MPL8pK6KsIlmYZ",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Presas Afiadas",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 3,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 2,
+            "dice": "d10",
+            "bonus": 6,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 18,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Saci-Pererê — Espírito de Porco do Mato",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/espirito-porco-do-mato.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Repulso",
+      "type": "feature",
+      "_id": "wdWTnT0h3eRhsHoZ",
+      "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+      "system": {
+        "description": "<p>Quando o Saci-Pererê atingir um personagem, o alvo <strong>perde uma Esperança</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "RREeKIEt4aOHf6eN": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Perder Esperança",
+            "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hope": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hope",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "RREeKIEt4aOHf6eN",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pYyTummvNocI7kHC.wdWTnT0h3eRhsHoZ"
+    },
+    {
+      "name": "Furacão",
+      "type": "feature",
+      "_id": "k4DMhVg8rflgXB3k",
+      "img": "icons/magic/air/wind-tornado-funnel-damage-blue.webp",
+      "system": {
+        "description": "<p><strong>Uma vez por cena, gaste um Ponto de Medo</strong> para criar um furacão denso de poeira, galhos e folhas. Todos em alcance Distante devem passar em um <strong>Teste de Reação de Agilidade</strong>. Na falha, sofrem <strong>2d20+7</strong> de dano físico. Até o Saci ser derrotado, a área ao redor dele se torna difícil por causa da ventania: ataques à distância maior que Muito Próximo contra o Saci têm desvantagem, testes de conjuração devem rolar dois Dados de Medo e ficar com o resultado mais alto, e é preciso um Teste de Agilidade para se movimentar qualquer distância maior que Muito Próximo na área.</p>",
+        "resource": null,
+        "actions": {
+          "kIgSM1ztavmrTDvO": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Furacão",
+            "img": "icons/magic/air/wind-tornado-funnel-damage-blue.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "1",
+              "recovery": "scene",
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d20",
+                  "bonus": 7,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "agility",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "kIgSM1ztavmrTDvO",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pYyTummvNocI7kHC.k4DMhVg8rflgXB3k"
+    },
+    {
+      "name": "Passo Umbral",
+      "type": "feature",
+      "_id": "irX9ZOrIVzSNXsyf",
+      "img": "icons/skills/movement/portal-silhouette-pink.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para o Saci se teletransportar para as costas de qualquer alvo em alcance Distante e realizar um ataque corpo a corpo imediatamente. <strong>Marque um Ponto de Fadiga</strong> para retornar ao ponto inicial ao final do ataque.</p>",
+        "resource": null,
+        "actions": {
+          "4mYXDi1kkoTTVp7H": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Passo Umbral",
+            "img": "icons/skills/movement/portal-silhouette-pink.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "melee",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d10",
+                  "bonus": 6,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "4mYXDi1kkoTTVp7H",
+            "effects": []
+          },
+          "125bHOnogR4Fj8FF": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Retornar",
+            "img": "icons/skills/movement/portal-silhouette-pink.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "125bHOnogR4Fj8FF",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pYyTummvNocI7kHC.irX9ZOrIVzSNXsyf"
+    },
+    {
+      "name": "Sorvedouro Abissal",
+      "type": "feature",
+      "_id": "Efu1A82ZVhjYBxKc",
+      "img": "icons/magic/unholy/orb-swirling-teal.webp",
+      "system": {
+        "description": "<p>Quando um ataque do Saci atinge um personagem, o alvo <strong>perde uma Esperança</strong> e o mestre <strong>ganha um Medo</strong>. Se o alvo já não tiver Esperança para perder, ele deve marcar um Ponto de Fadiga.</p>",
+        "resource": null,
+        "actions": {
+          "8mciOCM2F7naOo8Z": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Perder Esperança",
+            "img": "icons/magic/unholy/orb-swirling-teal.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hope": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hope",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "8mciOCM2F7naOo8Z",
+            "effects": []
+          },
+          "5K7vf1K9QJBbm3Fh": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Ganhar Medo",
+            "img": "icons/magic/unholy/orb-swirling-teal.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "fear": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "fear",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "5K7vf1K9QJBbm3Fh",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pYyTummvNocI7kHC.Efu1A82ZVhjYBxKc"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "espirito-porco-do-mato"
+    }
+  },
+  "_key": "!actors!pYyTummvNocI7kHC",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

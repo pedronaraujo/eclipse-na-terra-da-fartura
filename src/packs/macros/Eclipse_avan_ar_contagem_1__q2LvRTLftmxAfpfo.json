@@ -1,0 +1,21 @@
+{
+  "_id": "q2LvRTLftmxAfpfo",
+  "name": "Eclipse: avançar contagem (−1)",
+  "type": "script",
+  "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+  "command": "game.modules.get('eclipse-na-terra-da-fartura')?.api?.tick(-1);",
+  "scope": "global",
+  "folder": null,
+  "sort": 300,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  },
+  "_key": "!macros!q2LvRTLftmxAfpfo"
+}

@@ -1,0 +1,515 @@
+{
+  "_id": "lJx8NFZWxtfPD5BV",
+  "name": "Cabra Cabriola",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/cabra-cabriola.webp",
+  "folder": "SEDqmfCu5O4lZwBn",
+  "sort": 300,
+  "system": {
+    "tier": 3,
+    "type": "skulk",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 34
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 8
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Comer Crianças, Espreitar, Matar",
+    "description": "<p><em>Uma cabra antropomórfica com aspecto monstruoso, faminta por crianças.</em></p><div class=\"eclipse-lore\"><p>A Cabra Cabriola é a personificação do medo. Uma figura humanoide esguia, com membros alongados e uma fome insaciável por crianças. Ela é capaz de imitar vozes perfeitamente, mesmo só tendo as escutado uma só vez, de personificar o maior medo daquele à sua frente e de se regenerar a partir do medo.</p></div>",
+    "notes": "",
+    "experiences": {
+      "CrmEptzngNs2MDBV": {
+        "name": "Raptar",
+        "value": 2,
+        "description": ""
+      },
+      "tC3lxya04iw9ZJcD": {
+        "name": "Transformar em Medo",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "eq44GzPBPS10W4UU",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Voz Desconcertante",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "close",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 4,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 3,
+            "dice": "d8",
+            "bonus": 5,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "magical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 20,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Cabra Cabriola",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/cabra-cabriola.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Eu Sou o Seu Maior Pesadelo",
+      "type": "feature",
+      "_id": "jWalAQnijhkUtqqh",
+      "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong>, escolha um personagem em alcance Distante e peça para o jogador descrever o maior medo do alvo. Ao terminar de descrever, a Cabra Cabriola muda de forma para personificar esse medo e deixa o alvo <em>Amedrontado</em>. Enquanto estiver Amedrontado, o alvo tem desvantagem em Testes de Ação contra a Cabra Cabriola e não pode se aproximar dela voluntariamente. A condição se encerra com um sucesso em um Teste de Instinto.</p>",
+        "resource": null,
+        "actions": {
+          "xyKy8k5rzf1mCgir": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Personificar o Medo",
+            "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "_id": "xyKy8k5rzf1mCgir",
+            "effects": [
+              {
+                "_id": "wbeTJeYPjQuVOlh7",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Amedrontado",
+          "img": "icons/magic/control/fear-fright-monster-grin-purple-blue.webp",
+          "_id": "wbeTJeYPjQuVOlh7",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Desvantagem em Testes de Ação contra a Cabra Cabriola; não pode se aproximar dela voluntariamente. Encerra com sucesso em um Teste de Instinto.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!lJx8NFZWxtfPD5BV.jWalAQnijhkUtqqh.wbeTJeYPjQuVOlh7"
+        }
+      ],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!lJx8NFZWxtfPD5BV.jWalAQnijhkUtqqh"
+    },
+    {
+      "name": "Vozes Dissonantes",
+      "type": "feature",
+      "_id": "37lfco2pBH1iVCiu",
+      "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para proferir inúmeras vozes ao mesmo tempo. Alvos Próximos que possam escutar devem ter sucesso em um <strong>Teste de Reação de Presença</strong>. Em caso de falha, os alvos sofrem <strong>2d8+4</strong> de dano físico direto. Em caso de sucesso, eles sofrem metade do dano.</p>",
+        "resource": null,
+        "actions": {
+          "23fLUk1yn7RF187I": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Vozes Dissonantes",
+            "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d8",
+                  "bonus": 4,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": true,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "presence",
+              "difficulty": null,
+              "damageMod": "half"
+            },
+            "_id": "23fLUk1yn7RF187I",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!lJx8NFZWxtfPD5BV.37lfco2pBH1iVCiu"
+    },
+    {
+      "name": "Alimentar-se do Medo",
+      "type": "feature",
+      "_id": "iElznKwr123QyMio",
+      "img": "icons/magic/life/heart-cross-strong-green.webp",
+      "system": {
+        "description": "<p>Sempre que a Cabra Cabriola usar sua habilidade <em>Eu Sou o Seu Maior Pesadelo</em>, ela pode se alimentar desse medo, recuperando <strong>um Ponto de Vida</strong>. Caso faça isso, a condição Amedrontado do alvo se encerra e ela volta ao normal.</p>",
+        "resource": null,
+        "actions": {
+          "Fjg9n3k8uGBzRede": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Alimentar-se (1 PV)",
+            "img": "icons/magic/life/heart-cross-strong-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "Fjg9n3k8uGBzRede",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!lJx8NFZWxtfPD5BV.iElznKwr123QyMio"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "cabra-cabriola"
+    }
+  },
+  "_key": "!actors!lJx8NFZWxtfPD5BV",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}
