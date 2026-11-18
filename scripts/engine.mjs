@@ -175,16 +175,14 @@ export class EclipseEngine {
         try {
             const setting = game.settings.get(...COUNTDOWN_SETTING);
             if (!setting.countdowns?.[id]) return;
-            const data = setting.toObject();
-            delete data.countdowns[id];
+            // Mesmo padrão do editor de contagens do sistema: operador de deleção da v14 + gravar o modelo
+            setting.updateSource({ [`countdowns.${id}`]: globalThis._del ?? null });
             this._writingCountdown = true;
-            // Troca o objeto inteiro para garantir a remoção da chave
-            await game.settings.set(...COUNTDOWN_SETTING, { ...data, countdowns: { ...data.countdowns, [`-=${id}`]: null } });
+            await game.settings.set(...COUNTDOWN_SETTING, setting);
             const after = game.settings.get(...COUNTDOWN_SETTING);
             if (after.countdowns?.[id]) {
-                const clean = after.toObject();
-                delete clean.countdowns[id];
-                await game.settings.set(...COUNTDOWN_SETTING, clean);
+                after.updateSource({ [`countdowns.-=${id}`]: null });
+                await game.settings.set(...COUNTDOWN_SETTING, after);
             }
         } catch (err) {
             console.warn(`${MOD} |`, err);
