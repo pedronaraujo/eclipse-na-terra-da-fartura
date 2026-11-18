@@ -1,0 +1,546 @@
+{
+  "_id": "WnainuS2XQrWeKJe",
+  "name": "Festa Junina",
+  "type": "environment",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/festa-junina.webp",
+  "folder": null,
+  "sort": 200,
+  "system": {
+    "tier": 2,
+    "type": "social",
+    "difficulty": 14,
+    "impulses": "Comemorar as colheitas, homenagear os Encantados, juntar a comunidade, oportunidades para seres Encantados, proteção contra a escuridão",
+    "description": "<p><em>Uma festa cultural que mistura brincadeiras com crendices populares. A festa predileta dos Encantados da região.</em></p>",
+    "notes": "",
+    "potentialAdversaries": {
+      "vMbTDOlxERIXzAL7": {
+        "label": "Convidados da Festa",
+        "adversaries": [
+          "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.63nGIAthNOd3PRjv",
+          "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.cLSWpNoVv1EcC68V",
+          "Compendium.daggerheart.adversaries.Actor.Al3w2CgjfdT3p9ma",
+          "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.MzXMOaJ3W1m8wBDs"
+        ]
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 25,
+      "artist": "",
+      "srd": false
+    }
+  },
+  "prototypeToken": {
+    "name": "Festa Junina",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/festa-junina.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Comilança da Boa",
+      "type": "feature",
+      "_id": "FXjKXOimqbNL0t0R",
+      "img": "icons/consumables/food/plate-fish-bowl-bones-brown.webp",
+      "system": {
+        "description": "<p>A comida da Festa Junina é conhecida por ser uma delícia e acalentar o coração do povo. Uma vez durante o evento, cada PJ pode gastar um punhado de ouro para comprar comidas típicas (pé de moleque, pinhão, pamonha, curau, bolo de milho, pipoca, quentão). Ao comerem, <strong>limpam um Ponto de Fadiga e recebem um Ponto de Esperança</strong>.</p><section id=\"secret-bcl5NHwHcM697pL5\" class=\"secret\"><p><em>Com que comidas o grupo se alimenta? Por que essa comida é tão boa?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "YzEleZvw2uXhAH4A": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Limpar 1 PF",
+            "img": "icons/consumables/food/plate-fish-bowl-bones-brown.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "YzEleZvw2uXhAH4A",
+            "effects": []
+          },
+          "PAkltAl6bxnqnwXb": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Ganhar 1 Esperança",
+            "img": "icons/consumables/food/plate-fish-bowl-bones-brown.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hope": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hope",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "PAkltAl6bxnqnwXb",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WnainuS2XQrWeKJe.FXjKXOimqbNL0t0R"
+    },
+    {
+      "name": "Fofoca da Vila",
+      "type": "feature",
+      "_id": "Uq9Ox16vBHN4dDNV",
+      "img": "icons/skills/social/diplomacy-writing-letter.webp",
+      "system": {
+        "description": "<p>Um personagem que jogue conversa fora com PdMs da vila durante a Festa Junina pode fazer um <strong>Teste de Presença</strong> para receber informações sobre acontecimentos locais. As informações dependem do resultado:</p><ul><li><strong>Sucesso Crítico:</strong> descobre informações relevantes sobre duas pessoas ou acontecimentos importantes da vila. O personagem pode fazer uma pergunta sobre um rumor e obter uma resposta verdadeira (mas não necessariamente completa).</li><li><strong>Sucesso com Esperança:</strong> ouve falar sobre dois acontecimentos recentes, e ao menos um deles é relevante para o personagem.</li><li><strong>Sucesso com Medo:</strong> ouve falar sobre dois acontecimentos recentes, e ao menos um deles é relevante para o personagem.</li><li><strong>Falha com Esperança:</strong> os habitantes não sentem confiança para fofocar com o personagem por perto. É preciso marcar um Ponto de Fadiga para descobrir um boato relevante.</li><li><strong>Falha com Medo:</strong> além de ninguém parecer confiar no personagem, ele se torna alvo de fofocas e boatos. Deve marcar um Ponto de Fadiga e, junto com o mestre, decidir qual fofoca está sendo espalhada sobre ele.</li></ul><section id=\"secret-jAZifRCqJdAMV703\" class=\"secret\"><p><em>Sobre quem estão falando nas rodas de conversa da festa? Há informações úteis para os personagens? Quais são?</em></p></section>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WnainuS2XQrWeKJe.Uq9Ox16vBHN4dDNV"
+    },
+    {
+      "name": "Quadrilha",
+      "type": "feature",
+      "_id": "xRgzkQ7JP4IvHWdm",
+      "img": "icons/skills/trades/music-notes-sound-blue.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para começar uma quadrilha, um dos eventos principais da Festa Junina. Se um dos PJs quiser participar da dança, ele deve fazer um <strong>Teste de Presença</strong>. Se tiver sucesso, recebe vantagem para interações sociais durante a Festa Junina e consegue entrar na dança. Se falhar, deve marcar um Ponto de Fadiga e descrever como os dançarinos não o deixam entrar na dança.</p><section id=\"secret-qKvAnEx2QI74EqmM\" class=\"secret\"><p><em>De quem você se aproxima após compartilhar a dança em quadrilha?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "pfDPC8m7dV9ymnIg": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Começar a Quadrilha",
+            "img": "icons/skills/trades/music-notes-sound-blue.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "pfDPC8m7dV9ymnIg",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WnainuS2XQrWeKJe.xRgzkQ7JP4IvHWdm"
+    },
+    {
+      "name": "Travessura do Saci",
+      "type": "feature",
+      "_id": "LFyt87DBkVWqzQx3",
+      "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+      "system": {
+        "description": "<p>O @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.MzXMOaJ3W1m8wBDs]{Saci-Pererê} está presente na festa. <strong>Gaste um Ponto de Medo</strong> para que o Saci esconda um pertence de alguém. O alvo deve fazer um <strong>Teste de Reação de Instinto</strong>; se falhar, seu item some e aparece em outro lugar ou com outra pessoa presente na festa. Se preferir, o mestre pode fazer com que um item apareça com um jogador. Se passar no teste e perceber o Saci, o jogador pode tentar confrontá-lo.</p><section id=\"secret-RZ9s1BqMYfS0h2Xb\" class=\"secret\"><p><em>Que acusações surgem a partir da brincadeira do Saci? Alguém procura algo importante que sumiu? O que é?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "Ct42ZLPvZhApizGs": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Travessura",
+            "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "Ct42ZLPvZhApizGs",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WnainuS2XQrWeKJe.LFyt87DBkVWqzQx3"
+    },
+    {
+      "name": "Fogueira",
+      "type": "feature",
+      "_id": "xXHtdBGM13ZQEKNp",
+      "img": "icons/magic/fire/flame-burning-embers-yellow.webp",
+      "system": {
+        "description": "<p>A fogueira da Festa Junina é um símbolo de proteção e homenagem ao sol. Alimentar a fogueira, mantendo-a acesa e tratando-a com respeito e reverência, fornece ao personagem <strong>um Ponto de Esperança</strong> e <strong>vantagem</strong> em um teste à escolha do jogador contra monstros e Criaturas da Noite. Além disso, lutar contra Criaturas da Noite em alcance Próximo da fogueira fornece vantagem ao atacar.</p><section id=\"secret-DQj2P1o5deZy7UWd\" class=\"secret\"><p><em>Que conversas acontecem ao redor da fogueira? Que sensação ela dá aos jogadores ao se aproximarem? Que lembranças eles têm?</em></p></section>",
+        "resource": null,
+        "actions": {
+          "XztawZ1S4gxOpprW": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Ganhar 1 Esperança",
+            "img": "icons/magic/fire/flame-burning-embers-yellow.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hope": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hope",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "XztawZ1S4gxOpprW",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WnainuS2XQrWeKJe.xXHtdBGM13ZQEKNp"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "festa-junina"
+    }
+  },
+  "_key": "!actors!WnainuS2XQrWeKJe",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

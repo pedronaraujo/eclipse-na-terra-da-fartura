@@ -1,0 +1,596 @@
+{
+  "_id": "rpJUGmBl1bsmwCEI",
+  "name": "Maria Caninana",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/maria-caninana.webp",
+  "folder": "jKqDBglxnLHl9Am0",
+  "sort": 400,
+  "system": {
+    "tier": 1,
+    "type": "ranged",
+    "difficulty": 13,
+    "damageThresholds": {
+      "major": 6,
+      "severe": 12
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Destruir, Matar, Odiar",
+    "description": "<p><em>Uma cobra verde com pontos pretos, gigante e destrutiva.</em></p><div class=\"eclipse-lore\"><p>Maria Caninana é a personificação do naufrágio violento e do apetite das correntes fluviais, o oposto de seu irmão Cobra Norato. Nascida de ventre humano, possui a anatomia de uma serpente gigante e escura, grande o bastante para estilhaçar cascos de madeira dos barcos que cruzarem seu caminho. Dizem que espalhar cinzas de fogueira no convés disfarça o cheiro humano, mas a forte correnteza costuma lavar a oferenda antes de garantir qualquer proteção. O cheiro súbito de lodo podre e o silêncio dos sapos denunciam sua aproximação, sinais quase sempre confundidos com a vazante natural do rio.</p></div>",
+    "notes": "",
+    "experiences": {
+      "iAJpaUnWgAvlh6mt": {
+        "name": "Puro Ódio",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "CLbHcc2QVEdRNJ8R",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Cuspe Venenoso",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "far",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 2,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 1,
+            "dice": "d8",
+            "bonus": 3,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "magical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 15,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Maria Caninana",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/maria-caninana.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Ódio de Irmã",
+      "type": "feature",
+      "_id": "SDwTQrUgnJGnMHN9",
+      "img": "icons/magic/control/fear-fright-monster-red.webp",
+      "system": {
+        "description": "<p>Enquanto a Maria Caninana estiver em alcance Próximo do @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.Wef3aXKoOO7DQNIL]{Cobra Norato}, ela recebe um bônus de dano de <strong>1d6</strong> em todos os seus ataques.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!rpJUGmBl1bsmwCEI.SDwTQrUgnJGnMHN9"
+    },
+    {
+      "name": "Constrição",
+      "type": "feature",
+      "_id": "OWfU4F09zDdpNUfx",
+      "img": "icons/creatures/reptiles/snake-fangs-bite-green.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para tentar constringir um alvo Muito Próximo. O alvo deve ter sucesso em um <strong>Teste de Reação de Agilidade</strong>. Em caso de falha, ele sofre <strong>2d4+3</strong> de dano físico e fica <em>Imobilizado</em>. A criatura Imobilizada se move com a Maria Caninana.</p>",
+        "resource": null,
+        "actions": {
+          "hdaUZZontGTlurmo": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Constringir",
+            "img": "icons/creatures/reptiles/snake-fangs-bite-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 2,
+                  "dice": "d4",
+                  "bonus": 3,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "agility",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "hdaUZZontGTlurmo",
+            "effects": [
+              {
+                "_id": "LrnPVq9E9FoAHhJ0",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Imobilizado",
+          "img": "icons/magic/control/debuff-chains-shackles-movement-blue.webp",
+          "_id": "LrnPVq9E9FoAHhJ0",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p><em>Imobilizado</em>: não pode se mover, mas ainda pode agir no lugar. Enrolado pela Maria Caninana, move-se junto com ela.</p>",
+          "statuses": [
+            "restrained"
+          ],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!rpJUGmBl1bsmwCEI.OWfU4F09zDdpNUfx.LrnPVq9E9FoAHhJ0"
+        }
+      ],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!rpJUGmBl1bsmwCEI.OWfU4F09zDdpNUfx"
+    },
+    {
+      "name": "Chuva Venenosa",
+      "type": "feature",
+      "_id": "E7IhyjFfB4Ie3PTy",
+      "img": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para cuspir veneno em uma área à sua frente. Faça um ataque contra todos os alvos em alcance Próximo. Se acertar, os alvos sofrem <strong>1d12+2</strong> de dano mágico.</p>",
+        "resource": null,
+        "actions": {
+          "IoaKKT3VXphsJJDa": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Chuva Venenosa",
+            "img": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 1,
+                  "dice": "d12",
+                  "bonus": 2,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "IoaKKT3VXphsJJDa",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!rpJUGmBl1bsmwCEI.E7IhyjFfB4Ie3PTy"
+    },
+    {
+      "name": "Meu Ódio é Maior",
+      "type": "feature",
+      "_id": "5T1gUal36TIMl8xM",
+      "img": "icons/magic/control/fear-fright-monster-red.webp",
+      "system": {
+        "description": "<p>Caso Maria Caninana presencie a morte de @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.Wef3aXKoOO7DQNIL]{Cobra Norato}, ela se enfurece e recebe um bônus de <strong>+5 de dano</strong> em todos os seus ataques.</p>",
+        "resource": null,
+        "actions": {
+          "LsnZW5oMVtc5OK0q": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Enfurecer",
+            "img": "icons/magic/control/fear-fright-monster-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "LsnZW5oMVtc5OK0q",
+            "effects": [
+              {
+                "_id": "WOfJukc4YufyeN6H",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Meu Ódio é Maior",
+          "img": "icons/magic/control/fear-fright-monster-red.webp",
+          "_id": "WOfJukc4YufyeN6H",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>+5 de dano em todos os ataques.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [
+              {
+                "key": "system.bonuses.damage.bonus",
+                "type": "add",
+                "value": 5,
+                "priority": null,
+                "phase": "initial"
+              }
+            ],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!rpJUGmBl1bsmwCEI.5T1gUal36TIMl8xM.WOfJukc4YufyeN6H"
+        }
+      ],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!rpJUGmBl1bsmwCEI.5T1gUal36TIMl8xM"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "maria-caninana"
+    }
+  },
+  "_key": "!actors!rpJUGmBl1bsmwCEI",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

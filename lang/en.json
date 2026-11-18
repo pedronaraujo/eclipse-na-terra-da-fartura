@@ -1,0 +1,165 @@
+{
+  "ECLIPSE": {
+    "Status": "Eclipse",
+    "Menu": {
+      "Legend": "Eclipse in the Land of Plenty",
+      "Tooltip": "Open the Eclipse window",
+      "Button": "Eclipse",
+      "StatusActive": "Ongoing · countdown {counter}/{max}",
+      "StatusUsed": "Already used this long rest",
+      "StatusReady": "Ready to cover the sun"
+    },
+    "Hud": {
+      "Title": "Night at Noon",
+      "Tooltip": "Eclipse in progress — click to open"
+    },
+    "Intro": {
+      "Title": "Night at Noon",
+      "Subtitle": "Chariã, the Celestial Jaguar, swallows the Sun"
+    },
+    "Outro": {
+      "Title": "The Sun Returns",
+      "Subtitle": "The shadow recedes… for now"
+    },
+    "App": {
+      "Title": "Eclipse — Night at Noon",
+      "Active": "Eclipse in progress",
+      "UsedChip": "Used this long rest",
+      "ReadyChip": "Available",
+      "Countdown": "Countdown",
+      "ActiveHint": "Ticks down by 1 every time a character spends Hope. At zero, or at sunset, the Eclipse ends.",
+      "TickDown": "Tick the countdown down",
+      "TickUp": "Tick the countdown up",
+      "Rules": "<strong>Once per long rest, while it is still day</strong>, spend Fear to start an Eclipse. The countdown is <strong>twice the number of players</strong> in the scene. For each Fear spent, roll a <strong>d10</strong> and add that trait; a repeated trait raises the countdown by <strong>+2</strong>.",
+      "UsedHint": "An Eclipse already happened since the last long rest.",
+      "UsedWarning": "By the rules the Eclipse happens once per long rest, and it was already used. Start anyway?",
+      "ResetRest": "A long rest happened",
+      "Players": "Players in the scene",
+      "PlayersHint": "Countdown = 2 × players",
+      "Fear": "Fear to spend",
+      "FearHint": "You have {fear} Fear",
+      "CountdownHint": "2 × {players} players + 2 × {dup} repeats",
+      "Darken": "Darken the scene",
+      "SpendFear": "Deduct the Fear from the tracker",
+      "Roll": "Roll {n}d10",
+      "Clear": "Clear",
+      "Duplicates": "{n} repeat(s): countdown +2 each",
+      "NoEclipse": "The sky is clear. For now, no Eclipse covers the Land of Plenty.",
+      "Notes": "Improvised traits",
+      "NotesPlaceholder": "E.g. the mists rise and sight beyond Close has disadvantage…",
+      "ImproviseHint": "Click the traits to toggle them on or off (Improvising an Eclipse).",
+      "Guide": "Rules in the GM Guide",
+      "Start": "Start the Eclipse",
+      "End": "Sunset — end it",
+      "EndConfirm": "End the Eclipse now and remove all of its traits?",
+      "JustNow": "just now",
+      "MinutesAgo": "{mins} min ago"
+    },
+    "Traits": {
+      "dano": {
+        "name": "Night Fury",
+        "text": "Increase adversary damage by +2.",
+        "auto": "Active effect: +2 damage on adversaries"
+      },
+      "dificuldade": {
+        "name": "Thick Shadow",
+        "text": "Increase the Difficulty of all adversaries and environments by 1 while the Eclipse lasts.",
+        "auto": "Active effect: Difficulty +1 on adversaries and environments"
+      },
+      "limiares": {
+        "name": "Night Hide",
+        "text": "Increase adversary damage thresholds by +2.",
+        "auto": "Active effect: thresholds +2 (except minions)"
+      },
+      "esperanca": {
+        "name": "Waning Hope",
+        "text": "Reduce the players' Hope Die to a d10.",
+        "auto": "Active effect: d10 Hope Die on characters"
+      },
+      "critico": {
+        "name": "Celestial Jaguar's Claws",
+        "text": "All creatures score a critical success on a 19 or 20 on attack rolls against characters.",
+        "auto": "Active effect: crit on 19–20 for adversaries"
+      }
+    },
+    "Effect": {
+      "Name": "Eclipse — Night at Noon",
+      "Description": "While the Eclipse lasts:",
+      "Duration": "Until the Eclipse countdown ends or sunset."
+    },
+    "Countdown": {
+      "Name": "Eclipse — Night at Noon"
+    },
+    "Chat": {
+      "Speaker": "Chariã, the Celestial Jaguar",
+      "StartTitle": "Night at Noon has begun",
+      "StartFlavor": "The birds fall silent. A colossal shadow swallows the Sun, and the bonfire flames waver.",
+      "CountDetail": "2 × {players} players + 2 × {dup} repeats",
+      "FearSpent": "{fear} Fear spent",
+      "EndTitle": "The Sun returns",
+      "EndFlavor": "A grey light returns and shows the damage. It will happen again — no one knows when."
+    },
+    "End": {
+      "Reason": {
+        "countdown": "The countdown reached zero.",
+        "sunset": "The sun has set."
+      }
+    },
+    "Notify": {
+      "HopeSpent": "{name} spent Hope — Eclipse: {counter}"
+    },
+    "Errors": {
+      "Generic": "Eclipse: something went wrong (see console).",
+      "GMOnly": "Only the GM can control the Eclipse.",
+      "AlreadyActive": "An Eclipse is already in progress.",
+      "NotEnoughFear": "Not enough Fear: need {fear}, you have {cur}."
+    },
+    "Settings": {
+      "DarkenScene": {
+        "Name": "Darken the scene during the Eclipse",
+        "Hint": "Default for the “Darken the scene” box in the Eclipse window."
+      },
+      "DarknessLevel": {
+        "Name": "Darkness level",
+        "Hint": "Scene darkness during the Eclipse (restored at the end)."
+      },
+      "ApplyEffects": {
+        "Name": "Apply traits automatically",
+        "Hint": "Creates an “Eclipse” active effect on affected adversaries, environments and characters, and removes it at the end."
+      },
+      "AutoTick": {
+        "Name": "Automatic countdown from Hope",
+        "Hint": "Ticks the countdown down whenever a character's Hope decreases."
+      },
+      "SystemCountdown": {
+        "Name": "Show in the countdown tracker",
+        "Hint": "Creates the Eclipse countdown in the Daggerheart countdown tracker."
+      },
+      "SoundStart": {
+        "Name": "Start sound",
+        "Hint": "Optional: audio file played for everyone when the Eclipse starts."
+      },
+      "SoundEnd": {
+        "Name": "End sound",
+        "Hint": "Optional: audio file played when the sun returns."
+      },
+      "Intensity": {
+        "Name": "Screen effect",
+        "Hint": "Intensity of the pulsing border during the Eclipse (only for you).",
+        "Full": "Intense",
+        "Subtle": "Subtle",
+        "Off": "Off"
+      },
+      "Animations": {
+        "Name": "Start and end animations",
+        "Hint": "Shows the “Night at Noon” and “The Sun Returns” cinematics."
+      },
+      "HudPosition": {
+        "Name": "Eclipse HUD position",
+        "Top": "Top",
+        "Bottom": "Above the hotbar",
+        "Hidden": "Hidden"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "mOQKHQcOm6VoncIB",
+  "name": "Eclipse: pôr do sol (encerrar)",
+  "type": "script",
+  "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+  "command": "game.modules.get('eclipse-na-terra-da-fartura')?.api?.end();",
+  "scope": "global",
+  "folder": null,
+  "sort": 200,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  },
+  "_key": "!macros!mOQKHQcOm6VoncIB"
+}

@@ -1,0 +1,329 @@
+{
+  "_id": "SQguJbM5trLac0jr",
+  "name": "Pesadelo da Cuca",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/pesadelo-da-cuca.webp",
+  "folder": "SEDqmfCu5O4lZwBn",
+  "sort": 410,
+  "system": {
+    "tier": 3,
+    "type": "minion",
+    "difficulty": 14,
+    "damageThresholds": {
+      "major": 0,
+      "severe": 0
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 1
+      },
+      "stress": {
+        "value": 0,
+        "max": 1
+      }
+    },
+    "motivesAndTactics": "Andar, Obedecer",
+    "description": "<p><em>Alguém posto para dormir e controlado pela Cuca.</em></p><div class=\"eclipse-lore\"><p>Estas são pessoas sonâmbulas controladas pela Cuca. Em geral, antes de se alimentar delas, a Cuca as usa para trabalhos braçais, como escudo e para lutar por ela se necessário. Dizem que a maioria são pessoas com insônia e que uma outra forma de acordá-las é fazer com que elas se deparem com seu maior medo.</p></div>",
+    "notes": "",
+    "experiences": {},
+    "attack": {
+      "_id": "q4bBwRQjjTEKdOin",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Pancada",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 1,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 1,
+            "dice": "d6",
+            "bonus": null,
+            "custom": {
+              "enabled": true,
+              "formula": "5"
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 21,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Pesadelo da Cuca",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/pesadelo-da-cuca.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Acordando",
+      "type": "feature",
+      "_id": "mi7NEV1kjON4e9dY",
+      "img": "icons/magic/control/fear-fright-white.webp",
+      "system": {
+        "description": "<p>Ao sofrer qualquer dano, o Pesadelo da Cuca é acordado e a pessoa que estava sendo controlada pela Cuca volta a si. Ao voltar a si, ela perde um PV e marca um Ponto de Fadiga.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!SQguJbM5trLac0jr.mi7NEV1kjON4e9dY"
+    },
+    {
+      "name": "Ataque em Grupo",
+      "type": "feature",
+      "_id": "UMJl3FVwLzYa7aL0",
+      "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para escolher um alvo e pôr em foco todos os Pesadelos da Cuca próximos dele. Esses lacaios ficam em alcance Corpo a Corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa <strong>5</strong> pontos de dano físico. Os danos são somados.</p>",
+        "resource": null,
+        "actions": {
+          "oAv0YHroRrwFqH9m": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Ataque em Grupo",
+            "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "melee",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 1,
+                  "dice": "d6",
+                  "bonus": null,
+                  "custom": {
+                    "enabled": true,
+                    "formula": "5"
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "oAv0YHroRrwFqH9m",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!SQguJbM5trLac0jr.UMJl3FVwLzYa7aL0"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "pesadelo-da-cuca"
+    }
+  },
+  "_key": "!actors!SQguJbM5trLac0jr",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

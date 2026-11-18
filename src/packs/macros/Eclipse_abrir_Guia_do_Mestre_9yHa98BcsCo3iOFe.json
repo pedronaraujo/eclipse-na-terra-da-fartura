@@ -1,0 +1,21 @@
+{
+  "_id": "9yHa98BcsCo3iOFe",
+  "name": "Eclipse: abrir Guia do Mestre",
+  "type": "script",
+  "img": "icons/sundries/scrolls/scroll-bound-sealed-red-tan.webp",
+  "command": "(await fromUuid('Compendium.eclipse-na-terra-da-fartura.diario-mestre.JournalEntry.vhwmDjTdxN1eeqxV'))?.sheet.render(true);",
+  "scope": "global",
+  "folder": null,
+  "sort": 400,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  },
+  "_key": "!macros!9yHa98BcsCo3iOFe"
+}

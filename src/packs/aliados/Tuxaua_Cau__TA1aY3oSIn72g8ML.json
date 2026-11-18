@@ -1,0 +1,104 @@
+{
+  "_id": "TA1aY3oSIn72g8ML",
+  "name": "Tuxaua Cauê",
+  "type": "npc",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/tuxaua-caue.webp",
+  "folder": null,
+  "sort": 300,
+  "system": {
+    "difficulty": null,
+    "description": "<p>Um tuxaua experiente em negociações, que aconselha e orienta os aliados.</p>",
+    "motives": "Aconselhar, Negociar, Unir os povos",
+    "notes": "",
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 11,
+      "artist": "",
+      "srd": false
+    }
+  },
+  "prototypeToken": {
+    "name": "Tuxaua Cauê",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/tuxaua-caue.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Mestre das Negociações",
+      "type": "feature",
+      "_id": "HoSMrTvxoU66B9dE",
+      "img": "icons/skills/social/diplomacy-handshake.webp",
+      "system": {
+        "description": "<p><strong>Gatilho:</strong> um personagem falha em um teste em uma negociação.<br><strong>Efeito:</strong> mova-se até Corpo a Corpo com o aliado, oferecendo conselhos e orientação. <strong>Uma vez por cena</strong>, o personagem pode rolar o teste novamente.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!TA1aY3oSIn72g8ML.HoSMrTvxoU66B9dE"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "tuxaua-caue"
+    }
+  },
+  "_key": "!actors!TA1aY3oSIn72g8ML",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

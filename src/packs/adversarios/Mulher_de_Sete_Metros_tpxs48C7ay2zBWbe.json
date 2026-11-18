@@ -1,0 +1,464 @@
+{
+  "_id": "tpxs48C7ay2zBWbe",
+  "name": "Mulher de Sete Metros",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/mulher-de-sete-metros.webp",
+  "folder": "BLNt8QlxFRhKEDTx",
+  "sort": 400,
+  "system": {
+    "tier": 2,
+    "type": "standard",
+    "difficulty": 12,
+    "damageThresholds": {
+      "major": 7,
+      "severe": 19
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Aterrorizar, Vingança",
+    "description": "<p><em>Uma mulher alta e fantasmagórica que vai aumentando seu tamanho à medida que vão interagindo com ela.</em></p><div class=\"eclipse-lore\"><p>A Mulher de Sete Metros é uma figura alta e esquálida que caminha pelas ruas ao entardecer, e sua sombra se estende pelos telhados muito antes de ela aparecer. Seu vestido branco pende em farrapos, seu pescoço se curva sob os beirais e seus dedos são longos o bastante para bater nas janelas do andar de cima. Ela espia as casas onde crianças permanecem acordadas além da hora de dormir. Os anciãos da Terra da Fartura dizem que a casa com as janelas trancadas e uma vela acesa em cada parapeito é ignorada, e que um terço pendurado na porta desvia o olhar dela. Dizem que quem ousa encará-la sente o ar parar, ouve o ranger de passadas longas sobre as telhas e percebe o cheiro de terra úmida e cera queimada. Alguns juram que quem a chama pelo nome de batismo, como se fosse uma vizinha…</p></div>",
+    "notes": "",
+    "experiences": {
+      "PhKQaZp6AuJnVFRA": {
+        "name": "Crescer",
+        "value": 2,
+        "description": ""
+      },
+      "AVsbGtzj4yGw4jgW": {
+        "name": "Perseguir",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "L3sSj5m4Q4M5W00K",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Dedos Alongados",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 0,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 2,
+            "dice": "d8",
+            "bonus": 1,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "magical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 18,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Mulher de Sete Metros",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/mulher-de-sete-metros.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Crescimento Ilusório",
+      "type": "feature",
+      "_id": "UwsKJehznLnWOGUY",
+      "img": "icons/skills/movement/arrows-up-trio-red.webp",
+      "system": {
+        "description": "<p>A Mulher de Sete Metros aparenta ter o tamanho de uma mulher normal. Ao ser posta em foco pela primeira vez, inicie uma <strong>Contagem Regressiva Decrescente (3)</strong> na ficha dela. Cada ação feita contra ela reduz esse marcador em 1. Sempre que o contador diminuir, sua altura aumenta até chegar a um total de 7 metros. Ela não marca PV até o contador zerar.</p>",
+        "resource": null,
+        "actions": {
+          "c47FQEbN6kms0ivX": {
+            "type": "countdown",
+            "systemPath": "actions",
+            "name": "Iniciar Contagem",
+            "img": "icons/skills/movement/arrows-up-trio-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "countdown": [
+              {
+                "name": "Crescimento Ilusório",
+                "type": "encounter",
+                "hidden": false,
+                "img": "icons/skills/movement/arrows-up-trio-red.webp",
+                "progress": {
+                  "looping": "decreasing",
+                  "type": "custom",
+                  "startFormula": "3",
+                  "current": 1,
+                  "start": 1
+                },
+                "ownership": {}
+              }
+            ],
+            "_id": "c47FQEbN6kms0ivX",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tpxs48C7ay2zBWbe.UwsKJehznLnWOGUY"
+    },
+    {
+      "name": "Vertigem",
+      "type": "feature",
+      "_id": "X7nq6mlCcDWQK9yQ",
+      "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+      "system": {
+        "description": "<p>Ao terminar o contador, personagens em alcance Muito Próximo devem fazer um <strong>Teste de Reação de Instinto</strong> ou ficarem <em>Vulneráveis</em> graças à vertigem.</p>",
+        "resource": null,
+        "actions": {
+          "CcURlKCDDIyaUVvz": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Vertigem",
+            "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "CcURlKCDDIyaUVvz",
+            "effects": [
+              {
+                "_id": "ilLdKs1zeJI5cg1Q",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Vulnerável",
+          "img": "icons/magic/control/silhouette-fall-slip-prone.webp",
+          "_id": "ilLdKs1zeJI5cg1Q",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p><em>Vulnerável</em>: todas as rolagens contra a criatura têm vantagem. Vertigem diante da Mulher de Sete Metros.</p>",
+          "statuses": [
+            "vulnerable"
+          ],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!tpxs48C7ay2zBWbe.X7nq6mlCcDWQK9yQ.ilLdKs1zeJI5cg1Q"
+        }
+      ],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tpxs48C7ay2zBWbe.X7nq6mlCcDWQK9yQ"
+    },
+    {
+      "name": "Grito Silencioso",
+      "type": "feature",
+      "_id": "HrOqlFtK5443oQzu",
+      "img": "icons/sundries/lights/candle-pillar-lit-yellow.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para esmorecer todas as fontes de luz não mágicas em alcance Distante. Testes relacionados à visão têm desvantagem nessa área.</p>",
+        "resource": null,
+        "actions": {
+          "ACyBae70VAMRyjKB": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Apagar as Luzes",
+            "img": "icons/sundries/lights/candle-pillar-lit-yellow.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "ACyBae70VAMRyjKB",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!tpxs48C7ay2zBWbe.HrOqlFtK5443oQzu"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "mulher-de-sete-metros"
+    }
+  },
+  "_key": "!actors!tpxs48C7ay2zBWbe",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

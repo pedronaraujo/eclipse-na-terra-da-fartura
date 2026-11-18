@@ -1,0 +1,805 @@
+{
+  "_id": "yr0GR2xLYD0VRB57",
+  "name": "Boitatá (Cabeça)",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/boitata.webp",
+  "folder": "JoyzwQX8BMXTEF0z",
+  "sort": 200,
+  "system": {
+    "tier": 4,
+    "type": "solo",
+    "difficulty": 19,
+    "damageThresholds": {
+      "major": 37,
+      "severe": 69
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 8
+      }
+    },
+    "motivesAndTactics": "Cegar contempladores, Defender as profundezas da mata, Queimar invasores",
+    "description": "<p><em>O Boitatá é uma gigantesca serpente de fogo que protege as matas e os animais contra destruidores e caçadores.</em></p><div class=\"eclipse-box\"><p><strong>4º Patamar · Colosso</strong> — <strong>Tamanho:</strong> 120 m de comprimento. <strong>Segmentos:</strong> 1 Cabeça, 2 Corpos, 1 Cauda. <strong>Limiares:</strong> 37/69 · <strong>Fadiga:</strong> 8 (compartilhada). <strong>Experiência:</strong> Fúria Primitiva da Mata +4, Presença Deslumbrante e Cegante +3.</p><p>Segmentos: @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.yr0GR2xLYD0VRB57]{Cabeça} · @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.0U9b0HnUZmpBVcyV]{Corpo (×2)} · @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.DABNrRyQk9I14JCi]{Cauda}. Use as regras de Colosso da Campanha de Caça a Monstros do SRD.</p></div><div class=\"eclipse-lore\"><p>O Boitatá é o guardião dos campos e a punição de quem os incendeia. Tem o corpo de uma serpente imensa de um fogo azulado que não queima as folhas por onde passa, e olhos enormes, feitos dos olhos de todos os animais mortos nas queimadas. Antes dele, o capim exala cheiro de queimado sem que haja brasa, e carcaças aparecem com as órbitas vazias. A luz das suas chamas dançando sobre a mata pode parecer distante, mas quem fica para olhar essa luz já entregou a ele os próprios olhos.</p></div>",
+    "notes": "",
+    "experiences": {
+      "NblCBYpPdCmIL1xB": {
+        "name": "Fúria Primitiva da Mata",
+        "value": 4,
+        "description": ""
+      },
+      "m0iUD3ejf2v9Omkg": {
+        "name": "Presença Deslumbrante e Cegante",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "QKv58Y8Uqutu826J",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Mordida de Fogo",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 6,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 4,
+            "dice": "d12",
+            "bonus": 10,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 22,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "huge",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Boitatá (Cabeça)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 3,
+    "height": 3,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/boitata-cabeca.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Segmentos Adjacentes: Corpo",
+      "type": "feature",
+      "_id": "0xZkLXPNGchybu3Q",
+      "img": "icons/creatures/reptiles/serpent-horned-green.webp",
+      "system": {
+        "description": "<p>A Cabeça é adjacente ao segmento Corpo.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.0xZkLXPNGchybu3Q"
+    },
+    {
+      "name": "Letal",
+      "type": "feature",
+      "_id": "8aPfkwxA1hSJg68U",
+      "img": "icons/creatures/abilities/mouth-teeth-fire-orange.webp",
+      "system": {
+        "description": "<p>Quando a Cabeça é <strong>Destruída</strong>, o Boitatá é derrotado.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.8aPfkwxA1hSJg68U"
+    },
+    {
+      "name": "Proteção de Fogo",
+      "type": "feature",
+      "_id": "np21Tzz3u8qpOIZ8",
+      "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+      "system": {
+        "description": "<p>Enquanto estiver envolta na Proteção de Fogo, a Cabeça <strong>não pode marcar Pontos de Vida</strong>.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.np21Tzz3u8qpOIZ8"
+    },
+    {
+      "name": "Cisco no Olho",
+      "type": "feature",
+      "_id": "lyXR2OFGTQf2upMz",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+      "system": {
+        "description": "<p>Apesar de muito poderosos, os olhos do Boitatá são sua maior fraqueza: sempre que um personagem atacar diretamente algum de seus olhos, a Cabeça perde sua <em>Proteção de Fogo</em> até ser colocada em foco novamente.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.lyXR2OFGTQf2upMz"
+    },
+    {
+      "name": "Loucura dos Mil Olhos",
+      "type": "feature",
+      "_id": "DbpFJ0FFY3LtKGFz",
+      "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+      "system": {
+        "description": "<p><strong>Contagem (Ciclo 4).</strong> Na primeira vez que o grupo vir o Boitatá, ative a contagem. Personagens em alcance Muito Distante devem fazer um <strong>Teste de Reação de Instinto</strong>. Em caso de falha, o personagem fica <em>Louco</em>. Personagens Loucos diminuem a contagem sempre que rolarem com Medo. Quando ela terminar, todos os personagens em alcance Muito Distante sofrem uma penalidade de −1 em todos os Testes de Ação e Reação até o próximo descanso. Essa penalidade é cumulativa. Caso nenhum personagem fique Louco, o mestre pode gastar 2 Pontos de Medo para forçar o grupo a fazer o Teste de Reação de Instinto novamente.</p>",
+        "resource": null,
+        "actions": {
+          "15kBGLpxtzNCahtj": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Contemplar o Boitatá",
+            "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryFar",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "15kBGLpxtzNCahtj",
+            "effects": [
+              {
+                "_id": "iEmsWWGboz6W5vPl",
+                "onSave": false
+              }
+            ]
+          },
+          "t0NyBghGmh3u1Wt5": {
+            "type": "countdown",
+            "systemPath": "actions",
+            "name": "Iniciar Contagem",
+            "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "countdown": [
+              {
+                "name": "Loucura dos Mil Olhos",
+                "type": "encounter",
+                "hidden": false,
+                "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+                "progress": {
+                  "looping": "looping",
+                  "type": "custom",
+                  "startFormula": "4",
+                  "current": 1,
+                  "start": 1
+                },
+                "ownership": {}
+              }
+            ],
+            "_id": "t0NyBghGmh3u1Wt5",
+            "effects": []
+          },
+          "nizN9HVV4p55IdCf": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Forçar novo teste",
+            "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 2,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "nizN9HVV4p55IdCf",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Louco",
+          "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+          "_id": "iEmsWWGboz6W5vPl",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Diminua a contagem Loucura dos Mil Olhos sempre que rolar com Medo.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!yr0GR2xLYD0VRB57.DbpFJ0FFY3LtKGFz.iEmsWWGboz6W5vPl"
+        }
+      ],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.DbpFJ0FFY3LtKGFz"
+    },
+    {
+      "name": "O Fogo Purifica",
+      "type": "feature",
+      "_id": "yOBzEZ88qtfDV3Lh",
+      "img": "icons/magic/fire/flame-burning-eye.webp",
+      "system": {
+        "description": "<p>Sempre que o Boitatá sofrer um ataque corpo a corpo, o atacante deve <strong>marcar um Ponto de Armadura</strong>.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.yOBzEZ88qtfDV3Lh"
+    },
+    {
+      "name": "Terror Grandioso",
+      "type": "feature",
+      "_id": "2NG72pCQqRhU4gdO",
+      "img": "icons/magic/control/fear-fright-shadow-monster-red.webp",
+      "system": {
+        "description": "<p>Sempre que o Boitatá errar um ataque, receba <strong>1 Ponto de Medo</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "GBrUuBrvCOmYGNdK": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Ganhar Medo",
+            "img": "icons/magic/control/fear-fright-shadow-monster-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "fear": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "fear",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "GBrUuBrvCOmYGNdK",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.2NG72pCQqRhU4gdO"
+    },
+    {
+      "name": "Controlar o Fogo",
+      "type": "feature",
+      "_id": "PLer0B1Zgyy5O3ll",
+      "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para controlar o fogo, aumentando-o ou fazendo-o desaparecer. Inimigos em alcance Distante devem fazer um <strong>Teste de Reação de Agilidade</strong>. Em caso de falha, sofrem <strong>4d20+5</strong> de dano mágico e ficam temporariamente <em>Incendiados</em>. Sempre que uma criatura Incendiada age, ela deve marcar 1 PA ou 1 PV. Se passarem, recebem metade do dano e não ficam Incendiados.</p>",
+        "resource": null,
+        "actions": {
+          "D0F0t5a7WwEwk2zS": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Controlar o Fogo",
+            "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 4,
+                  "dice": "d20",
+                  "bonus": 5,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "agility",
+              "difficulty": null,
+              "damageMod": "half"
+            },
+            "_id": "D0F0t5a7WwEwk2zS",
+            "effects": [
+              {
+                "_id": "b4guCs08GQmq99ON",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Incendiado",
+          "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+          "_id": "b4guCs08GQmq99ON",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Sempre que agir, marque 1 Ponto de Armadura ou 1 Ponto de Vida.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!yr0GR2xLYD0VRB57.PLer0B1Zgyy5O3ll.b4guCs08GQmq99ON"
+        }
+      ],
+      "folder": null,
+      "sort": 800,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!yr0GR2xLYD0VRB57.PLer0B1Zgyy5O3ll"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "boitata-cabeca"
+    }
+  },
+  "_key": "!actors!yr0GR2xLYD0VRB57",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

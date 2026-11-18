@@ -1,0 +1,853 @@
+{
+  "_id": "pt89lvfxGld6ldM6",
+  "name": "Abúhukü",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/abuhuku.webp",
+  "folder": "JoyzwQX8BMXTEF0z",
+  "sort": 100,
+  "system": {
+    "tier": 4,
+    "type": "solo",
+    "difficulty": 20,
+    "damageThresholds": {
+      "major": 32,
+      "severe": 68
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 11
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Agarrar, Comer, Espreitar, Perfurar",
+    "description": "<p><em>Um demônio humanoide esguio com um bico de mosquito.</em></p><div class=\"eclipse-lore\"><p>Abúhukü é a personificação da morte, da doença e do mal. Tem um corpo antropomórfico com membros alongados, uma segunda face na nuca e um grande probóscide para sugar o sangue e as entranhas de suas vítimas. Algumas lendas dizem que a fumaça gerada pela queima de uma pimenta específica é tóxica para o Abúhukü, mas ninguém nunca sobreviveu para contar a história. Sua pelagem é fétida e grudenta, o que torna fácil saber se ele está por perto; por outro lado, caso você sinta esse cheiro, já é tarde demais para fugir.</p></div>",
+    "notes": "",
+    "experiences": {
+      "L8QvB7qVnCU6REQk": {
+        "name": "Espreitar",
+        "value": 5,
+        "description": ""
+      },
+      "oXo6d3iUaNRfY3Rp": {
+        "name": "Pelos Grudentos",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "0TlWFs3HwUEIm8cH",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Probóscide",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 9,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 4,
+            "dice": "d10",
+            "bonus": 10,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 22,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Abúhukü",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/abuhuku.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Inclemente (3)",
+      "type": "feature",
+      "_id": "DoDlPZ6IjD0OkHPP",
+      "img": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+      "system": {
+        "description": "<p>O Abúhukü pode ser posto em foco até <strong>3 vezes</strong> por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco.</p>",
+        "resource": null,
+        "actions": {
+          "AkHtexzj4Qcvfk4v": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Foco: Inclemente",
+            "img": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "passive",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "AkHtexzj4Qcvfk4v",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pt89lvfxGld6ldM6.DoDlPZ6IjD0OkHPP"
+    },
+    {
+      "name": "Abraço da Morte",
+      "type": "feature",
+      "_id": "OSbB0Vne5yK5vFJt",
+      "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+      "system": {
+        "description": "<p><strong>Marque 2 Pontos de Fadiga</strong> para fazer o Abúhukü se mover e fazer um ataque padrão contra um alvo em alcance Distante. Em caso de sucesso, o alvo sofre <strong>4d20+5</strong> de dano físico e fica <em>Imobilizado</em> graças aos pelos grudentos dele até ter sucesso em um Teste de Força. A cada vez que o Abúhukü for posto em foco, ele pode causar esse dano automaticamente até o alvo escapar. Nesse estado, o Abúhukü perde sua habilidade Inclemente (3).</p>",
+        "resource": null,
+        "actions": {
+          "pGHbrKD98lvlgvAV": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Abraço da Morte",
+            "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 2,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 4,
+                  "dice": "d20",
+                  "bonus": 5,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "pGHbrKD98lvlgvAV",
+            "effects": [
+              {
+                "_id": "7UIpHjbv86jJe9VF",
+                "onSave": false
+              }
+            ]
+          },
+          "pp7X251WLaiiCgUG": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Dano Contínuo",
+            "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 4,
+                  "dice": "d20",
+                  "bonus": 5,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "_id": "pp7X251WLaiiCgUG",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Imobilizado",
+          "img": "icons/magic/control/debuff-chains-shackles-movement-blue.webp",
+          "_id": "7UIpHjbv86jJe9VF",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p><em>Imobilizado</em>: não pode se mover, mas ainda pode agir no lugar. Preso pelos pelos grudentos do Abúhukü até ter sucesso em um Teste de Força.</p>",
+          "statuses": [
+            "restrained"
+          ],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!pt89lvfxGld6ldM6.OSbB0Vne5yK5vFJt.7UIpHjbv86jJe9VF"
+        }
+      ],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pt89lvfxGld6ldM6.OSbB0Vne5yK5vFJt"
+    },
+    {
+      "name": "Fumaça Doentia",
+      "type": "feature",
+      "_id": "SuHJs0ig2ugUlCm8",
+      "img": "icons/magic/air/fog-gas-smoke-dense-green.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para que o Abúhukü produza uma fumaça carregada de doenças em alcance Muito Próximo. Todos dentro da área devem fazer um <strong>Teste de Reação de Instinto</strong>. Em caso de falha, o alvo respira a fumaça e fica <em>Adoecido</em>. Um alvo Adoecido recebe −1 em todos os atributos até o próximo descanso. Essa condição pode acumular até 2 vezes.</p>",
+        "resource": null,
+        "actions": {
+          "tPTTZKMjM3He4h26": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Fumaça Doentia",
+            "img": "icons/magic/air/fog-gas-smoke-dense-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "tPTTZKMjM3He4h26",
+            "effects": [
+              {
+                "_id": "KVT9SaAl7wwrv285",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Adoecido",
+          "img": "icons/magic/air/fog-gas-smoke-dense-green.webp",
+          "_id": "KVT9SaAl7wwrv285",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>−1 em todos os atributos até o próximo descanso (acumula até 2 vezes).</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [
+              {
+                "key": "system.traits.agility.value",
+                "type": "add",
+                "value": -1,
+                "priority": null,
+                "phase": "initial"
+              },
+              {
+                "key": "system.traits.strength.value",
+                "type": "add",
+                "value": -1,
+                "priority": null,
+                "phase": "initial"
+              },
+              {
+                "key": "system.traits.finesse.value",
+                "type": "add",
+                "value": -1,
+                "priority": null,
+                "phase": "initial"
+              },
+              {
+                "key": "system.traits.instinct.value",
+                "type": "add",
+                "value": -1,
+                "priority": null,
+                "phase": "initial"
+              },
+              {
+                "key": "system.traits.presence.value",
+                "type": "add",
+                "value": -1,
+                "priority": null,
+                "phase": "initial"
+              },
+              {
+                "key": "system.traits.knowledge.value",
+                "type": "add",
+                "value": -1,
+                "priority": null,
+                "phase": "initial"
+              }
+            ],
+            "duration": {
+              "type": "shortRest",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!pt89lvfxGld6ldM6.SuHJs0ig2ugUlCm8.KVT9SaAl7wwrv285"
+        }
+      ],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pt89lvfxGld6ldM6.SuHJs0ig2ugUlCm8"
+    },
+    {
+      "name": "Mesclar com as Sombras",
+      "type": "feature",
+      "_id": "gaGOSV8fwwlfbRFH",
+      "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para que o Abúhukü se torne um com as sombras e fique <em>Sob as Sombras</em>. Enquanto estiver Sob as Sombras, o Abúhukü tem vantagem em testes e recebe resistência a dano mágico. Ao sofrer dano Maior ou superior, ele deixa de estar Sob as Sombras.</p>",
+        "resource": null,
+        "actions": {
+          "dol9JftWaaKAObEq": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Mesclar-se",
+            "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "dol9JftWaaKAObEq",
+            "effects": [
+              {
+                "_id": "LGILN1Tzy4RchCbS",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Sob as Sombras",
+          "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+          "_id": "LGILN1Tzy4RchCbS",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Vantagem em testes e resistência a dano mágico. Termina ao sofrer dano Maior ou superior.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!pt89lvfxGld6ldM6.gaGOSV8fwwlfbRFH.LGILN1Tzy4RchCbS"
+        }
+      ],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pt89lvfxGld6ldM6.gaGOSV8fwwlfbRFH"
+    },
+    {
+      "name": "Impulso",
+      "type": "feature",
+      "_id": "doTOWUU36K9hRHUY",
+      "img": "icons/skills/melee/strike-weapons-orange.webp",
+      "system": {
+        "description": "<p>Quando o Abúhukü acertar um ataque contra um personagem, receba <strong>um Ponto de Medo</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "yxHMszmybzA521wo": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Ganhar Medo",
+            "img": "icons/skills/melee/strike-weapons-orange.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "fear": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "fear",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "yxHMszmybzA521wo",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!pt89lvfxGld6ldM6.doTOWUU36K9hRHUY"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "abuhuku"
+    }
+  },
+  "_key": "!actors!pt89lvfxGld6ldM6",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

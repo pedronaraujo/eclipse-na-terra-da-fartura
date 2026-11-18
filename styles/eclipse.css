@@ -1,0 +1,427 @@
+/* =====================================================================
+   Eclipse na Terra da Fartura — estilos
+   ===================================================================== */
+
+@font-face { font-family: 'Eclipse Fraktur'; src: url('../assets/fonts/UnifrakturMaguntia-Book.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'Eclipse Cinzel'; src: url('../assets/fonts/Cinzel-Variable.ttf') format('truetype'); font-weight: 400 900; font-display: swap; }
+@font-face { font-family: 'Eclipse Fell'; src: url('../assets/fonts/IMFePIrm28P.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'Eclipse Fell'; src: url('../assets/fonts/IMFePIit28P.ttf') format('truetype'); font-style: italic; font-display: swap; }
+
+:root {
+    --ecl-night: #0b0710;
+    --ecl-night-2: #160b18;
+    --ecl-blood: #7a0018;
+    --ecl-blood-2: #a3122a;
+    --ecl-ember: #ff6a2a;
+    --ecl-gold: #e8be78;
+    --ecl-rust: #b5652c;
+    --ecl-bone: #f1e6d0;
+    --ecl-ink: #2a1a12;
+}
+
+@property --eclipse-angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+
+/* ---------------------------------------------------------------------
+   Efeito de tela: borda pulsante
+   --------------------------------------------------------------------- */
+#eclipse-ntf-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 65;
+    opacity: 0;
+    transition: opacity 2.4s ease;
+    --eclipse-pulse: 3.2s;
+}
+#eclipse-ntf-overlay.visible { opacity: 1; }
+#eclipse-ntf-overlay.leaving { opacity: 0; transition: opacity 2.4s ease; }
+
+#eclipse-ntf-overlay .eclipse-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(40, 0, 12, 0.35) 78%, rgba(10, 0, 4, 0.75) 100%);
+    box-shadow: inset 0 0 90px 24px rgba(122, 0, 24, 0.55), inset 0 0 26px 6px rgba(255, 106, 42, 0.28);
+    animation: eclipse-pulse var(--eclipse-pulse) ease-in-out infinite;
+}
+@keyframes eclipse-pulse {
+    0%, 100% { opacity: 0.55; }
+    50% {
+        opacity: 1;
+        box-shadow: inset 0 0 170px 46px rgba(163, 18, 42, 0.78), inset 0 0 48px 12px rgba(255, 150, 70, 0.4);
+    }
+}
+
+#eclipse-ntf-overlay .eclipse-border {
+    position: absolute;
+    inset: 0;
+    padding: 4px;
+    background: conic-gradient(from var(--eclipse-angle), #ffcf8a, #7a0018 12%, #14000a 25%, #ff6a2a 38%, #7a0018 50%, #14000a 63%, #ffb35c 76%, #7a0018 88%, #ffcf8a);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+    filter: drop-shadow(0 0 10px rgba(255, 90, 42, 0.8));
+    animation: eclipse-spin 14s linear infinite, eclipse-border-breath var(--eclipse-pulse) ease-in-out infinite;
+}
+@keyframes eclipse-spin { to { --eclipse-angle: 360deg; } }
+@keyframes eclipse-border-breath { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+
+#eclipse-ntf-overlay .eclipse-corner {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at var(--cx) var(--cy), rgba(255, 120, 60, 0.32), rgba(122, 0, 24, 0.18) 35%, transparent 65%);
+    animation: eclipse-pulse var(--eclipse-pulse) ease-in-out infinite reverse;
+}
+#eclipse-ntf-overlay .eclipse-corner.tl { top: 0; left: 0; --cx: 0%; --cy: 0%; }
+#eclipse-ntf-overlay .eclipse-corner.tr { top: 0; right: 0; --cx: 100%; --cy: 0%; }
+#eclipse-ntf-overlay .eclipse-corner.bl { bottom: 0; left: 0; --cx: 0%; --cy: 100%; }
+#eclipse-ntf-overlay .eclipse-corner.br { bottom: 0; right: 0; --cx: 100%; --cy: 100%; }
+
+/* Cinzas subindo pelas bordas */
+#eclipse-ntf-overlay .eclipse-ember {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffd9a0, #ff6a2a 60%, transparent 70%);
+    box-shadow: 0 0 6px 2px rgba(255, 106, 42, 0.6);
+    opacity: 0;
+    animation: eclipse-ember var(--t) linear var(--d) infinite;
+}
+#eclipse-ntf-overlay .eclipse-ember.side-0 { left: 10px; bottom: -10px; }
+#eclipse-ntf-overlay .eclipse-ember.side-1 { right: 10px; bottom: -10px; }
+#eclipse-ntf-overlay .eclipse-ember.side-2 { left: var(--p); bottom: -10px; }
+#eclipse-ntf-overlay .eclipse-ember.side-3 { left: var(--p); bottom: -10px; width: 3px; height: 3px; }
+#eclipse-ntf-overlay .eclipse-ember.side-0, #eclipse-ntf-overlay .eclipse-ember.side-1 { margin-left: calc(var(--p) * 0.6); }
+#eclipse-ntf-overlay .eclipse-ember.side-1 { margin-left: 0; margin-right: calc(var(--p) * 0.6); }
+@keyframes eclipse-ember {
+    0% { transform: translate(0, 0) scale(1); opacity: 0; }
+    10% { opacity: 0.9; }
+    60% { opacity: 0.6; }
+    100% { transform: translate(30px, -70vh) scale(0.3); opacity: 0; }
+}
+#eclipse-ntf-overlay .eclipse-ember.side-2, #eclipse-ntf-overlay .eclipse-ember.side-3 { animation-name: eclipse-ember-short; }
+@keyframes eclipse-ember-short {
+    0% { transform: translate(0, 0) scale(1); opacity: 0; }
+    15% { opacity: 0.8; }
+    100% { transform: translate(-20px, -22vh) scale(0.2); opacity: 0; }
+}
+
+#eclipse-ntf-overlay[data-intensity='subtle'] .eclipse-vignette { opacity: 0.45; animation-duration: calc(var(--eclipse-pulse) * 1.6); }
+#eclipse-ntf-overlay[data-intensity='subtle'] .eclipse-corner,
+#eclipse-ntf-overlay[data-intensity='subtle'] .eclipse-embers { display: none; }
+#eclipse-ntf-overlay[data-intensity='subtle'] .eclipse-border { padding: 2px; opacity: 0.7; }
+
+@media (prefers-reduced-motion: reduce) {
+    #eclipse-ntf-overlay *, .eclipse-ntf-cinematic * { animation-duration: 0.01s !important; animation-iteration-count: 1 !important; }
+}
+
+/* ---------------------------------------------------------------------
+   HUD do Eclipse
+   --------------------------------------------------------------------- */
+#eclipse-ntf-hud {
+    position: fixed;
+    left: 50%;
+    top: 58px;
+    transform: translate(-50%, -12px);
+    z-index: 70;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 16px 6px 6px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(11, 7, 16, 0.92), rgba(40, 6, 16, 0.92));
+    border: 1px solid rgba(232, 190, 120, 0.55);
+    box-shadow: 0 0 18px rgba(255, 90, 42, 0.35), inset 0 0 12px rgba(122, 0, 24, 0.6);
+    color: var(--ecl-bone);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    pointer-events: auto;
+}
+#eclipse-ntf-hud.visible { opacity: 1; transform: translate(-50%, 0); }
+#eclipse-ntf-hud.leaving { opacity: 0; transform: translate(-50%, -12px); }
+#eclipse-ntf-hud[data-position='bottom'] { top: auto; bottom: 96px; }
+#eclipse-ntf-hud:hover { border-color: var(--ecl-gold); box-shadow: 0 0 26px rgba(255, 120, 60, 0.6), inset 0 0 12px rgba(122, 0, 24, 0.6); }
+#eclipse-ntf-hud .hud-sun { width: 52px; height: 52px; flex: 0 0 52px; }
+#eclipse-ntf-hud .hud-sun img { width: 100%; height: 100%; border: none; animation: eclipse-sun-rot 40s linear infinite; filter: drop-shadow(0 0 8px rgba(255, 210, 160, 0.7)); }
+@keyframes eclipse-sun-rot { to { transform: rotate(360deg); } }
+#eclipse-ntf-hud .hud-body { display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto; column-gap: 12px; align-items: center; }
+#eclipse-ntf-hud .hud-title { font-family: 'Eclipse Fraktur', serif; font-size: 20px; color: var(--ecl-gold); text-shadow: 0 0 8px rgba(255, 106, 42, 0.6); line-height: 1; }
+#eclipse-ntf-hud .hud-count { font-family: 'Eclipse Cinzel', serif; font-weight: 800; text-align: right; }
+#eclipse-ntf-hud .hud-count .num { font-size: 22px; color: #fff; text-shadow: 0 0 10px var(--ecl-ember); }
+#eclipse-ntf-hud .hud-count .of { font-size: 12px; opacity: 0.7; margin-left: 2px; }
+#eclipse-ntf-hud .hud-pips { display: flex; gap: 3px; flex-wrap: wrap; max-width: 220px; }
+#eclipse-ntf-hud .hud-traits { display: flex; gap: 6px; justify-content: flex-end; }
+#eclipse-ntf-hud .trait { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: rgba(122, 0, 24, 0.7); border: 1px solid rgba(232, 190, 120, 0.6); font-size: 11px; color: var(--ecl-gold); }
+#eclipse-ntf-hud .trait.note { background: rgba(60, 40, 20, 0.8); }
+
+.eclipse-ntf .pip, #eclipse-ntf-hud .pip {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff2d6, #ffb35c 40%, #b5652c 75%);
+    box-shadow: 0 0 6px rgba(255, 170, 80, 0.8);
+    transition: all 0.6s ease;
+}
+.eclipse-ntf .pip.spent, #eclipse-ntf-hud .pip.spent { background: #1a0d10; box-shadow: inset 0 0 0 1px rgba(232, 190, 120, 0.35); }
+
+/* ---------------------------------------------------------------------
+   Cinemáticas
+   --------------------------------------------------------------------- */
+.eclipse-ntf-cinematic { position: fixed; inset: 0; z-index: 9999; pointer-events: none; display: grid; place-items: center; overflow: hidden; }
+.eclipse-ntf-cinematic .cine-sky { position: absolute; inset: 0; }
+.eclipse-ntf-cinematic.intro .cine-sky { background: radial-gradient(circle at 50% 45%, rgba(20, 0, 10, 0.2), rgba(5, 0, 4, 0.92) 70%); animation: cine-sky-in 5.2s ease forwards; }
+@keyframes cine-sky-in { 0% { opacity: 0; } 15% { opacity: 1; } 78% { opacity: 1; } 100% { opacity: 0; } }
+.eclipse-ntf-cinematic.outro .cine-sky { background: radial-gradient(circle at 50% 45%, rgba(255, 236, 190, 0.55), rgba(255, 170, 80, 0.25) 40%, transparent 75%); animation: cine-sky-out 4.6s ease forwards; }
+@keyframes cine-sky-out { 0% { opacity: 0; } 30% { opacity: 1; } 100% { opacity: 0; } }
+
+.eclipse-ntf-cinematic .cine-stage { position: relative; width: 260px; height: 260px; margin-top: -90px; }
+.eclipse-ntf-cinematic .cine-sun,
+.eclipse-ntf-cinematic .cine-moon,
+.eclipse-ntf-cinematic .cine-corona { position: absolute; inset: 0; border-radius: 50%; }
+.eclipse-ntf-cinematic .cine-sun { background: radial-gradient(circle, #fffbea, #ffd58a 45%, #ff8a3a 70%, rgba(255, 90, 40, 0) 72%); filter: drop-shadow(0 0 60px #ffb35c); }
+.eclipse-ntf-cinematic .cine-corona {
+    inset: -70px;
+    background: radial-gradient(circle, transparent 40%, rgba(255, 245, 225, 0.85) 42%, rgba(255, 220, 170, 0.35) 48%, transparent 66%),
+                repeating-conic-gradient(from 0deg, rgba(255, 245, 225, 0.55) 0 2deg, transparent 2deg 14deg);
+    -webkit-mask: radial-gradient(circle, transparent 38%, #000 42%, #000 60%, transparent 72%);
+    mask: radial-gradient(circle, transparent 38%, #000 42%, #000 60%, transparent 72%);
+    opacity: 0;
+}
+.eclipse-ntf-cinematic .cine-moon { background: radial-gradient(circle at 40% 40%, #1a1218, #050306 70%); box-shadow: 0 0 0 2px rgba(255, 240, 220, 0.25); }
+
+.eclipse-ntf-cinematic.intro .cine-moon { animation: cine-moon-in 5.2s cubic-bezier(.3, .1, .2, 1) forwards; }
+.eclipse-ntf-cinematic.intro .cine-corona { animation: cine-corona-in 5.2s ease forwards; }
+.eclipse-ntf-cinematic.intro .cine-sun { animation: cine-sun-in 5.2s ease forwards; }
+@keyframes cine-moon-in { 0% { transform: translateX(-160%); opacity: 0; } 10% { opacity: 1; } 45% { transform: translateX(0); } 85% { transform: translateX(0); opacity: 1; } 100% { transform: translateX(0) scale(1.1); opacity: 0; } }
+@keyframes cine-corona-in { 0%, 40% { opacity: 0; transform: rotate(0) scale(0.9); } 50% { opacity: 1; transform: rotate(10deg) scale(1.08); } 85% { opacity: 0.9; transform: rotate(30deg) scale(1); } 100% { opacity: 0; transform: rotate(40deg) scale(1.2); } }
+@keyframes cine-sun-in { 0% { opacity: 0; } 12% { opacity: 1; } 42% { opacity: 1; filter: drop-shadow(0 0 60px #ffb35c); } 50% { filter: drop-shadow(0 0 140px #ff5a2a); } 85% { opacity: 1; } 100% { opacity: 0; } }
+
+.eclipse-ntf-cinematic.outro .cine-moon { animation: cine-moon-out 4.6s cubic-bezier(.5, 0, .7, .3) forwards; }
+.eclipse-ntf-cinematic.outro .cine-corona { animation: cine-corona-out 4.6s ease forwards; }
+.eclipse-ntf-cinematic.outro .cine-sun { animation: cine-sun-out 4.6s ease forwards; }
+@keyframes cine-moon-out { 0% { transform: translateX(0); opacity: 1; } 15% { transform: translateX(0); } 70% { transform: translateX(170%); opacity: 1; } 100% { transform: translateX(200%); opacity: 0; } }
+@keyframes cine-corona-out { 0% { opacity: 1; } 35% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes cine-sun-out { 0% { opacity: 1; transform: scale(1); } 60% { opacity: 1; transform: scale(1.2); filter: drop-shadow(0 0 160px #ffd58a); } 100% { opacity: 0; transform: scale(1.8); } }
+
+.eclipse-ntf-cinematic .cine-text { position: absolute; top: calc(50% + 90px); width: 100%; text-align: center; color: var(--ecl-bone); opacity: 0; }
+.eclipse-ntf-cinematic .cine-text h1 { font-family: 'Eclipse Fraktur', serif; font-size: clamp(42px, 7vw, 96px); margin: 0; border: none; color: #fff; text-shadow: 0 0 18px var(--ecl-ember), 0 0 46px var(--ecl-blood-2); letter-spacing: 1px; }
+.eclipse-ntf-cinematic .cine-text p { font-family: 'Eclipse Fell', serif; font-style: italic; font-size: clamp(16px, 2vw, 24px); margin: 6px 0 0; color: var(--ecl-gold); text-shadow: 0 0 10px #000; }
+.eclipse-ntf-cinematic.intro .cine-text { animation: cine-text 5.2s ease forwards; }
+.eclipse-ntf-cinematic.outro .cine-text { animation: cine-text 4.6s ease forwards; }
+.eclipse-ntf-cinematic.outro .cine-text h1 { text-shadow: 0 0 18px #ffd58a, 0 0 46px #ff8a3a; color: #2a1206; }
+@keyframes cine-text { 0%, 35% { opacity: 0; transform: translateY(14px); letter-spacing: 12px; } 52% { opacity: 1; transform: translateY(0); letter-spacing: 2px; } 85% { opacity: 1; } 100% { opacity: 0; } }
+
+/* ---------------------------------------------------------------------
+   Botão no menu Daggerheart
+   --------------------------------------------------------------------- */
+.eclipse-ntf-menu { border-color: rgba(181, 101, 44, 0.6) !important; }
+.eclipse-ntf-menu legend { font-family: 'Eclipse Cinzel', serif; letter-spacing: 0.5px; }
+.eclipse-ntf-menu .eclipse-ntf-menu-btn {
+    display: flex; align-items: center; gap: 10px; width: 100%; height: auto; min-height: 52px; padding: 6px 10px;
+    background: linear-gradient(100deg, #120a14, #2b0a14 60%, #4a1410);
+    border: 1px solid rgba(232, 190, 120, 0.5); border-radius: 8px; color: var(--ecl-bone);
+    text-align: left; overflow: hidden; position: relative;
+}
+.eclipse-ntf-menu .eclipse-ntf-menu-btn:hover { border-color: var(--ecl-gold); box-shadow: 0 0 14px rgba(255, 106, 42, 0.45); }
+.eclipse-ntf-menu .eclipse-ntf-menu-sun { width: 40px; height: 40px; flex: 0 0 40px; }
+.eclipse-ntf-menu .eclipse-ntf-menu-sun img { width: 100%; height: 100%; border: none; }
+.eclipse-ntf-menu .eclipse-ntf-menu-label { display: flex; flex-direction: column; line-height: 1.15; }
+.eclipse-ntf-menu .eclipse-ntf-menu-label strong { font-family: 'Eclipse Fraktur', serif; font-size: 22px; font-weight: normal; color: var(--ecl-gold); }
+.eclipse-ntf-menu .eclipse-ntf-menu-label small { font-size: 11px; opacity: 0.8; }
+.eclipse-ntf-menu .eclipse-ntf-menu-btn.is-active { border-color: var(--ecl-ember); animation: eclipse-btn-pulse 2.4s ease-in-out infinite; }
+.eclipse-ntf-menu .eclipse-ntf-menu-btn.is-active .eclipse-ntf-menu-sun img { animation: eclipse-sun-rot 20s linear infinite; }
+@keyframes eclipse-btn-pulse { 0%, 100% { box-shadow: 0 0 6px rgba(255, 106, 42, 0.35); } 50% { box-shadow: 0 0 20px rgba(255, 106, 42, 0.85), inset 0 0 10px rgba(163, 18, 42, 0.6); } }
+
+/* ---------------------------------------------------------------------
+   Janela do Eclipse
+   --------------------------------------------------------------------- */
+.eclipse-ntf-app { --app-bg: var(--ecl-night); min-width: 560px; }
+.eclipse-ntf-app .window-header { background: linear-gradient(90deg, #120a14, #3a0d14); border-bottom: 1px solid rgba(232, 190, 120, 0.4); color: var(--ecl-gold); }
+.eclipse-ntf-app .window-header .window-title { font-family: 'Eclipse Cinzel', serif; letter-spacing: 0.5px; }
+.eclipse-ntf-app .window-content { padding: 0; background: radial-gradient(ellipse at 70% 0%, #2a0c18 0%, var(--ecl-night) 55%); color: var(--ecl-bone); }
+.eclipse-ntf-app .eclipse-app-inner { display: flex; flex-direction: column; min-height: 100%; }
+.eclipse-ntf-app .eclipse-scroll { padding: 12px 18px 6px; overflow-y: auto; max-height: 62vh; }
+
+.eclipse-ntf-app .eclipse-hero { position: relative; height: 170px; overflow: hidden; border-bottom: 1px solid rgba(232, 190, 120, 0.35); }
+.eclipse-ntf-app .hero-banner { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; border: none; display: block; }
+.eclipse-ntf-app .hero-glow { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, var(--ecl-night) 100%), radial-gradient(circle at 80% 40%, rgba(255, 106, 42, 0.12), transparent 50%); }
+.eclipse-ntf-app.is-active .hero-glow, .eclipse-ntf-app .is-active .hero-glow { animation: eclipse-pulse 3s ease-in-out infinite; box-shadow: inset 0 0 60px rgba(163, 18, 42, 0.8); }
+.eclipse-ntf-app .hero-badge { position: absolute; right: 12px; bottom: 10px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-family: 'Eclipse Cinzel', serif; background: rgba(11, 7, 16, 0.8); border: 1px solid rgba(232, 190, 120, 0.6); }
+.eclipse-ntf-app .hero-badge.active { color: #fff; border-color: var(--ecl-ember); box-shadow: 0 0 12px rgba(255, 106, 42, 0.7); }
+.eclipse-ntf-app .hero-badge.used { color: #d8a0a0; }
+.eclipse-ntf-app .hero-badge.ready { color: var(--ecl-gold); }
+
+.eclipse-ntf-app .eclipse-rules p { font-family: 'Eclipse Fell', serif; font-size: 15px; line-height: 1.45; margin: 0 0 8px; }
+.eclipse-ntf-app .eclipse-warning { color: #ffb0a0; font-size: 13px !important; }
+.eclipse-ntf-app .eclipse-warning a { color: var(--ecl-gold); text-decoration: underline; cursor: pointer; margin-left: 6px; }
+
+.eclipse-ntf-app .eclipse-setup { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 6px 0 10px; }
+.eclipse-ntf-app .setup-card { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(232, 190, 120, 0.3); border-radius: 10px; padding: 8px 10px; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+.eclipse-ntf-app .setup-card label { font-family: 'Eclipse Cinzel', serif; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--ecl-gold); }
+.eclipse-ntf-app .setup-card small { font-size: 11px; opacity: 0.7; }
+.eclipse-ntf-app .setup-card.fear.short { border-color: #ff6a6a; }
+.eclipse-ntf-app .stepper { display: flex; align-items: center; gap: 6px; }
+.eclipse-ntf-app .stepper button { width: 26px; height: 26px; padding: 0; line-height: 1; background: rgba(122, 0, 24, 0.6); border: 1px solid rgba(232, 190, 120, 0.4); color: var(--ecl-bone); border-radius: 6px; }
+.eclipse-ntf-app .stepper button:hover { background: var(--ecl-blood-2); }
+.eclipse-ntf-app .stepper input, .eclipse-ntf-app .stepper .value { width: 46px; text-align: center; font-family: 'Eclipse Cinzel', serif; font-size: 24px; font-weight: 800; background: transparent; border: none; color: #fff; }
+.eclipse-ntf-app .setup-card .big { font-family: 'Eclipse Cinzel', serif; font-size: 30px; font-weight: 800; color: #fff; text-shadow: 0 0 10px var(--ecl-ember); }
+.eclipse-ntf-app .fear-pips { display: flex; flex-wrap: wrap; justify-content: center; gap: 3px; max-width: 170px; }
+.eclipse-ntf-app .fear-pips .skull { font-size: 11px; color: rgba(241, 230, 208, 0.25); transition: all 0.3s; }
+.eclipse-ntf-app .fear-pips .skull.lit { color: #c74b6a; text-shadow: 0 0 6px #ff3355; }
+
+.eclipse-ntf-app .eclipse-options { display: flex; gap: 18px; justify-content: center; margin-bottom: 10px; font-size: 13px; }
+.eclipse-ntf-app .eclipse-options .check { display: flex; align-items: center; gap: 6px; }
+
+.eclipse-ntf-app .eclipse-roll-row { display: flex; justify-content: center; gap: 10px; margin-bottom: 8px; }
+.eclipse-ntf-app button.eclipse-roll {
+    flex: 0 0 auto; width: auto; padding: 6px 22px; height: auto; font-family: 'Eclipse Cinzel', serif; font-size: 16px; font-weight: 700;
+    color: #fff; background: linear-gradient(180deg, var(--ecl-blood-2), #4a0612); border: 1px solid var(--ecl-gold); border-radius: 999px;
+    box-shadow: 0 0 14px rgba(255, 90, 42, 0.45);
+}
+.eclipse-ntf-app button.eclipse-roll:hover { box-shadow: 0 0 22px rgba(255, 120, 60, 0.8); }
+.eclipse-ntf-app button.eclipse-ghost { flex: 0 0 auto; width: auto; background: transparent; border: 1px solid rgba(232, 190, 120, 0.35); color: var(--ecl-bone); border-radius: 999px; padding: 4px 14px; }
+.eclipse-ntf-app .eclipse-dice { display: flex; justify-content: center; align-items: center; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.eclipse-ntf .die {
+    display: inline-grid; place-items: center; min-width: 28px; height: 28px; padding: 0 4px;
+    font-family: 'Eclipse Cinzel', serif; font-weight: 800; color: var(--ecl-night);
+    background: linear-gradient(160deg, #ffe7b8, #e8be78 55%, #b5652c);
+    clip-path: polygon(50% 0, 100% 38%, 82% 100%, 18% 100%, 0 38%);
+}
+.eclipse-ntf-app.just-rolled .eclipse-dice .die { animation: eclipse-die-in 0.7s cubic-bezier(.2, 1.6, .4, 1) both; }
+.eclipse-ntf-app.just-rolled .eclipse-dice .die:nth-child(2) { animation-delay: 0.08s; }
+.eclipse-ntf-app.just-rolled .eclipse-dice .die:nth-child(3) { animation-delay: 0.16s; }
+.eclipse-ntf-app.just-rolled .eclipse-dice .die:nth-child(4) { animation-delay: 0.24s; }
+.eclipse-ntf-app.just-rolled .eclipse-dice .die:nth-child(5) { animation-delay: 0.32s; }
+@keyframes eclipse-die-in { from { transform: scale(0) rotate(-120deg); opacity: 0; } to { transform: none; opacity: 1; } }
+.eclipse-ntf-app .dup-note { font-size: 12px; color: #ffb35c; }
+
+.eclipse-ntf-app .eclipse-traits { display: flex; flex-direction: column; gap: 6px; margin: 8px 0; }
+.eclipse-ntf-app .trait-card {
+    position: relative; display: grid; grid-template-columns: 52px 38px 1fr auto; align-items: center; gap: 10px;
+    padding: 8px 12px 8px 8px; border-radius: 10px; border: 1px solid rgba(232, 190, 120, 0.18);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+    opacity: 0.55; filter: saturate(0.4); transition: all 0.35s ease;
+}
+.eclipse-ntf-app .trait-card.interactive { cursor: pointer; }
+.eclipse-ntf-app .trait-card.interactive:hover { opacity: 0.85; border-color: rgba(232, 190, 120, 0.5); }
+.eclipse-ntf-app .trait-card.selected {
+    opacity: 1; filter: none; border-color: var(--ecl-ember);
+    background: linear-gradient(90deg, rgba(163, 18, 42, 0.45), rgba(40, 6, 16, 0.4));
+    box-shadow: 0 0 16px rgba(255, 90, 42, 0.35), inset 0 0 18px rgba(122, 0, 24, 0.5);
+}
+.eclipse-ntf-app.just-rolled .trait-card.selected { animation: eclipse-trait-flash 1.2s ease; }
+@keyframes eclipse-trait-flash { 0% { box-shadow: 0 0 0 rgba(255, 200, 120, 0); } 30% { box-shadow: 0 0 34px rgba(255, 200, 120, 0.95); } 100% { box-shadow: 0 0 16px rgba(255, 90, 42, 0.35); } }
+.eclipse-ntf-app .trait-range { font-family: 'Eclipse Cinzel', serif; font-size: 15px; font-weight: 800; text-align: center; color: var(--ecl-gold); }
+.eclipse-ntf-app .trait-icon { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-size: 16px; background: rgba(11, 7, 16, 0.8); border: 1px solid rgba(232, 190, 120, 0.5); color: var(--ecl-gold); }
+.eclipse-ntf-app .trait-card.selected .trait-icon { color: #fff; border-color: var(--ecl-ember); box-shadow: 0 0 10px var(--ecl-ember); }
+.eclipse-ntf-app .trait-body h3 { margin: 0; border: none; font-family: 'Eclipse Fraktur', serif; font-size: 20px; font-weight: normal; color: var(--ecl-gold); }
+.eclipse-ntf-app .trait-body p { margin: 1px 0 2px; font-size: 13px; line-height: 1.3; }
+.eclipse-ntf-app .trait-body .trait-auto { font-size: 10.5px; opacity: 0.65; }
+.eclipse-ntf-app .trait-dice { display: flex; gap: 4px; }
+
+.eclipse-ntf-app .eclipse-notes { display: flex; flex-direction: column; gap: 4px; margin-bottom: 8px; }
+.eclipse-ntf-app .eclipse-notes label { font-family: 'Eclipse Cinzel', serif; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--ecl-gold); }
+.eclipse-ntf-app .eclipse-notes textarea { background: rgba(255, 255, 255, 0.05); color: var(--ecl-bone); border: 1px solid rgba(232, 190, 120, 0.3); border-radius: 8px; resize: vertical; font-family: 'Eclipse Fell', serif; font-size: 14px; }
+.eclipse-ntf-app .eclipse-notes small { font-size: 11px; opacity: 0.6; }
+.eclipse-ntf-app .eclipse-notes.view p { font-family: 'Eclipse Fell', serif; font-style: italic; margin: 0; }
+
+.eclipse-ntf-app .eclipse-active-panel { display: grid; grid-template-columns: 110px 1fr auto; align-items: center; gap: 16px; padding: 6px 0 10px; }
+.eclipse-ntf-app .active-sun img { width: 110px; height: 110px; border: none; animation: eclipse-sun-rot 30s linear infinite; filter: drop-shadow(0 0 14px rgba(255, 200, 150, 0.8)); }
+.eclipse-ntf-app .active-label { font-family: 'Eclipse Cinzel', serif; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: var(--ecl-gold); }
+.eclipse-ntf-app .active-count .num { font-family: 'Eclipse Cinzel', serif; font-size: 54px; font-weight: 900; color: #fff; text-shadow: 0 0 16px var(--ecl-ember), 0 0 30px var(--ecl-blood-2); line-height: 1; }
+.eclipse-ntf-app .active-count .of { font-family: 'Eclipse Cinzel', serif; font-size: 18px; opacity: 0.7; margin-left: 4px; }
+.eclipse-ntf-app .eclipse-pips { display: flex; gap: 5px; flex-wrap: wrap; margin: 6px 0; }
+.eclipse-ntf-app .eclipse-pips .pip { width: 14px; height: 14px; }
+.eclipse-ntf-app .active-hint { font-size: 12px; opacity: 0.75; margin: 0; }
+.eclipse-ntf-app .active-controls { display: flex; flex-direction: column; gap: 6px; }
+.eclipse-ntf-app .active-controls button { width: 38px; height: 38px; border-radius: 50%; background: rgba(122, 0, 24, 0.7); border: 1px solid var(--ecl-gold); color: #fff; }
+
+.eclipse-ntf-app .eclipse-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 18px 14px; border-top: 1px solid rgba(232, 190, 120, 0.2); background: rgba(0, 0, 0, 0.25); }
+.eclipse-ntf-app .eclipse-footer .guide { color: var(--ecl-gold); font-size: 13px; cursor: pointer; }
+.eclipse-ntf-app .eclipse-footer button { flex: 0 0 auto; width: auto; height: auto; padding: 8px 22px; border-radius: 999px; font-family: 'Eclipse Cinzel', serif; font-weight: 800; font-size: 15px; }
+.eclipse-ntf-app button.eclipse-start { color: #fff; background: radial-gradient(circle at 30% 30%, #3a0d14, #0b0710); border: 1px solid var(--ecl-ember); box-shadow: 0 0 18px rgba(255, 90, 42, 0.55); }
+.eclipse-ntf-app button.eclipse-start:not([disabled]):hover { box-shadow: 0 0 30px rgba(255, 120, 60, 0.95); }
+.eclipse-ntf-app button.eclipse-start[disabled] { opacity: 0.4; box-shadow: none; }
+.eclipse-ntf-app button.eclipse-sunset { color: var(--ecl-ink); background: linear-gradient(180deg, #ffe7b8, #e8be78 60%, #b5652c); border: 1px solid #fff2d6; box-shadow: 0 0 20px rgba(255, 210, 150, 0.6); }
+
+/* ---------------------------------------------------------------------
+   Chat
+   --------------------------------------------------------------------- */
+.eclipse-ntf-chat { border-radius: 8px; overflow: hidden; background: radial-gradient(ellipse at 70% 0%, #2a0c18, #0b0710 70%); color: var(--ecl-bone); border: 1px solid rgba(232, 190, 120, 0.45); padding-bottom: 8px; }
+.eclipse-ntf-chat .chat-banner img { display: block; width: 100%; height: 90px; object-fit: cover; object-position: center 35%; border: none; }
+.eclipse-ntf-chat h3 { margin: 6px 10px 2px; border: none; font-family: 'Eclipse Fraktur', serif; font-size: 22px; font-weight: normal; color: var(--ecl-gold); text-shadow: 0 0 8px rgba(255, 106, 42, 0.6); }
+.eclipse-ntf-chat .chat-flavor { margin: 0 10px 6px; font-family: 'Eclipse Fell', serif; font-style: italic; font-size: 13px; opacity: 0.9; }
+.eclipse-ntf-chat .chat-count { display: flex; align-items: baseline; gap: 8px; margin: 0 10px 4px; }
+.eclipse-ntf-chat .chat-count .label { font-family: 'Eclipse Cinzel', serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--ecl-gold); }
+.eclipse-ntf-chat .chat-count .num { font-family: 'Eclipse Cinzel', serif; font-size: 26px; font-weight: 900; color: #fff; text-shadow: 0 0 8px var(--ecl-ember); }
+.eclipse-ntf-chat .chat-count .detail { font-size: 11px; opacity: 0.7; }
+.eclipse-ntf-chat .chat-dice { margin: 0 10px 6px; display: flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+.eclipse-ntf-chat .chat-dice .fear { font-size: 11px; opacity: 0.75; }
+.eclipse-ntf-chat .chat-traits { list-style: none; margin: 0 8px; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.eclipse-ntf-chat .chat-traits li { display: flex; gap: 8px; align-items: center; padding: 4px 6px; border-radius: 6px; background: rgba(163, 18, 42, 0.3); border: 1px solid rgba(255, 106, 42, 0.4); }
+.eclipse-ntf-chat .chat-traits li i { width: 24px; text-align: center; color: var(--ecl-gold); }
+.eclipse-ntf-chat .chat-traits li div { display: flex; flex-direction: column; font-size: 12px; line-height: 1.25; }
+.eclipse-ntf-chat .chat-traits strong { font-family: 'Eclipse Cinzel', serif; color: #fff; }
+.eclipse-ntf-chat .chat-notes { margin: 6px 10px 0; font-family: 'Eclipse Fell', serif; font-style: italic; font-size: 13px; }
+.eclipse-ntf-chat.end { background: radial-gradient(ellipse at 50% 0%, #fff2d6, #e8be78 45%, #8a4a22 100%); color: var(--ecl-ink); padding: 8px 0 10px; text-align: center; }
+.eclipse-ntf-chat.end h3 { color: #3a1606; text-shadow: 0 0 10px #fff2d6; }
+.eclipse-ntf-chat.end .chat-sunrise img { width: 64px; height: 64px; border: none; filter: invert(1) sepia(1) saturate(4) hue-rotate(-10deg) drop-shadow(0 0 10px #fff); }
+.eclipse-ntf-chat.end .chat-reason { margin: 0; font-size: 12px; opacity: 0.8; }
+
+/* ---------------------------------------------------------------------
+   Diário (journal) — páginas da revista
+   --------------------------------------------------------------------- */
+.journal-entry-page .eclipse-page, .eclipse-page {
+    font-family: 'Eclipse Fell', 'Signika', serif;
+    font-size: 15.5px;
+    line-height: 1.55;
+    color: #2a1a12;
+}
+.journal-entry-page:has(.eclipse-page), .journal-page-content:has(.eclipse-page) {
+    background: url('../assets/ui/pergaminho.webp') center / cover, #efe5d0;
+}
+.journal-entry-page:has(.eclipse-page) > header h1, .journal-entry-page:has(.eclipse-page) > header h2 {
+    font-family: 'Eclipse Fell', serif; font-style: italic; color: #2a1a12; border-bottom: 2px solid rgba(122, 0, 24, 0.6);
+}
+.eclipse-page h2 { font-family: 'Eclipse Fell', serif; font-style: italic; font-size: 2em; color: #2a1a12; border-bottom: 2px solid #7a0018; margin-top: 1em; }
+.eclipse-page h3 { font-family: 'Eclipse Cinzel', serif; font-weight: 800; font-size: 1.1em; letter-spacing: 0.5px; text-transform: uppercase; color: #7a0018; border: none; margin: 1.1em 0 0.3em; }
+.eclipse-page h3::before { content: '✦ '; color: #b5652c; }
+.eclipse-page h4 { font-family: 'Eclipse Cinzel', serif; font-weight: 800; color: #7a0018; margin: 0 0 4px; border: none; }
+.eclipse-page strong { color: #4a0a10; }
+.eclipse-page p.eclipse-drop::first-letter { font-family: 'Eclipse Fraktur', serif; float: left; font-size: 3.6em; line-height: 0.85; padding: 4px 8px 0 0; color: #7a0018; }
+.eclipse-page .eclipse-banner { margin: -8px -8px 12px; background: #0b0710; border-radius: 6px; overflow: hidden; }
+.eclipse-page .eclipse-banner img { width: 100%; display: block; border: none; }
+.eclipse-page .eclipse-dots { color: #7a0018; letter-spacing: 3px; }
+.eclipse-page blockquote.eclipse-read {
+    margin: 12px 0; padding: 12px 16px 6px; border: none; border-left: 4px solid #7a0018;
+    background: linear-gradient(90deg, rgba(122, 0, 24, 0.12), rgba(122, 0, 24, 0.03)); border-radius: 0 8px 8px 0;
+    font-style: italic; color: #2a1a12;
+}
+.eclipse-page .eclipse-box { margin: 10px 0; padding: 10px 14px; background: rgba(255, 250, 238, 0.65); border: 1px solid rgba(122, 0, 24, 0.35); border-radius: 8px; box-shadow: 0 2px 6px rgba(42, 26, 18, 0.15); }
+.eclipse-page .eclipse-box p { margin: 0.3em 0; }
+.eclipse-page .eclipse-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+.eclipse-page ul.eclipse-questions { list-style: none; padding-left: 0; }
+.eclipse-page ul.eclipse-questions li { position: relative; padding-left: 26px; margin: 6px 0; font-style: italic; }
+.eclipse-page ul.eclipse-questions li::before { content: '?'; position: absolute; left: 0; top: 1px; width: 18px; height: 18px; border-radius: 50%; background: #7a0018; color: #f1e6d0; font: bold 12px/18px 'Eclipse Cinzel', serif; text-align: center; font-style: normal; }
+.eclipse-page figure.eclipse-art { margin: 4px 0 10px; }
+.eclipse-page figure.eclipse-art img { border: none; max-width: 100%; filter: drop-shadow(0 6px 10px rgba(42, 26, 18, 0.35)); }
+.eclipse-page figure.eclipse-art.right { float: right; width: 42%; margin-left: 16px; }
+.eclipse-page figure.eclipse-art.left { float: left; width: 30%; margin-right: 16px; }
+.eclipse-page figure.eclipse-art.center { text-align: center; clear: both; }
+.eclipse-page figure.eclipse-art.center img { max-width: 70%; }
+.eclipse-page figure.eclipse-art.wide { width: 100%; }
+.eclipse-page figure.eclipse-art.wide img { width: 100%; border-radius: 8px; }
+.eclipse-page figure.eclipse-art.token { width: 30%; }
+.eclipse-page figure.eclipse-art.token img { border-radius: 50%; }
+.eclipse-page figcaption { font-family: 'Eclipse Fell', serif; font-style: italic; font-size: 0.85em; text-align: center; color: #5a3a2a; }
+.eclipse-page table.eclipse-table { width: 100%; border-collapse: collapse; margin: 8px 0; background: rgba(255, 250, 238, 0.6); border: 1px solid rgba(122, 0, 24, 0.4); }
+.eclipse-page table.eclipse-table th { background: #7a0018; color: #f1e6d0; font-family: 'Eclipse Cinzel', serif; text-align: left; padding: 4px 8px; }
+.eclipse-page table.eclipse-table td { padding: 4px 8px; border-top: 1px solid rgba(122, 0, 24, 0.2); }
+.eclipse-page table.eclipse-table td:first-child { font-family: 'Eclipse Cinzel', serif; font-weight: 800; white-space: nowrap; color: #7a0018; }
+.eclipse-page .eclipse-lore { font-style: italic; }
+.eclipse-page section.secret { background: rgba(122, 0, 24, 0.06); }
+.eclipse-page::after { content: ''; display: block; clear: both; }
+
+/* Ficha do adversário: lore da revista */
+.daggerheart .eclipse-lore { font-style: italic; border-left: 3px solid #7a0018; padding-left: 8px; margin-top: 6px; }
+.daggerheart .eclipse-box { padding: 6px 8px; border: 1px solid rgba(181, 101, 44, 0.6); border-radius: 6px; margin: 6px 0; }

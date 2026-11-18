@@ -1,0 +1,47 @@
+[
+  {
+    "range": [
+      1,
+      2
+    ],
+    "name": "Fúria da Noite",
+    "text": "Aumente o dano dos adversários em +2.",
+    "img": "icons/skills/melee/strike-slashes-red.webp"
+  },
+  {
+    "range": [
+      3,
+      4
+    ],
+    "name": "Sombra Espessa",
+    "text": "Aumente a Dificuldade de todos os adversários e ambientes em 1, enquanto o Eclipse durar.",
+    "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp"
+  },
+  {
+    "range": [
+      5,
+      6
+    ],
+    "name": "Couro da Noite",
+    "text": "Aumente os limiares de dano dos adversários em +2.",
+    "img": "icons/magic/defensive/shield-barrier-flaming-pentagon-orange.webp"
+  },
+  {
+    "range": [
+      7,
+      8
+    ],
+    "name": "Esperança Minguante",
+    "text": "Diminua o Dado de Esperança dos jogadores para um d10.",
+    "img": "icons/magic/light/explosion-star-small-blue-yellow.webp"
+  },
+  {
+    "range": [
+      9,
+      10
+    ],
+    "name": "Garras da Onça Celeste",
+    "text": "Todas as criaturas obtêm sucesso crítico ao rolar 19 ou 20 em testes de ataque contra personagens.",
+    "img": "icons/creatures/claws/claw-talons-glowing-purple.webp"
+  }
+]

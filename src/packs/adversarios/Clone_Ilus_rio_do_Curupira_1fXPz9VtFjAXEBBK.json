@@ -1,0 +1,296 @@
+{
+  "_id": "1fXPz9VtFjAXEBBK",
+  "name": "Clone Ilusório do Curupira",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/curupira.webp",
+  "folder": "BLNt8QlxFRhKEDTx",
+  "sort": 310,
+  "system": {
+    "tier": 2,
+    "type": "minion",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 0,
+      "severe": 0
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 1
+      },
+      "stress": {
+        "value": 0,
+        "max": 1
+      }
+    },
+    "motivesAndTactics": "Confundir, Cercar, Desaparecer",
+    "description": "<p><em>Uma cópia ilusória do Curupira, feita de fogo-fátuo e folhas.</em></p><div class=\"eclipse-lore\"><p>Criado pela habilidade <em>Natureza Ilusória</em> do @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.cLSWpNoVv1EcC68V]{Curupira}. Os clones agem independentemente do Curupira; gaste Medo normalmente para colocá-los em foco.</p></div>",
+    "notes": "",
+    "experiences": {},
+    "attack": null,
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 17,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Clone Ilusório do Curupira",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/curupira.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Assombrar",
+      "type": "feature",
+      "_id": "ztQmLHk4sPVUSp6o",
+      "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+      "system": {
+        "description": "<p>Use uma ação para forçar um alvo a <strong>marcar um Ponto de Fadiga</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "jKPPGe97SHhjCJMD": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Forçar Fadiga",
+            "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "jKPPGe97SHhjCJMD",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!1fXPz9VtFjAXEBBK.ztQmLHk4sPVUSp6o"
+    },
+    {
+      "name": "Desfazer-se",
+      "type": "feature",
+      "_id": "ysOcG8Sb7yvBEKwO",
+      "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+      "system": {
+        "description": "<p>Quando destruído, alvos Muito Próximos devem fazer um <strong>Teste de Reação de Instinto ou Presença</strong>. Em caso de falha, marcam <strong>1 PF</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "V1AbZoRA9DJ1pLUW": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Explosão Ilusória",
+            "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "V1AbZoRA9DJ1pLUW",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!1fXPz9VtFjAXEBBK.ysOcG8Sb7yvBEKwO"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "clone-curupira"
+    }
+  },
+  "_key": "!actors!1fXPz9VtFjAXEBBK",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

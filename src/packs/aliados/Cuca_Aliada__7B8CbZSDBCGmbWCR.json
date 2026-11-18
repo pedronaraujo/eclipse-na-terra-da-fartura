@@ -1,0 +1,104 @@
+{
+  "_id": "7B8CbZSDBCGmbWCR",
+  "name": "Cuca (Aliada)",
+  "type": "npc",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/aliada-cuca.webp",
+  "folder": null,
+  "sort": 100,
+  "system": {
+    "difficulty": null,
+    "description": "<p>Uma aliada que sabe cuidar do descanso dos Caçadores de Mitos.</p>",
+    "motives": "Acolher, Alimentar, Cuidar",
+    "notes": "",
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 11,
+      "artist": "",
+      "srd": false
+    }
+  },
+  "prototypeToken": {
+    "name": "Cuca (Aliada)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/aliada-cuca.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Descanse Bem",
+      "type": "feature",
+      "_id": "juvKHGd6bXGm8hP0",
+      "img": "icons/magic/nature/moon-crescent.webp",
+      "system": {
+        "description": "<p><strong>Gatilho:</strong> os jogadores iniciam um descanso com esta PdM presente.<br><strong>Efeito:</strong> role <strong>1d6</strong>; se rolar 5 ou mais, os jogadores podem fazer um movimento de repouso adicional.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!7B8CbZSDBCGmbWCR.juvKHGd6bXGm8hP0"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "aliada-cuca"
+    }
+  },
+  "_key": "!actors!7B8CbZSDBCGmbWCR",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

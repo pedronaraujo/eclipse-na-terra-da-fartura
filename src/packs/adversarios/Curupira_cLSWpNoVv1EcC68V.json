@@ -1,0 +1,535 @@
+{
+  "_id": "cLSWpNoVv1EcC68V",
+  "name": "Curupira",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/curupira.webp",
+  "folder": "BLNt8QlxFRhKEDTx",
+  "sort": 300,
+  "system": {
+    "tier": 2,
+    "type": "leader",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 12,
+      "severe": 23
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Expulsar Invasores, Reunir Grupos",
+    "description": "<p><em>Um humanoide com pele morena queimada de sol, cabelos de fogo, orelhas pontudas e pés voltados para trás.</em></p><div class=\"eclipse-lore\"><p>O Curupira é a cobrança que a mata faz de quem tira mais do que precisa. Tem corpo de menino, cabelos de fogo, dentes verdes e pés virados para trás, o que faz com que suas pegadas sempre apontem para onde ele não está. Caçadores velhos amarram nós em cipós, porque dizem que ele precisa desatar cada um antes de seguir, embora suspeitem que o ritual apenas prolongue a agonia da perseguição.</p></div>",
+    "notes": "",
+    "experiences": {
+      "tIwLPW7hgzd0TYiQ": {
+        "name": "Amigo dos Animais",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "rZ4EgulEaRS17Fta",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Arco de Fogo",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "far",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 2,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 2,
+            "dice": "d8",
+            "bonus": 4,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "magical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 17,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Curupira",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/curupira.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Todos por Um",
+      "type": "feature",
+      "_id": "QKW6GYgiI9ywHuW3",
+      "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+      "system": {
+        "description": "<p>Quando o Curupira estiver em foco, você também pode pôr em foco um adversário animal de 1º patamar ou um clone que esteja sob o controle dele. <strong>Marque um Ponto de Fadiga</strong> para colocar um animal de 2º patamar no lugar do de 1º.</p>",
+        "resource": null,
+        "actions": {
+          "oZh89SW461Pq9T9A": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Animal de 2º patamar",
+            "img": "icons/skills/social/diplomacy-unity-alliance.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "oZh89SW461Pq9T9A",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!cLSWpNoVv1EcC68V.QKW6GYgiI9ywHuW3"
+    },
+    {
+      "name": "Natureza Ilusória",
+      "type": "feature",
+      "_id": "46KlAf2CDTKPSabW",
+      "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para criar até 3 @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.1fXPz9VtFjAXEBBK]{clones} seus. Você pode manter no máximo 3 clones por vez. Os clones podem agir independentemente do Curupira; gaste Medo normalmente para colocá-los em foco. Os clones têm 1 PV, podem usar uma ação para forçar um alvo a marcar um Ponto de Fadiga e, quando destruídos, alvos Muito Próximos devem fazer um Teste de Reação de Instinto ou Presença. Em caso de falha, marcam 1 PF.</p>",
+        "resource": null,
+        "actions": {
+          "TOMxF0IqU31e8WbM": {
+            "type": "summon",
+            "systemPath": "actions",
+            "name": "Criar Clones",
+            "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "summon": [
+              {
+                "actorUUID": "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.1fXPz9VtFjAXEBBK",
+                "count": "3"
+              }
+            ],
+            "_id": "TOMxF0IqU31e8WbM",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!cLSWpNoVv1EcC68V.46KlAf2CDTKPSabW"
+    },
+    {
+      "name": "Vocalização Primitiva",
+      "type": "feature",
+      "_id": "fusXk9MsifbniNLY",
+      "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para invocar <strong>1d6+1</strong> animais de 1º patamar ou <strong>1d4</strong> animais de 2º patamar da região para auxiliá-lo.</p>",
+        "resource": null,
+        "actions": {
+          "RHu9ewVvGh5T1EPJ": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Chamar Animais",
+            "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "RHu9ewVvGh5T1EPJ",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!cLSWpNoVv1EcC68V.fusXk9MsifbniNLY"
+    },
+    {
+      "name": "Assobio Aterrorizante",
+      "type": "feature",
+      "_id": "Oubj0BUuC74qw4MS",
+      "img": "icons/magic/sonic/explosion-shock-sound-wave.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para assobiar e fazer com que todos os personagens em alcance Distante façam um <strong>Teste de Reação de Instinto ou Presença</strong>. Em caso de falha, os personagens devem rolar dois Dados de Medo e ficar com o resultado mais alto. O efeito dura até o Curupira ser derrotado ou até o próximo descanso.</p>",
+        "resource": null,
+        "actions": {
+          "KwlpNf6bUL2iI3NS": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Assobiar",
+            "img": "icons/magic/sonic/explosion-shock-sound-wave.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "instinct",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "KwlpNf6bUL2iI3NS",
+            "effects": [
+              {
+                "_id": "ZLi0TzA3PE7CUtw0",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Assobio Aterrorizante",
+          "img": "icons/magic/sonic/explosion-shock-sound-wave.webp",
+          "_id": "ZLi0TzA3PE7CUtw0",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Role dois Dados de Medo e fique com o resultado mais alto, até o Curupira ser derrotado ou até o próximo descanso.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "shortRest",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!cLSWpNoVv1EcC68V.Oubj0BUuC74qw4MS.ZLi0TzA3PE7CUtw0"
+        }
+      ],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!cLSWpNoVv1EcC68V.Oubj0BUuC74qw4MS"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "curupira"
+    }
+  },
+  "_key": "!actors!cLSWpNoVv1EcC68V",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

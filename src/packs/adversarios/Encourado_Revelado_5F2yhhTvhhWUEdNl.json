@@ -1,0 +1,751 @@
+{
+  "_id": "5F2yhhTvhhWUEdNl",
+  "name": "Encourado Revelado",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/encourado-revelado.webp",
+  "folder": "SEDqmfCu5O4lZwBn",
+  "sort": 510,
+  "system": {
+    "tier": 3,
+    "type": "solo",
+    "difficulty": 17,
+    "damageThresholds": {
+      "major": 16,
+      "severe": 32
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 10
+      },
+      "stress": {
+        "value": 0,
+        "max": 8
+      }
+    },
+    "motivesAndTactics": "Sobrevoar, Matar, Caçar",
+    "description": "<p><em>Em sua forma real, o Encourado revela garras e presas, além de longas asas demoníacas.</em></p><div class=\"eclipse-lore\"><p>Quando escolhe revelar a sua verdadeira forma, o Encourado estende suas enormes asas de morcego e paira sobre sua presa, fazendo com que a lua pareça desaparecer do céu. Seu ar de cobrador de dívidas dá lugar a garras e presas capazes de dilacerar a carne. O cheiro de curtume se transforma em um fedor de enxofre vindo dos mais profundos infernos.</p></div>",
+    "notes": "",
+    "experiences": {
+      "eyZQ6mqtqBAHAfSD": {
+        "name": "Caçador Noturno",
+        "value": 3,
+        "description": ""
+      },
+      "Wt51GtPIi7TQ5CHH": {
+        "name": "Sanguinário",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "y7Xo84Agvorh5jCu",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Garras",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 5,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 3,
+            "dice": "d12",
+            "bonus": 5,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": true,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 21,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Encourado Revelado",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/encourado-revelado.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Inclemente (3)",
+      "type": "feature",
+      "_id": "bEuAOKG3mAI2jqkb",
+      "img": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+      "system": {
+        "description": "<p>O Encourado Revelado pode ser posto em foco até <strong>3 vezes</strong> por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco.</p>",
+        "resource": null,
+        "actions": {
+          "nNRxySXkvW0NXIc6": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Foco: Inclemente",
+            "img": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "passive",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "nNRxySXkvW0NXIc6",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!5F2yhhTvhhWUEdNl.bEuAOKG3mAI2jqkb"
+    },
+    {
+      "name": "Morte Vinda de Cima",
+      "type": "feature",
+      "_id": "fGRGWqASnAmwUeKd",
+      "img": "icons/creatures/abilities/wing-batlike-red-pink.webp",
+      "system": {
+        "description": "<p>Enquanto estiver voando, o Encourado Revelado ganha <strong>+1</strong> de bônus em sua Dificuldade.</p>",
+        "resource": null,
+        "actions": {
+          "yeeCLoP1nS8CBxQJ": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Alçar Voo",
+            "img": "icons/creatures/abilities/wing-batlike-red-pink.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "yeeCLoP1nS8CBxQJ",
+            "effects": [
+              {
+                "_id": "rx3T0cusJ6lg0H44",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Voando",
+          "img": "icons/creatures/abilities/wing-batlike-red-pink.webp",
+          "_id": "rx3T0cusJ6lg0H44",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>+1 na Dificuldade enquanto voa.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [
+              {
+                "key": "system.difficulty",
+                "type": "add",
+                "value": 1,
+                "priority": null,
+                "phase": "initial"
+              }
+            ],
+            "duration": {
+              "type": "",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!5F2yhhTvhhWUEdNl.fGRGWqASnAmwUeKd.rx3T0cusJ6lg0H44"
+        }
+      ],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!5F2yhhTvhhWUEdNl.fGRGWqASnAmwUeKd"
+    },
+    {
+      "name": "Energia Devastadora",
+      "type": "feature",
+      "_id": "xR7Hv5ahYWEAxj0g",
+      "img": "icons/magic/unholy/energy-smoke-pink.webp",
+      "system": {
+        "description": "<p>Quando um personagem rolar 20 ou menos em testes contra o Encourado, ele deve <strong>marcar 1 Ponto de Fadiga</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "gERl8dvoORYGg9Fr": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Marcar Fadiga",
+            "img": "icons/magic/unholy/energy-smoke-pink.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "gERl8dvoORYGg9Fr",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!5F2yhhTvhhWUEdNl.xR7Hv5ahYWEAxj0g"
+    },
+    {
+      "name": "Natureza Demoníaca",
+      "type": "feature",
+      "_id": "DJu2vdIO2HhIAwiK",
+      "img": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+      "system": {
+        "description": "<p>O Encourado é <strong>resistente a dano mágico</strong> e não pode ser enganado por ilusões mágicas.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!5F2yhhTvhhWUEdNl.DJu2vdIO2HhIAwiK"
+    },
+    {
+      "name": "Golpe Descendente",
+      "type": "feature",
+      "_id": "J1ouYG09r622sU0v",
+      "img": "icons/magic/control/buff-flight-wings-runes-red-yellow.webp",
+      "system": {
+        "description": "<p>Mova-se até um ponto Distante e faça um ataque padrão contra um alvo no meio do caminho.</p>",
+        "resource": null,
+        "actions": {
+          "XEKbNY63IlFwVlcd": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Golpe Descendente",
+            "img": "icons/magic/control/buff-flight-wings-runes-red-yellow.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 3,
+                  "dice": "d12",
+                  "bonus": 5,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "XEKbNY63IlFwVlcd",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!5F2yhhTvhhWUEdNl.J1ouYG09r622sU0v"
+    },
+    {
+      "name": "Sede de Sangue",
+      "type": "feature",
+      "_id": "zlyX27424Rqaqp9e",
+      "img": "icons/skills/wounds/blood-spurt-spray-red.webp",
+      "system": {
+        "description": "<p>Quando o Encourado Revelado causa dano a um alvo Corpo a Corpo, você pode <strong>marcar uma Fadiga</strong> para fazer com que ele se alimente. O alvo deve marcar mais um PV e o Encourado Revelado recupera um PV.</p>",
+        "resource": null,
+        "actions": {
+          "HCLes2k6mb6W9hAM": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Alimentar-se (+1 PV)",
+            "img": "icons/skills/wounds/blood-spurt-spray-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "HCLes2k6mb6W9hAM",
+            "effects": []
+          },
+          "vYF4EY5ggeV3pB0O": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Recuperar 1 PV",
+            "img": "icons/skills/wounds/blood-spurt-spray-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "vYF4EY5ggeV3pB0O",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!5F2yhhTvhhWUEdNl.zlyX27424Rqaqp9e"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "encourado-revelado"
+    }
+  },
+  "_key": "!actors!5F2yhhTvhhWUEdNl",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

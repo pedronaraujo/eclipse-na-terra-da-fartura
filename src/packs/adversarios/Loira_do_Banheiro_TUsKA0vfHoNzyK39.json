@@ -1,0 +1,661 @@
+{
+  "_id": "TUsKA0vfHoNzyK39",
+  "name": "Loira do Banheiro",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/loira-do-banheiro.webp",
+  "folder": "JoyzwQX8BMXTEF0z",
+  "sort": 400,
+  "system": {
+    "tier": 4,
+    "type": "social",
+    "difficulty": 19,
+    "damageThresholds": {
+      "major": 28,
+      "severe": 58
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Assustar, Matar, Saciar sua Sede de Sangue",
+    "description": "<p><em>Uma mulher loira de vestido branco rodeada por brumas.</em></p><div class=\"eclipse-lore\"><p>Uma loira gigantesca e fantasmagórica, com a pele cinzenta de quem foi velada por dias, cabelos claros empapados de umidade e pedaços de algodão enfiados nas narinas, encharcados de um sangue que nunca seca. Seu corpo fica preso ao espelho, mas não se engane achando que isso o manterá a salvo. Sua aparição vem acompanhada de brumas que fazem com que os que tentam fugir acabem voltando para ela. Dizem que, para encontrá-la, basta chamar seu nome em frente ao espelho três vezes e ela virá.</p></div>",
+    "notes": "",
+    "experiences": {
+      "raYcEg0qIxavYW1a": {
+        "name": "Assombrar",
+        "value": 5,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "2SmixwxsRan8eZ0E",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Garras Sangrentas",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 5,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 4,
+            "dice": "d8",
+            "bonus": 6,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "magical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 24,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Loira do Banheiro",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/loira-do-banheiro.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Cercada por Brumas",
+      "type": "feature",
+      "_id": "3ZWEHcwqQgLgYweb",
+      "img": "icons/magic/air/fog-gas-smoke-dense-white.webp",
+      "system": {
+        "description": "<p>A área em alcance Distante da Loira do Banheiro sempre está tomada por brumas; personagens dentro dessa área têm desvantagem em Testes de Instinto relacionados à visão. Personagens que tentarem sair da área devem ter sucesso em um Teste de Instinto.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!TUsKA0vfHoNzyK39.3ZWEHcwqQgLgYweb"
+    },
+    {
+      "name": "Presença Perturbadora",
+      "type": "feature",
+      "_id": "Gf2R3fA0AqHw4WTw",
+      "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+      "system": {
+        "description": "<p>Ao falhar em um teste contra a Loira do Banheiro, o personagem <strong>perde um Ponto de Esperança</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "tTSkgGJhvsGUAJfD": {
+            "type": "damage",
+            "systemPath": "actions",
+            "name": "Perder Esperança",
+            "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hope": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hope",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "_id": "tTSkgGJhvsGUAJfD",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!TUsKA0vfHoNzyK39.Gf2R3fA0AqHw4WTw"
+    },
+    {
+      "name": "Sede de Sangue",
+      "type": "feature",
+      "_id": "616Ww1tLIVtCx3q7",
+      "img": "icons/skills/wounds/blood-spurt-spray-red.webp",
+      "system": {
+        "description": "<p><strong>Contagem Regressiva (Decrescente 10).</strong> Quando a Loira do Banheiro entra em cena pela primeira vez, ative a contagem. Sempre que um personagem fizer um teste relacionado à Loira do Banheiro, diminua a contagem em uma quantidade igual ao número de Pontos de Vida que o personagem tem marcado. Quando a contagem termina, a Loira do Banheiro entra em uma sede de sangue insaciável. A partir desse ponto, qualquer interação amigável com a Loira do Banheiro falha automaticamente.</p>",
+        "resource": null,
+        "actions": {
+          "dpbe7rfCMGYYS3gc": {
+            "type": "countdown",
+            "systemPath": "actions",
+            "name": "Iniciar Contagem",
+            "img": "icons/skills/wounds/blood-spurt-spray-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "countdown": [
+              {
+                "name": "Sede de Sangue (Loira do Banheiro)",
+                "type": "encounter",
+                "hidden": false,
+                "img": "icons/skills/wounds/blood-spurt-spray-red.webp",
+                "progress": {
+                  "looping": "decreasing",
+                  "type": "custom",
+                  "startFormula": "10",
+                  "current": 1,
+                  "start": 1
+                },
+                "ownership": {}
+              }
+            ],
+            "_id": "dpbe7rfCMGYYS3gc",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!TUsKA0vfHoNzyK39.616Ww1tLIVtCx3q7"
+    },
+    {
+      "name": "Olhar Desconcertante",
+      "type": "feature",
+      "_id": "Wuttfh7DlytCXnki",
+      "img": "icons/magic/perception/eye-slit-pink.webp",
+      "system": {
+        "description": "<p>O olhar da Loira do Banheiro, sedento por sangue, é assustador. <strong>Gaste um Ponto de Medo</strong> para que todos os personagens em alcance Próximo façam um <strong>Teste de Reação de Presença</strong>. Em caso de falha, eles devem marcar <strong>2 Pontos de Fadiga</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "i75muI3PkXfUSOLv": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Olhar Desconcertante",
+            "img": "icons/magic/perception/eye-slit-pink.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {
+                "stress": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "2"
+                    }
+                  },
+                  "applyTo": "stress",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "save": {
+              "trait": "presence",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "i75muI3PkXfUSOLv",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!TUsKA0vfHoNzyK39.Wuttfh7DlytCXnki"
+    },
+    {
+      "name": "Brumas do Pavor",
+      "type": "feature",
+      "_id": "sFvVIheoEawz6KMR",
+      "img": "icons/magic/air/fog-gas-smoke-dense-white.webp",
+      "system": {
+        "description": "<p>Quando um personagem faz um Teste de Ação com a Loira do Banheiro em cena, você pode <strong>marcar um Ponto de Fadiga</strong> para retirar <strong>1d4</strong> do resultado do Dado de Esperança.</p>",
+        "resource": null,
+        "actions": {
+          "iPKrWy2bufP0mQRN": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Retirar 1d4 da Esperança",
+            "img": "icons/magic/air/fog-gas-smoke-dense-white.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "reaction",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "iPKrWy2bufP0mQRN",
+            "effects": []
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!TUsKA0vfHoNzyK39.sFvVIheoEawz6KMR"
+    },
+    {
+      "name": "O Chamado",
+      "type": "feature",
+      "_id": "AqBXNaxISTEdrV4J",
+      "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+      "system": {
+        "description": "<p>A Loira do Banheiro aparece em cena no momento em que um mortal repete seu nome três vezes na frente de um espelho. Caso esse espelho seja quebrado, todos os personagens em alcance Distante ficam <em>Azarentos</em> até o próximo descanso. Quando um personagem Azarento faz um teste de ação, seu resultado sempre gera um Ponto de Medo para o mestre. Rolagens com Esperança ainda geram Pontos de Esperança.</p>",
+        "resource": null,
+        "actions": {
+          "YNOjfF9WkEDmY1qb": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Espelho Quebrado",
+            "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "_id": "YNOjfF9WkEDmY1qb",
+            "effects": [
+              {
+                "_id": "6xd4vUxXstV21i7k",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Azarento",
+          "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+          "_id": "6xd4vUxXstV21i7k",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Todo teste de ação gera um Ponto de Medo para o mestre (rolagens com Esperança ainda geram Esperança). Dura até o próximo descanso.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "shortRest",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!TUsKA0vfHoNzyK39.AqBXNaxISTEdrV4J.6xd4vUxXstV21i7k"
+        }
+      ],
+      "folder": null,
+      "sort": 600,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!TUsKA0vfHoNzyK39.AqBXNaxISTEdrV4J"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "loira-do-banheiro"
+    }
+  },
+  "_key": "!actors!TUsKA0vfHoNzyK39",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

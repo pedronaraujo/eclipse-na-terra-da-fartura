@@ -1,0 +1,394 @@
+{
+  "_id": "Wef3aXKoOO7DQNIL",
+  "name": "Cobra Norato",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/cobra-norato.webp",
+  "folder": "jKqDBglxnLHl9Am0",
+  "sort": 100,
+  "system": {
+    "tier": 1,
+    "type": "support",
+    "difficulty": 13,
+    "damageThresholds": {
+      "major": 6,
+      "severe": 12
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Amar, Curar, Proteger",
+    "description": "<p><em>Uma cobra verde com pontos pretos, gigante e honrosa.</em></p><div class=\"eclipse-lore\"><p>Irmão de Maria Caninana, Cobra Norato costumava ser o protetor dos viajantes e pescadores. Hoje, o encantado meio gente, meio Boiúna, se arrasta entre dois mundos com a fome de voltar a ser homem. Seu corpo é comprido e coberto de escamas frias que guardam o desenho de um rosto nas costas. Sua boca fala a língua dos humanos sem mover o queixo. Contam que leite derramado na boca e um corte de ferro limpo na testa lhe devolvem seu corpo de homem, mas o encanto só se desfaz se a mão não tremer, e toda mão treme. Quando a água do rio fica morna e para de correr, ele já passou por baixo de você.</p></div>",
+    "notes": "",
+    "experiences": {
+      "hBkC3gIPH3PyRrsf": {
+        "name": "Eu Vou te Salvar",
+        "value": 4,
+        "description": ""
+      },
+      "OYehTceU93x88WTd": {
+        "name": "Proteger",
+        "value": 2,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "GCst77ncGP3V59Wj",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Mordida Protetora",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 2,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 1,
+            "dice": "d8",
+            "bonus": 3,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 13,
+      "artist": "",
+      "srd": false
+    },
+    "size": "medium",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Cobra Norato",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/cobra-norato.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Amor de Irmão",
+      "type": "feature",
+      "_id": "BsaX2thHb5KlrfnQ",
+      "img": "icons/magic/life/heart-pink.webp",
+      "system": {
+        "description": "<p>Enquanto o Cobra Norato estiver em alcance Próximo da @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.rpJUGmBl1bsmwCEI]{Maria Caninana}, sua Dificuldade recebe um bônus de <strong>+1</strong>.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!Wef3aXKoOO7DQNIL.BsaX2thHb5KlrfnQ"
+    },
+    {
+      "name": "Pacifista",
+      "type": "feature",
+      "_id": "0Nva1VRjE0nq9nDb",
+      "img": "icons/skills/social/diplomacy-handshake.webp",
+      "system": {
+        "description": "<p>O Cobra Norato só pode atacar um alvo depois de ser atacado.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!Wef3aXKoOO7DQNIL.0Nva1VRjE0nq9nDb"
+    },
+    {
+      "name": "Água Curativa",
+      "type": "feature",
+      "_id": "ZddA4bGUwIivvgOf",
+      "img": "icons/magic/water/wave-water-teal.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para manipular a água dos rios e curar <strong>1 Ponto de Vida</strong> de um alvo Próximo.</p>",
+        "resource": null,
+        "actions": {
+          "UDSYgI08flQrNjxs": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Curar 1 PV",
+            "img": "icons/magic/water/wave-water-teal.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "UDSYgI08flQrNjxs",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!Wef3aXKoOO7DQNIL.ZddA4bGUwIivvgOf"
+    },
+    {
+      "name": "Meu Amor é Maior",
+      "type": "feature",
+      "_id": "6pulMxGjPKFFEb6d",
+      "img": "icons/magic/life/heart-glowing-red.webp",
+      "system": {
+        "description": "<p>Caso o Cobra Norato presencie a morte de @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.rpJUGmBl1bsmwCEI]{Maria Caninana}, ele se move até ela e dá sua vida pela dela. Recupere todos os Pontos de Vida e de Fadiga da Maria Caninana e coloque-a em foco imediatamente.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "reaction",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!Wef3aXKoOO7DQNIL.6pulMxGjPKFFEb6d"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "cobra-norato"
+    }
+  },
+  "_key": "!actors!Wef3aXKoOO7DQNIL",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

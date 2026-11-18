@@ -1,0 +1,217 @@
+{
+  "_id": "hDvChzCyQERDgUHE",
+  "name": "Pajé Raoni",
+  "type": "npc",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/tokens/paje-raoni.webp",
+  "folder": null,
+  "sort": 200,
+  "system": {
+    "difficulty": null,
+    "description": "<p>Galapa, masc. Líder espiritual dos Ibyrã, o primeiro a perceber e avisar sobre o despertar de Boiúna.</p>",
+    "motives": "Guiar, Curar, Proteger as tradições",
+    "notes": "",
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 11,
+      "artist": "",
+      "srd": false
+    }
+  },
+  "prototypeToken": {
+    "name": "Pajé Raoni",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/paje-raoni.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Cura dos Espíritos",
+      "type": "feature",
+      "_id": "p3gHlL935rBhafZt",
+      "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
+      "system": {
+        "description": "<p><strong>Gatilho:</strong> um combate inicia com este PdM presente.<br><strong>Efeito:</strong> inicie uma <strong>Contagem (Ciclo 4)</strong>. Ela diminui sempre que um personagem marca Pontos de Vida. Quando ativada, este PdM faz com que todos os aliados próximos <strong>limpem um Ponto de Vida</strong>.</p>",
+        "resource": null,
+        "actions": {
+          "ECeHfLDR32eFfTfP": {
+            "type": "countdown",
+            "systemPath": "actions",
+            "name": "Iniciar Contagem",
+            "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "countdown": [
+              {
+                "name": "Cura dos Espíritos (Pajé Raoni)",
+                "type": "encounter",
+                "hidden": false,
+                "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
+                "progress": {
+                  "looping": "looping",
+                  "type": "custom",
+                  "startFormula": "4",
+                  "current": 1,
+                  "start": 1
+                },
+                "ownership": {}
+              }
+            ],
+            "_id": "ECeHfLDR32eFfTfP",
+            "effects": []
+          },
+          "HTMa8jBJStJsze7C": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Limpar 1 PV dos aliados",
+            "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "friendly",
+              "amount": null
+            },
+            "range": "close",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "HTMa8jBJStJsze7C",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!hDvChzCyQERDgUHE.p3gHlL935rBhafZt"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "paje-raoni"
+    }
+  },
+  "_key": "!actors!hDvChzCyQERDgUHE",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

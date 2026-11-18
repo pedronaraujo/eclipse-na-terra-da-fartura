@@ -1,0 +1,538 @@
+{
+  "_id": "WAlwBl6Rmc3U1xCI",
+  "name": "Boi da Cara Preta — O Despertar do Pesadelo",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/boi-da-cara-preta.webp",
+  "folder": "SEDqmfCu5O4lZwBn",
+  "sort": 210,
+  "system": {
+    "tier": 3,
+    "type": "bruiser",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 25,
+      "severe": 38
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Chifrar, Pisotear, Proteger",
+    "description": "<p><em>As sombras da manada derrotada se juntam em um enorme humanoide com aparência de minotauro.</em></p><div class=\"eclipse-lore\"><p>Mães costumam cantar cantigas de ninar sobre uma criatura que vem buscar as crianças que se recusam a dormir: o Boi da Cara Preta. Seu corpo é de boi magro com a pelagem curta, mas com a cabeça inteiramente negra, com chifres curvados para dentro como ganchos. Seu focinho fareja o choro das crianças pelas frestas das janelas. Dizem que ele não entra onde a criança já dorme; por isso as mães cantam até o sono chegar. O problema é que a cantiga que embala o sono é a mesma que o chama.</p></div>",
+    "notes": "",
+    "experiences": {
+      "Qd8VMD68bp1Dpvsb": {
+        "name": "Correr em Bando",
+        "value": 2,
+        "description": ""
+      },
+      "EjHU6pfB8rKh3Sn7": {
+        "name": "Pisotear",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "25KUIwm8avIPAnzn",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Machado do Suplício",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "veryClose",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 3,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 3,
+            "dice": "d12",
+            "bonus": 3,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": null,
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 19,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "large",
+    "criticalThreshold": 20,
+    "typeData": null,
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Boi da Cara Preta — O Despertar do Pesadelo",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/despertar-do-pesadelo.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Lentidão",
+      "type": "feature",
+      "_id": "I7odM2Wbx1PWOx5C",
+      "img": "icons/magic/time/hourglass-tilted-gray.webp",
+      "system": {
+        "description": "<p>Se o Boi da Cara Preta for posto em foco, mas não tiver nenhum marcador em sua ficha, ele é incapaz de agir. Coloque um marcador na ficha e descreva o que ele está se preparando para fazer. Quando puser este adversário em foco e ele tiver um marcador na ficha, remova o marcador para que ele possa agir.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WAlwBl6Rmc3U1xCI.I7odM2Wbx1PWOx5C"
+    },
+    {
+      "name": "Brandindo a Morte",
+      "type": "feature",
+      "_id": "y5w4SmloAEBS9o6X",
+      "img": "icons/weapons/axes/axe-battle-skull-black.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para atacar todos dentro do alcance Muito Próximo, sugando seu poder vital e causando <strong>3d10+5</strong> de dano mágico. Recupere uma quantidade de PV igual à metade dos PV marcados pelos personagens.</p>",
+        "resource": null,
+        "actions": {
+          "qOzIqmh6FymP3T6g": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Brandindo a Morte",
+            "img": "icons/weapons/axes/axe-battle-skull-black.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": "attack",
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 3,
+                  "dice": "d10",
+                  "bonus": 5,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "magical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": null,
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "qOzIqmh6FymP3T6g",
+            "effects": []
+          },
+          "ikEaPY5EZFoB8KV5": {
+            "type": "healing",
+            "systemPath": "actions",
+            "name": "Sugar Vida",
+            "img": "icons/weapons/axes/axe-battle-skull-black.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "damage": {
+              "main": null,
+              "resources": {
+                "hitPoints": {
+                  "value": {
+                    "multiplier": "flat",
+                    "flatMultiplier": 1,
+                    "dice": "d6",
+                    "bonus": null,
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    }
+                  },
+                  "applyTo": "hitPoints",
+                  "base": false,
+                  "resultBased": false,
+                  "valueAlt": null,
+                  "fullRestore": false,
+                  "itemId": null
+                }
+              }
+            },
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "_id": "ikEaPY5EZFoB8KV5",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WAlwBl6Rmc3U1xCI.y5w4SmloAEBS9o6X"
+    },
+    {
+      "name": "Olhar do Pavor",
+      "type": "feature",
+      "_id": "WomBMKh5QVtR320N",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+      "system": {
+        "description": "<p><strong>Gaste um Ponto de Medo</strong> para trazer à vida os maiores medos do personagem. O personagem deve fazer um <strong>Teste de Reação de Presença</strong> ou terá desvantagem em testes de ação contra o Boi da Cara Preta até que ele seja derrotado ou até um descanso curto.</p>",
+        "resource": null,
+        "actions": {
+          "5dYxoFuA65pdDloG": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Olhar do Pavor",
+            "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "fear",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "range": "far",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": null,
+              "resources": {}
+            },
+            "save": {
+              "trait": "presence",
+              "difficulty": null,
+              "damageMod": "none"
+            },
+            "_id": "5dYxoFuA65pdDloG",
+            "effects": [
+              {
+                "_id": "9GRYxf5xrHwRBaLI",
+                "onSave": false
+              }
+            ]
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [
+        {
+          "name": "Olhar do Pavor",
+          "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+          "_id": "9GRYxf5xrHwRBaLI",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "description": "<p>Desvantagem em testes de ação contra o Boi da Cara Preta até ele ser derrotado ou até um descanso curto.</p>",
+          "statuses": [],
+          "tint": "#ffffff",
+          "system": {
+            "changes": [],
+            "duration": {
+              "type": "shortRest",
+              "description": ""
+            },
+            "rangeDependence": null,
+            "stacking": null,
+            "targetDispositions": [],
+            "conditionals": []
+          },
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.364",
+            "systemId": "daggerheart",
+            "systemVersion": "2.12.9",
+            "compendiumSource": null
+          },
+          "_key": "!actors.items.effects!WAlwBl6Rmc3U1xCI.WomBMKh5QVtR320N.9GRYxf5xrHwRBaLI"
+        }
+      ],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!WAlwBl6Rmc3U1xCI.WomBMKh5QVtR320N"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "despertar-do-pesadelo"
+    }
+  },
+  "_key": "!actors!WAlwBl6Rmc3U1xCI",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

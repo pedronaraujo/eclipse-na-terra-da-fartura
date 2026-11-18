@@ -1,0 +1,491 @@
+{
+  "_id": "hDSHeIbJlifloakV",
+  "name": "Boi da Cara Preta",
+  "type": "adversary",
+  "img": "modules/eclipse-na-terra-da-fartura/assets/art/boi-da-cara-preta.webp",
+  "folder": "SEDqmfCu5O4lZwBn",
+  "sort": 200,
+  "system": {
+    "tier": 3,
+    "type": "horde",
+    "difficulty": 14,
+    "damageThresholds": {
+      "major": 25,
+      "severe": 38
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Chifrar, Pisotear, Proteger",
+    "description": "<p><em>Uma manada de bois com a cabeça da cor do céu sem estrelas.</em></p><div class=\"eclipse-lore\"><p>Mães costumam cantar cantigas de ninar sobre uma criatura que vem buscar as crianças que se recusam a dormir: o Boi da Cara Preta. Seu corpo é de boi magro com a pelagem curta, mas com a cabeça inteiramente negra, com chifres curvados para dentro como ganchos. Seu focinho fareja o choro das crianças pelas frestas das janelas. Dizem que ele não entra onde a criança já dorme; por isso as mães cantam até o sono chegar. O problema é que a cantiga que embala o sono é a mesma que o chama.</p></div>",
+    "notes": "",
+    "experiences": {
+      "LZxmHPLIrPzt7cNw": {
+        "name": "Correr em Bando",
+        "value": 2,
+        "description": ""
+      },
+      "X80hCj9AyLNP1AGH": {
+        "name": "Pisotear",
+        "value": 3,
+        "description": ""
+      }
+    },
+    "attack": {
+      "_id": "M4od6TRmpcZtKpal",
+      "systemPath": "attack",
+      "type": "attack",
+      "name": "Chifres",
+      "img": "icons/skills/melee/blood-slash-foam-red.webp",
+      "range": "melee",
+      "chatDisplay": false,
+      "actionType": "action",
+      "baseAction": false,
+      "originItem": {
+        "type": "itemCollection"
+      },
+      "description": "",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "effects": [],
+      "triggers": [],
+      "areas": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 3,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "main": {
+          "value": {
+            "multiplier": "flat",
+            "flatMultiplier": 3,
+            "dice": "d8",
+            "bonus": 4,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "applyTo": "hitPoints",
+          "type": [
+            "physical"
+          ],
+          "base": false,
+          "resultBased": false,
+          "valueAlt": {
+            "multiplier": "flat",
+            "flatMultiplier": 2,
+            "dice": "d6",
+            "bonus": 2,
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            }
+          },
+          "includeBase": false,
+          "direct": false,
+          "fullRestore": false,
+          "itemId": null
+        },
+        "resources": {}
+      }
+    },
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "attribution": {
+      "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+      "page": 19,
+      "artist": "Rodrigo Martins, André Ignatiuk, Ranzinza Cinza",
+      "srd": false
+    },
+    "size": "large",
+    "criticalThreshold": 20,
+    "typeData": {
+      "type": "horde",
+      "hordeHP": 3,
+      "hordeDamage": "2d6+2"
+    },
+    "advantageSources": [],
+    "disadvantageSources": []
+  },
+  "prototypeToken": {
+    "name": "Boi da Cara Preta",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "modules/eclipse-na-terra-da-fartura/assets/tokens/boi-da-cara-preta.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "sight": {
+      "enabled": false
+    },
+    "ring": {
+      "enabled": false
+    },
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": true,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Horda (2d6+2)",
+      "type": "feature",
+      "_id": "w8WM1ltuf4QWR7iH",
+      "img": "icons/environment/people/charge.webp",
+      "system": {
+        "description": "<p>Quando a manada tiver marcado metade dos seus PV ou mais, seu ataque padrão causa <strong>2d6+2</strong> de dano físico, em vez do valor original.</p>",
+        "resource": null,
+        "actions": {},
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!hDSHeIbJlifloakV.w8WM1ltuf4QWR7iH"
+    },
+    {
+      "name": "Fantasmagórico",
+      "type": "feature",
+      "_id": "SdgM0Go6dMxPIcdp",
+      "img": "icons/magic/death/undead-ghost-strike-white.webp",
+      "system": {
+        "description": "<p>A manada do Boi da Cara Preta pode <strong>marcar um Ponto de Fadiga</strong> para atravessar objetos sólidos.</p>",
+        "resource": null,
+        "actions": {
+          "CkwHB3AzvmG0jyPz": {
+            "type": "effect",
+            "systemPath": "actions",
+            "name": "Atravessar",
+            "img": "icons/magic/death/undead-ghost-strike-white.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "_id": "CkwHB3AzvmG0jyPz",
+            "effects": []
+          }
+        },
+        "featureForm": "passive",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!hDSHeIbJlifloakV.SdgM0Go6dMxPIcdp"
+    },
+    {
+      "name": "Pisotear",
+      "type": "feature",
+      "_id": "fF2oap0e5N4XsoGe",
+      "img": "icons/creatures/mammals/bull-horned-blue.webp",
+      "system": {
+        "description": "<p><strong>Marque um Ponto de Fadiga</strong> para pisotear inimigos na frente da manada, causando <strong>3d12+6</strong> de dano físico. Se os personagens tiverem sucesso em um <strong>Teste de Reação de Agilidade</strong>, eles sofrem metade do dano.</p>",
+        "resource": null,
+        "actions": {
+          "3moxkWbTNIMddELt": {
+            "type": "attack",
+            "systemPath": "actions",
+            "name": "Pisotear",
+            "img": "icons/creatures/mammals/bull-horned-blue.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "step": null,
+                "itemId": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "veryClose",
+            "triggers": [],
+            "areas": [],
+            "roll": {
+              "type": null,
+              "trait": null,
+              "difficulty": null,
+              "bonus": null,
+              "advState": "neutral",
+              "diceRolling": {
+                "multiplier": "prof",
+                "flatMultiplier": 1,
+                "dice": "d6",
+                "compare": null,
+                "treshold": null
+              },
+              "useDefault": false
+            },
+            "damage": {
+              "main": {
+                "value": {
+                  "multiplier": "flat",
+                  "flatMultiplier": 3,
+                  "dice": "d12",
+                  "bonus": 6,
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  }
+                },
+                "applyTo": "hitPoints",
+                "type": [
+                  "physical"
+                ],
+                "base": false,
+                "resultBased": false,
+                "valueAlt": null,
+                "includeBase": false,
+                "direct": false,
+                "fullRestore": false,
+                "itemId": null
+              },
+              "resources": {}
+            },
+            "save": {
+              "trait": "agility",
+              "difficulty": null,
+              "damageMod": "half"
+            },
+            "_id": "3moxkWbTNIMddELt",
+            "effects": []
+          }
+        },
+        "featureForm": "action",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!hDSHeIbJlifloakV.fF2oap0e5N4XsoGe"
+    },
+    {
+      "name": "O Despertar do Pesadelo",
+      "type": "feature",
+      "_id": "IeUegwXAbYzXMBvy",
+      "img": "icons/weapons/axes/axe-battle-skull-black.webp",
+      "system": {
+        "description": "<p>Quando a manada marcar o último PV, as sombras da manada derrotada se juntam e formam um enorme humanoide com aparência de minotauro. Recupere todos os PV e PF e substitua a manada por @UUID[Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.WAlwBl6Rmc3U1xCI]{Boi da Cara Preta — O Despertar do Pesadelo}.</p>",
+        "resource": null,
+        "actions": {
+          "HZ5GQ3VjwqGl4hTh": {
+            "type": "transform",
+            "systemPath": "actions",
+            "name": "Despertar",
+            "img": "icons/weapons/axes/axe-battle-skull-black.webp",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "baseAction": false,
+            "originItem": {
+              "type": "itemCollection"
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "range": "",
+            "triggers": [],
+            "areas": [],
+            "transform": {
+              "actorUUID": "Compendium.eclipse-na-terra-da-fartura.adversarios.Actor.WAlwBl6Rmc3U1xCI",
+              "resourceRefresh": {
+                "hitPoints": true,
+                "stress": true
+              }
+            },
+            "_id": "HZ5GQ3VjwqGl4hTh",
+            "effects": []
+          }
+        },
+        "featureForm": "evolution",
+        "attribution": {
+          "source": "DOZE Vol. 1 — Eclipse na Terra da Fartura",
+          "page": null,
+          "artist": ""
+        },
+        "gmNotes": "",
+        "granter": null,
+        "actorResources": []
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "_key": "!actors.items!hDSHeIbJlifloakV.IeUegwXAbYzXMBvy"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "boi-da-cara-preta"
+    }
+  },
+  "_key": "!actors!hDSHeIbJlifloakV",
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  }
+}

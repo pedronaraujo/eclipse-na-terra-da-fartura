@@ -1,0 +1,248 @@
+{
+  "_id": "BptgU3hyxUGahOtm",
+  "name": "Eclipse na Terra da Fartura — Guia dos Jogadores",
+  "pages": [
+    {
+      "_id": "K3RebQf25QIuBL4p",
+      "name": "Eclipse na Terra da Fartura",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {},
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"eclipse-page\"><figure class=\"eclipse-banner\"><img src=\"modules/eclipse-na-terra-da-fartura/assets/ui/titulo-eclipse.webp\"></figure><p class=\"eclipse-drop\">Em uma terra onde eclipses tornam os protetores naturais em monstros, Caçadores de Mitos devem descobrir a verdade antes que o eclipse eterno cubra o céu.</p><p><em>Criado por Henrique, Pedro, Sena e Zeva.</em></p><p><strong>Nível de complexidade:</strong> <span class=\"eclipse-dots\">●●●●</span></p><h2>Proposta</h2><p><em>Leia esta apresentação para os jogadores:</em></p><blockquote class=\"eclipse-read\"><p>Terra da Fartura é uma terra de campos fartos e matas exuberantes, onde fé e temor se entrelaçam. Antigamente, as vilas viviam a fartura das colheitas, os rios sinuosos e o calor das fogueiras — mas quando eclipses passaram a tomar o céu, monstros começaram a emergir das sombras para se banquetear. Por gerações, os ritos sagrados dos Ibyrã e a proteção dos Encantados mantiveram as criaturas afastadas, mas, de uns tempos para cá, eclipses têm acontecido de forma antinatural, e os próprios seres que protegiam o povo se viraram contra ele.</p><p>Em uma campanha de Terra da Fartura, vocês serão <strong>Caçadores de Mitos</strong> que precisam investigar segredos milenares, enfrentar cismas religiosos e abater criaturas sobrenaturais para proteger seu povo do iminente eclipse eterno.</p></blockquote><div class=\"eclipse-columns\"><div class=\"eclipse-box\"><h4>Tom & Atmosfera</h4><p>Desesperançoso, Gótico, Heroico, Misterioso, Sinistro.</p></div><div class=\"eclipse-box\"><h4>Temas</h4><p>Caçada a Monstros, Defesa contra Colonização, Espiritualidade, Exploração, Fim do Mundo, Narrativas Ancestrais, Fúria da Natureza, Povos Originários, Sobrevivência, Terror.</p></div><div class=\"eclipse-box\"><h4>Referências</h4><p><em>Bloodborne</em>, <em>Dark Heart of Andaluria</em>, Folclore do Brasil, <em>The Witcher</em>, tradição de povos originários brasileiros.</p></div></div></div>"
+      },
+      "_key": "!journal.pages!BptgU3hyxUGahOtm.K3RebQf25QIuBL4p"
+    },
+    {
+      "_id": "KpQsO4OFxRev3Ok6",
+      "name": "Visão Geral",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {},
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"eclipse-page\"><figure class=\"eclipse-art wide\"><img src=\"modules/eclipse-na-terra-da-fartura/assets/art/mata-emaranhada.webp\"><figcaption>A Mata Emaranhada</figcaption></figure><p><em>Se o grupo optar por este cenário, forneça as informações abaixo antes da criação de personagem.</em></p><p class=\"eclipse-drop\">Uma terra de horizontes fartos, solo fértil e colheitas que nunca falharam, a Terra da Fartura manteve por muito tempo o caminho para a prosperidade intacto. Antes da Proteção — como ficou conhecido o evento que protegeu o continente de uma invasão —, o continente era um refúgio de calma e alegria, onde a vida seguia um curso natural por dias de sol e paz. Em meio a um ambiente diverso e exuberante, que mistura a pujança da mata e a vastidão dos campos, o povo celebrava o trabalho árduo, as colheitas, o convívio com a natureza com festas acolhedoras, fartura à mesa e uma coletividade e solidariedade entre os povos sem igual. Porém, algo que parecia certo e até inalterável se tornou uma promessa passageira: após o fim da Proteção, eclipses solares começaram a ocorrer de forma recorrente e aleatória, e com isso alteraram a distinta realidade local.</p><p>Situada em um continente esquecido, a Terra da Fartura é um encontro selvagem e deslumbrante de quatro ecossistemas: a <strong>Mata Emaranhada</strong>, densa e variada, onde vivem os enigmáticos <strong>Caá</strong>; <strong>Vento Raso</strong>, com seus campos, praias e dunas, dos nômades <strong>Itacuí</strong>; <strong>Aguapê</strong>, local de misteriosas águas pantanosas, habitadas pelos corajosos <strong>Tatatinas</strong>; e o <strong>Catingal</strong>, a semiárida e resiliente terra dos guerreiros <strong>Nharana</strong>. Além disso, a Terra da Fartura possui rios sinuosos que cortam estas terras de solo generoso e uma vastidão de antigas e grandiosas cidades subterrâneas e ruínas esquecidas.</p><p>Esta terra sempre exigiu e teve o respeito de seus habitantes, os <strong>Ibyrã</strong>, nome coletivo dos povos originários da Terra da Fartura. Suas vilas e aldeias prosperaram em comunhão com a natureza e com os espíritos protetores, enquanto perigos ancestrais permaneciam ocultos nas profundezas da mata e da terra. A profusão de rituais e magia dos povos faz parte do sagrado <strong>Yandê-M’Bae</strong>, religião dos Ibyrã, que possui sua fé enraizada no animismo e em cultos e celebrações em honra à ligação entre vivos, natureza e espiritualidade. Ela pratica o respeito aos <strong>Encantados</strong>, entidades místicas da natureza, que tiveram papel fundamental durante a Proteção contra os <strong>Bandeirolas do Norte</strong>, povo invasor que trouxe guerra ao vir expropriar as riquezas da terra sem se importar com quem vivia nela.</p><p>Porém, desde a vitória e a expulsão dos estrangeiros, algo mudou. <strong>Pajé Raoni</strong> (Galapa, masc.), um líder espiritual dos Ibyrã, foi o primeiro a perceber e avisar sobre o despertar de <strong>Boiúna</strong>, uma cobra colossal lendária que jaz dormindo. O fim de seu sono traria catástrofes. As defesas milenares já não serviam mais, e, das sombras, seres da noite conhecidos apenas no folclore começaram a reaparecer. Então vieram os eclipses, antes uma visão rara.</p><p>Com eles, os dias que normalmente eram calmos e repletos de festas e ritos começaram a ser afetados pelo fenômeno que ficou conhecido como <strong>Noite ao Meio-Dia</strong>, quando a luz é obscurecida por <strong>Chariã, a Onça Celeste</strong>, uma entidade mística de tamanho cósmico. Essa quebra da ordem natural entre dia e noite atingiu os Encantados, cuja ligação espiritual reflete o estado real da natureza, e os transformou em monstros hostis ao povo desta terra. De seres protetores, passaram a agir nas sombras do eclipse. Como o sol, tiveram sua essência primária devorada e, sem empatia pelo povo, os usam para o próprio prazer e diversão.</p><p>A própria sobrevivência da Terra da Fartura vem sendo ameaçada. Com o sol tantas vezes encoberto, a produção de alimentos entrou em crise: a cana-de-açúcar definha nos campos e a cachaça se tornou um artigo raro e cobiçado, enquanto a variedade de cores e alimentos dá lugar ao cultivo de tubérculos como inhame e aipim, além de cogumelos na meia-luz. Diante da escassez, um clima de urgência se apossou dos Ibyrã. Em muitos corações, a fé na comunhão com o mundo deu lugar ao medo e à descrença. Em outros, o desespero virou busca incessante por luxúria e prazer antes do fim. As festas, que antes celebravam a colheita, o fluxo da vida e a gratidão à natureza, agora são usadas para mascarar o desespero do fim do mundo.</p><p>Duas delas mostram bem essa mudança: as <strong>Festas Juninas</strong>, que reuniam as aldeias ao redor do fogo, com bandeirinhas coloridas, danças em grupo e comidas abundantes para agradecer fartas colheitas e a bonança do clima, hoje se tornaram um momento tenso de busca por acalanto e nostalgia, com o crescente medo do futuro incerto. Os <strong>Festivais das Fantasias</strong>, que tradicionalmente antecediam a primavera e celebravam a alegria, o amor e a comunidade, se tornaram uma folia frenética e constante. Por trás das fantasias, quem pode come e bebe sem limites, perdendo a sua individualidade cotidiana, para celebrar a vida antes que ela se apague, ou para que ela vá embora de uma vez.</p><p>Diante do rompimento da realidade vivida por centenas de anos na Terra da Fartura, tensões políticas e religiosas vêm à tona. Os Bandeirolas do Norte cultuavam o <strong>Deus Sol</strong>, um deus único que dava vida a tudo, e pregavam que eram o seu povo escolhido e que, por isso, os Ibyrã deveriam se curvar. Com as consequências da expulsão dos Bandeirolas do Norte da Terra da Fartura, a religião Yandê-M’Bae passa por um conflito interno, entre aqueles que mantêm suas crenças ancestrais e aqueles que passam a acreditar que a expulsão dos invasores trouxe uma punição do Deus Sol aos Ibyrã. Esse grupo, que antes se via como protetor da terra, hoje se considera insignificante, prega que a vida não tem sentido e se vê como algo que logo se findará.</p><p>As crenças ancestrais ainda são mantidas dentro da Yandê-M’Bae, mas o conflito interno está aceso e ardente, influenciando diretamente as relações sociais e políticas do povo Ibyrã. Nesse colapso social e espiritual, as <strong>Criaturas da Noite</strong> se aproveitam dos descrentes e dos tomados pelo medo. Ressurgidas depois de séculos presas nas profundezas, elas passam de antigas histórias e folclores à realidade. Infiltram-se na sociedade e influenciam o povo a se corromper e se entregar às trevas.</p><p>Antes e durante a Proteção, muitos migraram de terras longínquas, atraídos principalmente pela divulgação dos Bandeirolas do Norte de que haviam “encontrado” uma terra farta. Os Ibyrã sempre receberam bem os poucos forasteiros que chegavam, desde que houvesse respeito à natureza. Depois da Proteção, porém, muitos que vieram das terras estrangeiras, como trabalhadores e desertores, ficaram. Alguns fundaram vilas novas e outros se misturaram aos Ibyrã. Nesses lugares, o culto ao Deus Sol passou a ser feito à maneira do povo, com ervas, danças e cânticos.</p><p>Nem tudo é escuridão e medo. Nas fogueiras das vilas circulam rumores de relíquias perdidas capazes de mudar a situação atual, de entidades espirituais poderosas adormecidas nas profundezas do mundo e de campeões que desafiarão as trevas, como talvez já tenha acontecido no passado. Histórias ainda mais antigas, de antes da paz e da fartura milenares dos Ibyrã, surgem como uma faísca de esperança: falam sobre o povo <strong>Takehó</strong>, uma sociedade que teria enfrentado e expulsado as Criaturas da Noite e criado as proteções que duraram até poucos anos atrás.</p><p>Esta terra vasta, abundante e indomável precisa de defensores, e a busca pelo retorno do equilíbrio, ancorada na memória e nas histórias sobre como o povo vivia em comunhão com natureza, espírito e Encantados, é a luz no fim da imensa escuridão que se apresenta. Caberá àqueles que, por obra do destino ou do acaso, se dispuserem a enfrentar a noite, o medo e a corrupção do equilíbrio da vida assumir o papel de <strong>Caçadores de Mitos</strong>: corajosos aventureiros que defendem suas aldeias e vilas com a garra de seu povo, tentando transformar de novo as Criaturas da Noite em Mitos antigos.</p><blockquote class=\"eclipse-read\"><p>Vocês são esses heróis. Entre o calor das fogueiras, o mistério das matas e das águas e o avanço implacável da noite, a jornada se inicia: será possível restaurar o equilíbrio, a exuberância e a fartura desta terra, ou ela sucumbirá de vez às trevas?</p></blockquote></div>"
+      },
+      "_key": "!journal.pages!BptgU3hyxUGahOtm.KpQsO4OFxRev3Ok6"
+    },
+    {
+      "_id": "mO3H1M2nsUeeL6dX",
+      "name": "Comunidades",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {},
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"eclipse-page\"><p>Todas as comunidades estão disponíveis, mas algumas têm certas especificidades em uma campanha do Eclipse na Terra da Fartura. Forneça as informações a seguir conforme necessário e escolha uma ou mais perguntas para fazer aos jogadores na sessão zero.</p><h3>Aristocratas</h3><p>Pessoas oriundas das comunidades aristocráticas costumam ser estrangeiros que vieram em busca de riquezas, ou seus descendentes, uma vez que o povo da Terra da Fartura, antes da chegada dos invasores, não possuía esse tipo de divisão social. Muitos dos estrangeiros aristocratas não se envolveram diretamente na guerra, tendo relações mais tênues com os povos da Terra da Fartura e aceitando de alguma forma, ainda que a contragosto, os costumes e a cultura locais, em troca da possibilidade de se estabelecer e criar pequenas vilas pela Terra da Fartura.</p><ul class=\"eclipse-questions\"><li>Seu personagem é descendente de estrangeiros que participaram da guerra ou que criaram boas relações com os povos Ibyrã? Ou seu personagem é um estrangeiro que veio a esta terra em busca de tesouros?</li><li>O que a comunidade espera do seu personagem? Ele ainda mantém relações de hierarquia social como os membros da comunidade?</li></ul><h3>Desértica</h3><p>Localizados principalmente nas dunas de Vento Raso ou na região semiárida do Catingal, essa comunidade é feita por guerreiros que defenderam o território durante a Proteção. Apesar de ser repleto de dunas, o ambiente de Vento Raso se enche de lagoas de água doce durante períodos de chuvas, o que permite que os Ibyrã prosperem em um local que normalmente seria inóspito. Já no semiárido do Catingal, os povos possuíam um profundo conhecimento ecológico e usam estratégias ancestrais de adaptação, envolvendo uso de plantas, mudança de locais a cada época, conhecimento dos sinais da natureza e conservação do solo.</p><ul class=\"eclipse-questions\"><li>Seu personagem apoiou a expulsão dos Bandeirolas do Norte, feita principalmente pelos Nharana e pelos Itacuí? Ele acredita que foi a decisão certa para preservar a Terra da Fartura?</li><li>Como é a relação do seu personagem com os Nharana ou os Itacuí? Como eles moldaram a personalidade do seu personagem?</li></ul><h3>Disciplinada</h3><p>Algumas comunidades Ibyrã costumam ter regras bem estabelecidas e mantêm, há centenas de anos, ritos e cuidados com a natureza. Em geral, sua hierarquia se baseia no respeito aos mais velhos, e consideram sua sabedoria como leis que regem sua lógica de funcionamento. Todos os membros da comunidade mantêm rígidas obrigações de cuidado com a natureza.</p><ul class=\"eclipse-questions\"><li>Que lugar seu personagem ocupa na hierarquia da sua comunidade? Seu personagem enxerga a disciplina conduzida pelos mais velhos como sabedoria ancestral ou como algo antiquado?</li><li>Quais são (ou eram) as obrigações de cuidar da natureza do seu personagem?</li></ul><h3>Erudita</h3><p>O respeito aos ancestrais é algo vital na Terra da Fartura, graças à sabedoria dos anciões. No continente, o conhecimento passa de geração em geração sobretudo de forma oral, por meio de histórias, contos, poesias e provérbios que falam dos acontecimentos do passado e do que se aprendeu com eles. É essencial que cada vila e aldeia tenha pelo menos uma pessoa que possua os conhecimentos ancestrais.</p><ul class=\"eclipse-questions\"><li>Com que tipos de conhecimento seu personagem tem mais afinidade? Ou ele é um sabe-tudo?</li><li>Com quem seu personagem aprendeu isso? Qual foi a importância dessa pessoa para ele?</li></ul><h3>Fora da Lei</h3><p>Embora os povos Ibyrã sejam conectados e coesos, alguns preferem o caminho fácil. Essas pessoas formam as comunidades Fora da Lei, seja por estarem ligadas à exploração ilegal das riquezas do continente, seja por terem se desiludido com a fé Yandê-M’Bae. Esse tipo de comunidade tem crescido com o advento da Noite ao Meio-Dia. Com o fim dos tempos se aproximando, muitos já não se importam nem com o futuro próximo, pois o presente é tudo o que lhes resta.</p><ul class=\"eclipse-questions\"><li>O que fez seu personagem se desconectar da natureza, da religião ou do resto dos Ibyrã? Como isso o afetou?</li><li>Quais pequenos crimes seu personagem comete para sobreviver? Como os outros o veem por causa disso?</li></ul><h3>Glacial e Montanhesa</h3><p>Personagens dessas comunidades consistem basicamente de forasteiros. Não existem cadeias de montanhas nem áreas de neve na Terra da Fartura. Porém, ao extremo oeste, depois das fronteiras da Terra da Fartura, existe uma cadeia de montanhas onde a maioria dos rios do continente nasce. São locais ermos e inóspitos, mas existem aqueles loucos o suficiente para chamar esses locais de lar.</p><ul class=\"eclipse-questions\"><li>Seu personagem veio de um local onde já conhecia os Ibyrã? Por que ele saiu do seu lar para vir à Terra da Fartura?</li><li>A cultura de lá era próxima ou distinta da cultura da Terra da Fartura? Qual foi a principal diferença entre a cultura do seu personagem e a dos Ibyrã? E qual foi a maior semelhança?</li></ul><h3>Livre</h3><p>A comunidade Livre é formada sobretudo por povos que foram presos e escravizados pelos Bandeirolas do Norte logo no início da invasão e libertados durante e após a Proteção. A revolta dessas pessoas e a mobilização dos outros povos para libertar seus irmãos foram essenciais para a vitória. Apesar de curta, a violência que sofreram marcou suas vidas e as de seus descendentes, e a presença dos estrangeiros mudou a dinâmica da população desses lugares.</p><ul class=\"eclipse-questions\"><li>Quais hábitos dos Bandeirolas do Norte seu personagem acabou absorvendo, mesmo depois da libertação? Como ele é visto pelas outras comunidades por causa disso?</li><li>Como seu personagem vê os descendentes dos Bandeirolas e os habitantes vindos de suas terras que ficaram na Terra da Fartura?</li></ul><h3>Marítima</h3><p>Graças ao extenso litoral da Terra da Fartura, essa comunidade está muito presente no continente. Alguns de seus membros se aventuram nos mares, e outros vivem à beira dos inúmeros rios que cortam a terra. Alguns desses rios chegam a ter milhares de quilômetros de extensão e dezenas de quilômetros de largura, se tornando parte essencial do ambiente, tanto para alimentação quanto para deslocamento.</p><ul class=\"eclipse-questions\"><li>Como as águas fazem parte do cotidiano do seu personagem? Qual é a ligação dele com a navegação, a pesca e os Encantados das águas?</li><li>Seu personagem é de uma comunidade ribeirinha ou praiana? Como viver nela moldou a personalidade dele?</li></ul><h3>Silvestre</h3><p>As comunidades Silvestres são fortemente conectadas aos princípios da religião Yandê-M’Bae, mantêm uma relação ainda mais forte com a natureza e pregam a necessidade de viver em harmonia com a terra. Muitos ainda têm fé nos Encantados e acreditam que a transformação deles seja passageira e que a falta de fé e de ligação com eles trará algo ainda pior para o povo da Terra da Fartura.</p><ul class=\"eclipse-questions\"><li>Algum Encantado era protetor da região da comunidade do seu personagem? Se sim, como a transformação dele afetou o povo?</li><li>Qual é a posição da comunidade do seu personagem sobre a chegada dos seguidores do Deus Sol? Como o povo reagiu durante a Proteção?</li></ul></div>"
+      },
+      "_key": "!journal.pages!BptgU3hyxUGahOtm.mO3H1M2nsUeeL6dX"
+    },
+    {
+      "_id": "Zuo2WgSVSWpiiU0H",
+      "name": "Ancestralidades",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {},
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"eclipse-page\"><p>Todas as ancestralidades estão disponíveis, mas algumas têm certas especificidades em uma campanha do Eclipse na Terra da Fartura. Forneça as informações a seguir conforme necessário.</p><h3>Clanks</h3><p>Os Clanks são feitos de uma mistura de metais, pedras e madeiras muito bem tratadas. Essas criaturas servem de receptáculo para espíritos da natureza e têm forte ligação com Encantados, Druidas e Bruxos.</p><h3>Elfos</h3><p>Os elfos da Terra da Fartura têm traços físicos que imitam a flora da Mata Emaranhada e trazem pequenas bromélias, samambaias e orquídeas em meio aos cabelos e barbas.</p><h3>Galapas, Kataris, Quachos e Símios</h3><p>Na Terra da Fartura, essas ancestralidades costumam ter aparência semelhante à de animais típicos da região. Os Kataris têm pelagem amarelo-dourada com manchas pretas em forma de roseta, e cada um tem um padrão único. Os Símios geralmente não são muito grandes e têm pelagens variadas, do preto ao dourado intenso. Os Galapas costumam ter cores vivas e formatos incomuns, como pescoço alongado ou protuberâncias no queixo que lembram uma barba, e variam muito de tamanho. Já os Quachos são os mais diversos: suas cores vivas e as manchas pelo corpo lhes dão camuflagens variadas, e é praticamente impossível encontrar dois indivíduos parecidos entre si, mesmo entre parentes.</p><h3>Herdeiros Elementais</h3><p>Os Herdeiros Elementais são numerosos, têm uma ligação muito forte com os antepassados dos Ibyrã e são vistos como abençoados pelos espíritos que protegem a terra. No passado, cada grupo era mais numeroso em um território: os Herdeiros da Terra na Mata Emaranhada, os do Fogo no Catingal, os do Ar em Vento Raso e os da Água em Aguapê. Hoje vivem espalhados, sendo muito comuns as ancestralidades mistas que carregam alguma dessas heranças.</p><h3>Infernis</h3><p>Vistos por muitos como filhos do Eclipse, os Infernis sofrem muito preconceito na Terra da Fartura. Apesar disso, seguidores mais empáticos da Yandê-M’Bae acreditam que eles fazem parte da natureza, como todo ser vivo.</p></div>"
+      },
+      "_key": "!journal.pages!BptgU3hyxUGahOtm.Zuo2WgSVSWpiiU0H"
+    },
+    {
+      "_id": "0puolQgHavZWeBiD",
+      "name": "Classes",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {},
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"eclipse-page\"><figure class=\"eclipse-art right\"><img src=\"modules/eclipse-na-terra-da-fartura/assets/art/cuca.webp\"></figure><p>Todas as classes estão disponíveis, mas algumas têm certas especificidades em uma campanha do Eclipse na Terra da Fartura. Forneça as informações a seguir conforme necessário.</p><h3>Bardos</h3><p>Os bardos sempre foram amados em toda a Terra da Fartura pela tradição de contar às novas gerações as histórias e o folclore antigos. Porém, com o advento da Noite ao Meio-Dia, passaram a ser os detentores das histórias dos monstros e das Criaturas da Noite e, para alguns, até os responsáveis por criá-los.</p><h3>Bruxos</h3><p>A cultura dos bruxos como benzedeiros e pessoas muito sábias perdura até hoje. Com o fim dos tempos cada vez mais próximo, eles são procurados para dar orientação e conselhos sobre situações difíceis que passaram a ser cotidianas depois da Noite ao Meio-Dia.</p><h3>Druidas</h3><p>Desde os primórdios da Terra da Fartura, os druidas foram essenciais para manter o contato constante entre os mortais e a natureza. A Noite ao Meio-Dia abalou essa conexão, e muitos druidas viram sua importância questionada pela sociedade. Hoje se dividem entre ser vistos como uma possível salvação e como aqueles que erraram ao conduzir o povo ao longo do tempo.</p><h3>Guardiões e Patrulheiros</h3><p>Guardiões e Patrulheiros sempre foram parte de qualquer vila ou aldeia, como protetores e caçadores. Com a chegada dos Bandeirolas do Norte, assumiram um papel de destaque na Proteção, pois era preciso aumentar o número de pessoas treinadas para defender aquilo que amam e caçar aqueles que queriam mudar a vida da Terra da Fartura. Sempre trabalharam juntos para que os Ibyrã pudessem viver em paz, sem se preocupar com ameaças externas. Agora que a maior ameaça vem da própria natureza do continente, a proteção da população precisa ser redobrada nas comunidades, e a importância deles na cultura Ibyrã cresce ainda mais.</p><h3>Ocultistas</h3><p>Existem dois tipos de pactuados na Terra da Fartura: os que fazem pactos com Encantados e os que fazem pactos com Criaturas da Noite. Os Encantados, apesar da mudança que sofreram com a Noite ao Meio-Dia, continuam presentes, têm poderes inimagináveis para os mortais e podem oferecer pactos a quem for corajoso o bastante para se tornar seu pactuado. As Criaturas da Noite costumam se mover apenas por instinto, mas algumas são inteligentes e poderosas o bastante para firmar pactos com mortais. Como pouco se sabe sobre os pactos feitos pelos ocultistas, a população os vê com maus olhos e como sinal de que as Criaturas da Noite estão chegando.</p></div>"
+      },
+      "_key": "!journal.pages!BptgU3hyxUGahOtm.0puolQgHavZWeBiD"
+    },
+    {
+      "_id": "H2H1p00idjaYmgg3",
+      "name": "Princípios do Jogador",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {},
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"eclipse-page\"><p><em>Se o grupo optar por esta campanha, forneça as informações abaixo antes da criação de personagem.</em></p><h3>Valorize a Caçada</h3><p>Encontrar e eliminar as criaturas o mais rápido possível ajuda a reduzir as baixas, mas, se isso for feito sem o devido preparo, pode significar uma corrida rumo à própria morte. Reunir pistas e descobrir a fraqueza das Criaturas da Noite é tão importante quanto a batalha.</p><h3>O Coletivo Acima do Indivíduo</h3><p>Sair sozinho pelas ruas das diversas cidades e vilarejos durante um eclipse é assinar a própria sentença de morte. Valorizar o grupo como uma unidade é essencial para sobreviver a uma caçada com o menor número de mortes possível.</p><h3>Respeite as Tradições</h3><p>Apesar de a Noite ao Meio-Dia ter abalado a relação entre mortais e natureza, a Terra da Fartura ainda é um lugar repleto de tradição e cultura. Desrespeitar a cultura é tão grave quanto sofrer o ataque de uma Criatura da Noite. Nesse cenário, a cultura dos povos originários, a relação com a natureza e a noção de comunidade e solidariedade são os pilares do bem e da esperança. Seu personagem não precisa seguir esses pilares; a dualidade é parte fundamental do jogo. Pense em como ele se relaciona com as tradições: quais são importantes para ele e por quê? Como ele se relaciona atualmente com esses pilares?</p><h3>Abrace o Monstro Dentro de Você</h3><p>A luta contra as Criaturas da Noite não é fácil: a cada dia que passa, muitos Caçadores de Mitos morrem ou ficam incapazes de continuar seu trabalho. Raramente uma caçada pode ser resolvida na conversa, então os Caçadores de Mitos podem e devem fazer tudo o que estiver ao seu alcance para proteger os seus. Mas o custo pode ser alto: alguns se transformam e perdem partes importantes do seu eu.</p></div>"
+      },
+      "_key": "!journal.pages!BptgU3hyxUGahOtm.H2H1p00idjaYmgg3"
+    },
+    {
+      "_id": "s4ovDgzrb8XuvvlK",
+      "name": "Perguntas para a Sessão Zero",
+      "type": "text",
+      "sort": 700,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {},
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "daggerheart",
+        "systemVersion": "2.12.9",
+        "compendiumSource": null
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"eclipse-page\"><p>Faça as perguntas abaixo para os jogadores ou crie as suas.</p><ul class=\"eclipse-questions\"><li>Onde você estava e o que estava fazendo na primeira vez que testemunhou os efeitos da Noite ao Meio-Dia? O que aconteceu neste dia que seu personagem nunca irá esquecer?</li><li>Um lugar que seu personagem conhece mudou drasticamente após a chegada dos Bandeirolas do Norte e das batalhas da Proteção. Como ele era antes e o que a chegada deste povo estrangeiro mudou nele?</li><li>Qual é a posição do seu personagem quanto às crenças da Yandê-M’Bae e dos cultuadores do Deus Sol?</li><li>Qual é a relação do seu personagem com a espiritualidade Ibyrã? Como ele vê os Encantados? O que mudou na forma como ele se relaciona com tudo isso com o advento da Noite ao Meio-Dia?</li><li>Em quais crendices e superstições seu personagem acredita?</li></ul></div>"
+      },
+      "_key": "!journal.pages!BptgU3hyxUGahOtm.s4ovDgzrb8XuvvlK"
+    }
+  ],
+  "folder": null,
+  "sort": 100,
+  "categories": [],
+  "flags": {
+    "eclipse-na-terra-da-fartura": {
+      "key": "guia-jogadores"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "daggerheart",
+    "systemVersion": "2.12.9",
+    "compendiumSource": null
+  },
+  "_key": "!journal!BptgU3hyxUGahOtm"
+}
