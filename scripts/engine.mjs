@@ -328,6 +328,7 @@ export class EclipseEngine {
     /** Ao carregar o mundo: garante que os efeitos batem com o estado salvo. */
     static async verifyConsistency() {
         const state = getState();
+        if (state.active) await this.syncSystemCountdown();
         if (state.active) {
             const tokenEffects = await this.applyEffects(state.traits);
             if (tokenEffects.length) await this.setState({ tokenEffects: [...new Set([...state.tokenEffects, ...tokenEffects])] });
@@ -365,6 +366,23 @@ export class EclipseEngine {
             Hooks.callAll(`${MOD}.end`, state, reason);
         } finally {
             this._ending = false;
+        }
+    }
+
+    /** Cria ou remove a contagem do Eclipse no rastreador do sistema conforme a configuração. */
+    static async syncSystemCountdown() {
+        if (!isActiveGM()) return;
+        const state = getState();
+        if (!state.active) return;
+        const want = game.settings.get(MOD, 'useSystemCountdown');
+        const exists = state.countdownId && game.settings.get(...COUNTDOWN_SETTING)?.countdowns?.[state.countdownId];
+        if (!want && state.countdownId) {
+            await this.deleteCountdown(state.countdownId);
+            await this.setState({ countdownId: null });
+        } else if (want && !exists) {
+            const id = await this.createCountdown(state.max);
+            if (id) await this.updateCountdown(id, state.counter, state.max);
+            await this.setState({ countdownId: id });
         }
     }
 
