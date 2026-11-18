@@ -122,7 +122,7 @@
 #eclipse-ntf-hud {
     position: fixed;
     left: 50%;
-    top: 58px;
+    top: 74px;
     transform: translate(-50%, -12px);
     z-index: 70;
     display: flex;
@@ -242,10 +242,11 @@
 .eclipse-ntf-app .eclipse-app-inner { display: flex; flex-direction: column; min-height: 100%; }
 .eclipse-ntf-app .eclipse-scroll { padding: 12px 18px 6px; overflow-y: auto; max-height: 62vh; }
 
-.eclipse-ntf-app .eclipse-hero { position: relative; height: 170px; overflow: hidden; border-bottom: 1px solid rgba(232, 190, 120, 0.35); }
-.eclipse-ntf-app .hero-banner { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; border: none; display: block; }
-.eclipse-ntf-app .hero-glow { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, var(--ecl-night) 100%), radial-gradient(circle at 80% 40%, rgba(255, 106, 42, 0.12), transparent 50%); }
-.eclipse-ntf-app.is-active .hero-glow, .eclipse-ntf-app .is-active .hero-glow { animation: eclipse-pulse 3s ease-in-out infinite; box-shadow: inset 0 0 60px rgba(163, 18, 42, 0.8); }
+.eclipse-ntf-app .eclipse-hero { position: relative; height: 220px; overflow: hidden; background: #000; border-bottom: 1px solid rgba(232, 190, 120, 0.35); }
+.eclipse-ntf-app .hero-banner { width: 100%; height: 100%; object-fit: contain; border: none; display: block; }
+.eclipse-ntf-app .hero-glow { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 70%, var(--ecl-night) 100%); }
+.eclipse-ntf-app .is-active .hero-glow { animation: eclipse-hero-pulse 3s ease-in-out infinite; }
+@keyframes eclipse-hero-pulse { 0%, 100% { box-shadow: inset 0 0 30px rgba(163, 18, 42, 0.35); } 50% { box-shadow: inset 0 0 70px rgba(163, 18, 42, 0.85); } }
 .eclipse-ntf-app .hero-badge { position: absolute; right: 12px; bottom: 10px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-family: 'Eclipse Cinzel', serif; background: rgba(11, 7, 16, 0.8); border: 1px solid rgba(232, 190, 120, 0.6); }
 .eclipse-ntf-app .hero-badge.active { color: #fff; border-color: var(--ecl-ember); box-shadow: 0 0 12px rgba(255, 106, 42, 0.7); }
 .eclipse-ntf-app .hero-badge.used { color: #d8a0a0; }
@@ -348,7 +349,8 @@
    Chat
    --------------------------------------------------------------------- */
 .eclipse-ntf-chat { border-radius: 8px; overflow: hidden; background: radial-gradient(ellipse at 70% 0%, #2a0c18, #0b0710 70%); color: var(--ecl-bone); border: 1px solid rgba(232, 190, 120, 0.45); padding-bottom: 8px; }
-.eclipse-ntf-chat .chat-banner img { display: block; width: 100%; height: 90px; object-fit: cover; object-position: center 35%; border: none; }
+.eclipse-ntf-chat .chat-banner { background: #000; }
+.eclipse-ntf-chat .chat-banner img { display: block; width: 100%; height: 130px; object-fit: contain; border: none; }
 .eclipse-ntf-chat h3 { margin: 6px 10px 2px; border: none; font-family: 'Eclipse Fraktur', serif; font-size: 22px; font-weight: normal; color: var(--ecl-gold); text-shadow: 0 0 8px rgba(255, 106, 42, 0.6); }
 .eclipse-ntf-chat .chat-flavor { margin: 0 10px 6px; font-family: 'Eclipse Fell', serif; font-style: italic; font-size: 13px; opacity: 0.9; }
 .eclipse-ntf-chat .chat-count { display: flex; align-items: baseline; gap: 8px; margin: 0 10px 4px; }
