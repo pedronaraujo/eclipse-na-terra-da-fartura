@@ -88,7 +88,7 @@ export class EclipseOverlay {
                 <div class="eclipse-corner bl"></div><div class="eclipse-corner br"></div>
                 <div class="eclipse-embers">${embers}</div>`;
             document.body.appendChild(el);
-            requestAnimationFrame(() => el.classList.add('visible'));
+            setTimeout(() => el.classList.add('visible'), 30);
         }
         el.dataset.intensity = intensity;
         el.classList.remove('leaving');
@@ -106,7 +106,7 @@ export class EclipseOverlay {
             hud.id = 'eclipse-ntf-hud';
             hud.addEventListener('click', () => game.modules.get(MOD).api?.open());
             document.body.appendChild(hud);
-            requestAnimationFrame(() => hud.classList.add('visible'));
+            setTimeout(() => hud.classList.add('visible'), 30);
         }
         hud.dataset.position = pos;
         hud.classList.remove('leaving');
