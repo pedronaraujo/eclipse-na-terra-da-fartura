@@ -1,4 +1,4 @@
-import { MOD, icon, banner, FLAG, EFFECT_STATUS, TRAITS, DEFAULT_STATE, t, getState, isActiveGM, currentFear } from './constants.mjs';
+import { MOD, icon, banner, FLAG, TRAITS, DEFAULT_STATE, t, getState, isActiveGM, currentFear } from './constants.mjs';
 
 /** Id fixo do efeito: um por ator. Mantém base e token sem duplicar (o delta do token sobrescreve pelo id). */
 export const EFFECT_ID = 'eclipsentfEffect';
@@ -61,8 +61,7 @@ export class EclipseEngine {
         if (spendFear && fear > 0) {
             const cur = currentFear();
             if (fear > cur) return ui.notifications.error(t('Errors.NotEnoughFear', { fear, cur }));
-            if (ui.resources?.updateFear) await ui.resources.updateFear(cur - fear);
-            else await game.settings.set('daggerheart', 'ResourcesFear', cur - fear);
+            await game.settings.set('daggerheart', 'ResourcesFear', cur - fear);
         }
 
         const max = Math.max(1, players * 2 + duplicates * 2);
@@ -244,9 +243,10 @@ export class EclipseEngine {
             type: 'base',
             transfer: false,
             disabled: false,
-            statuses: [EFFECT_STATUS],
+            // Sem ícone e sem status: não abre o painel de efeitos do sistema (que empurra o rastreador de Medo)
+            statuses: [],
             description: `<p>${t('Effect.Description')}</p><ul>${list}</ul>`,
-            showIcon: CONST.ACTIVE_EFFECT_SHOW_ICON?.ALWAYS ?? 2,
+            showIcon: CONST.ACTIVE_EFFECT_SHOW_ICON?.NONE ?? 0,
             flags: { [MOD]: { [FLAG]: true } },
             system: {
                 changes,
@@ -264,7 +264,10 @@ export class EclipseEngine {
                 if (existing) await existing.delete();
                 return false;
             }
-            if (existing) await existing.update({ 'system.changes': data.system.changes, description: data.description, disabled: false });
+            if (existing) await existing.update({
+                'system.changes': data.system.changes, description: data.description, disabled: false,
+                statuses: data.statuses, showIcon: data.showIcon
+            });
             else await actor.createEmbeddedDocuments('ActiveEffect', [data], { keepId: true, [MOD]: true });
             return true;
         } catch (err) {

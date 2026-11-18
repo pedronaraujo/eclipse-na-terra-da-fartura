@@ -133,7 +133,7 @@
       },
       "SystemCountdown": {
         "Name": "Mostrar no rastreador de contagens",
-        "Hint": "Cria a contagem do Eclipse no rastreador de contagens do sistema Daggerheart."
+        "Hint": "Também mostra a contagem do Eclipse no rastreador de contagens do sistema. Desligado por padrão: o painel de contagens do sistema empurra o rastreador de Medo para a esquerda em telas menores. O HUD do Eclipse já mostra a contagem."
       },
       "SoundStart": {
         "Name": "Som de início",

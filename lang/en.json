@@ -133,7 +133,7 @@
       },
       "SystemCountdown": {
         "Name": "Show in the countdown tracker",
-        "Hint": "Creates the Eclipse countdown in the Daggerheart countdown tracker."
+        "Hint": "Also shows the Eclipse countdown in the system countdown tracker. Off by default: the system countdown panel pushes the Fear tracker to the left on smaller screens. The Eclipse HUD already shows the countdown."
       },
       "SoundStart": {
         "Name": "Start sound",

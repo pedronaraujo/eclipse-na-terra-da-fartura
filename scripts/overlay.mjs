@@ -33,6 +33,35 @@ export class EclipseOverlay {
         }
         this.updateMenuButtons(state);
         document.body.classList.toggle('eclipse-ntf-active', state.active);
+        this.refreshFearTracker();
+    }
+
+    /**
+     * O sistema só recalcula a posição do rastreador de Medo em poucos momentos; quando a contagem do
+     * Eclipse entra ou sai do painel de contagens, o rastreador pode ficar deslocado (até fora da tela).
+     * Re-renderiza e recalcula sempre que o Eclipse ou as contagens mudam.
+     */
+    static refreshFearTracker = foundry.utils.debounce(async () => {
+        const tracker = ui.resources;
+        if (!tracker) return;
+        try {
+            if (tracker.rendered) await tracker.render();
+            tracker.handleOffset?.();
+            const hud = document.getElementById('eclipse-ntf-hud');
+            if (hud) EclipseOverlay.placeHud(hud);
+        } catch (err) {
+            console.warn(`${MOD} |`, err);
+        }
+    }, 250);
+
+    /** Mantém o HUD sempre abaixo do rastreador de Medo quando ele está no topo da tela. */
+    static placeHud(hud) {
+        hud.style.top = '';
+        if (hud.dataset.position !== 'top') return;
+        const fear = ui.resources?.element;
+        if (!fear?.isConnected || fear.hidden) return;
+        const rect = fear.getBoundingClientRect();
+        if (rect.height && rect.top < 200) hud.style.top = `${Math.round(rect.bottom + 10)}px`;
     }
 
     /* -------------------------------------------- */
@@ -97,6 +126,7 @@ export class EclipseOverlay {
                 <div class="hud-traits">${traits}${notes}</div>
             </div>`;
         hud.dataset.tooltip = t('Hud.Tooltip');
+        this.placeHud(hud);
     }
 
     static removeOverlay(animated) {

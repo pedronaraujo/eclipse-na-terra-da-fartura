@@ -22,11 +22,6 @@ export function initialize() {
     registerSettings();
     foundry.applications.handlebars.loadTemplates(TEMPLATES.map(n => `modules/${MOD}/templates/${n}.hbs`));
 
-    // Ícone de status do Eclipse nos tokens afetados (não aparece no HUD de status)
-    if (!CONFIG.statusEffects.some(s => s.id === 'eclipse-ntf')) {
-        CONFIG.statusEffects.push({ id: 'eclipse-ntf', name: 'ECLIPSE.Status', img: icon(), hud: false });
-    }
-
     const mod = game.modules.get(MOD);
     const api = {
         open: () => EclipseApp.open(),
@@ -116,7 +111,13 @@ function registerHooks() {
     /* Sincroniza com edições manuais na contagem do sistema */
     on('updateSetting', setting => {
         if (setting.key === 'daggerheart.Countdowns') EclipseEngine.onCountdownsChanged();
+        if (setting.key === 'daggerheart.Countdowns' || setting.key === 'daggerheart.ResourcesFear') EclipseOverlay.refreshFearTracker();
     });
+    on('renderFearTracker', () => {
+        const hud = document.getElementById('eclipse-ntf-hud');
+        if (hud) EclipseOverlay.placeHud(hud);
+    });
+    on('controlToken', () => EclipseOverlay.refreshFearTracker());
 
     on('canvasReady', () => EclipseOverlay.sync({ animate: false }));
 }
