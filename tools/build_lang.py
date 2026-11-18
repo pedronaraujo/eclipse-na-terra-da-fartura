@@ -93,7 +93,7 @@ T = {
     'Settings.AutoTick.Name': ('Contagem automática pela Esperança', 'Automatic countdown from Hope'),
     'Settings.AutoTick.Hint': ('Diminui a contagem sempre que a Esperança de um personagem diminui.', "Ticks the countdown down whenever a character's Hope decreases."),
     'Settings.SystemCountdown.Name': ('Mostrar no rastreador de contagens', 'Show in the countdown tracker'),
-    'Settings.SystemCountdown.Hint': ('Cria a contagem do Eclipse no rastreador de contagens do sistema Daggerheart.', 'Creates the Eclipse countdown in the Daggerheart countdown tracker.'),
+    'Settings.SystemCountdown.Hint': ('Também mostra a contagem do Eclipse no rastreador de contagens do sistema. Desligado por padrão: o painel de contagens do sistema empurra o rastreador de Medo para a esquerda em telas menores. O HUD do Eclipse já mostra a contagem.', 'Also shows the Eclipse countdown in the system countdown tracker. Off by default: the system countdown panel pushes the Fear tracker to the left on smaller screens. The Eclipse HUD already shows the countdown.'),
     'Settings.SoundStart.Name': ('Som de início', 'Start sound'),
     'Settings.SoundStart.Hint': ('Opcional: arquivo de áudio tocado para todos quando o Eclipse começa.', 'Optional: audio file played for everyone when the Eclipse starts.'),
     'Settings.SoundEnd.Name': ('Som de fim', 'End sound'),

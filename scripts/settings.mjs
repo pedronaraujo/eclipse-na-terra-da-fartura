@@ -1,6 +1,7 @@
 import { MOD, DEFAULT_STATE } from './constants.mjs';
 import { EclipseOverlay } from './overlay.mjs';
 import { EclipseApp } from './eclipse-app.mjs';
+import { EclipseEngine } from './engine.mjs';
 
 export function registerSettings() {
     const reg = game.settings.register.bind(game.settings);
@@ -60,7 +61,8 @@ export function registerSettings() {
         scope: 'world',
         config: true,
         type: Boolean,
-        default: true
+        default: false,
+        onChange: () => EclipseEngine.serialize(() => EclipseEngine.syncSystemCountdown())
     });
 
     game.settings.register(MOD, 'soundStart', {

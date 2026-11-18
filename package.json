@@ -1,7 +1,7 @@
 {
   "name": "eclipse-na-terra-da-fartura",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "data": "python3 tools/build.py && python3 tools/build_lang.py",
     "pack": "node tools/pack.mjs",
